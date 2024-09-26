@@ -1,4 +1,4 @@
 package Programacion.Tema1.EjerciciosPDF;
 
-public class Ejercicio3 {
+public class ejercicio8 {
 }
