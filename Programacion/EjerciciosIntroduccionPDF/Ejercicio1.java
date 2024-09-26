@@ -1,6 +1,5 @@
-package Programacion.Tema1.EjerciciosPDF;
+package Programacion.EjerciciosIntroduccionPDF;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Ejercicio1 {

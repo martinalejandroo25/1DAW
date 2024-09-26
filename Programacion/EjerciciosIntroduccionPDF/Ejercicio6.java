@@ -1,4 +1,4 @@
-package Programacion.Tema1.EjerciciosPDF;
+package Programacion.EjerciciosIntroduccionPDF;
 
 import java.util.Scanner;
 
