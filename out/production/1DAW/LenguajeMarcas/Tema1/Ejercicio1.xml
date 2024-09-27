@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE libro>
+<libro>
+    <nombre> XML practico</nombre>
+    <apellido>SebastienLecomte</apellido>
+    <direccion></direccion>
+    <telefono1></telefono1>
+    <telefono2></telefono2>
+    <telefono3></telefono3>
+</libro>
