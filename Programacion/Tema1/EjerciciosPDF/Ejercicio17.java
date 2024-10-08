@@ -18,7 +18,7 @@ public class Ejercicio17 {
         int c = (int)(Math.random() * 10) + 1;
         System.out.println(c);
         //d) Crear un número entero negativo entre -50 y -150
-        int d = (int)(Math.random() * (-150));
+        int d = (int)((-50) + (Math.random() * ((-150) - (-50))));
         System.out.println(d);
     }
 }
