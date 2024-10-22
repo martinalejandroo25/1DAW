@@ -1,4 +1,4 @@
-package Programacion.Tema2;
+package Programacion.Tema2.bucles.IfElse;
 
 public class EjemploIF2 {
     public static void main(String[] args) {

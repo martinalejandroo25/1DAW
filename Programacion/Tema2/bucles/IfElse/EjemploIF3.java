@@ -1,4 +1,4 @@
-package Programacion.Tema2;
+package Programacion.Tema2.bucles.IfElse;
 
 public class EjemploIF3 {
     //vidaP, magiaP, escudoEspecial (boolean)

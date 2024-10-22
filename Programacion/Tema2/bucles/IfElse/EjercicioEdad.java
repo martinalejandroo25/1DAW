@@ -1,4 +1,4 @@
-package Programacion.Tema2;
+package Programacion.Tema2.bucles.IfElse;
 
 import java.util.Scanner;
 
