@@ -32,5 +32,6 @@ que ir sacando la división entera, y el resto se lleva al siguiente billete.*/
         System.out.println("Ingrese el numero de euros");
         int euros = Integer.parseInt(sc.nextLine());
         billete(euros);
+
     }
 }
