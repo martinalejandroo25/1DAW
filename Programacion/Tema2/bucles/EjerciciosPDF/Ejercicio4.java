@@ -9,7 +9,7 @@ número de billetes y la cantidad sobrante que se pueden utilizar para obtener d
 que ir sacando la división entera, y el resto se lleva al siguiente billete.*/
     public static void billete(int euros){
         int total = euros;
-        int quinientos = euros / 500;
+        int billeteQ = euros / 500;
         euros = euros % 500;
         int dosC = euros / 200;
         euros = euros % 200;
@@ -24,7 +24,7 @@ que ir sacando la división entera, y el resto se lleva al siguiente billete.*/
         int cinco = euros / 5;
         euros = euros % 5;
         int sobrante = euros;
-        System.out.println(total+" euros →"+quinientos+" billete de 500,"+dosC+" billete de 200, "+cien+" billete de 100, "+cincuenta+" billete 50, "+veinte+" billete de 20,"+diez+" billete de 10,"+cinco+" billete de 5, sobran "+sobrante+" euros");
+        System.out.println(total+" euros →"+billeteQ+" billete de 500,"+dosC+" billete de 200, "+cien+" billete de 100, "+cincuenta+" billete 50, "+veinte+" billete de 20,"+diez+" billete de 10,"+cinco+" billete de 5, sobran "+sobrante+" euros");
     }
 
     public static void main(String[] args) {
