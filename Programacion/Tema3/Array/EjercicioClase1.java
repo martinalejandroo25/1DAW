@@ -3,7 +3,7 @@ package Programacion.Tema3.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class EjercicioClase1 {
+public class            EjercicioClase1 {
     public static void main(String[] args) {
         //Pide 5 números double por teclado
         //Guárdalos directamente en un array
