@@ -24,5 +24,6 @@ public class Ejercicio2 {
             array3[i] = array1[i] + array2[i];
         }
         System.out.println(Arrays.toString(array3));
+
     }
 }
