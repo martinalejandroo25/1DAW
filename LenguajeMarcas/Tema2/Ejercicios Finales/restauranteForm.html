@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Formulario</title>
+    <style>
+        * {
+            background-color: rgb(241, 226, 197);
+        }
+fieldset {
+            border-color: rgb(70, 43, 226);
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Restaurante</h1>
+    <h1></h1>
+    <form>
+        <fieldset>
+            <legend>Información Personal</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required><br><br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="comensales">Nº Comensales:</label>
+            <input type="text" id="comensales" name="comensales" required><br><br>
+        </fieldset>
+
+            <fieldset>
+                <legend>Datos de la comida</legend>
+                <legend>Tipo de comida</legend>
+            <select name="comida" id="comida">
+                <option value="Null">Selecciona una opcion</option>
+                <option value="desa">Desayuno</option>
+                <option value="com">Comida</option>
+                <option value="cena">Cena</option>
+            </select> 
+            <br><br>
+
+            <legend>Fecha de la reserva</legend>
+            <input type="date">
+            <br><br>
+            <legend>Zonas disponibles</legend>
+            <input type="radio" checked name="zona" value="terraza"> Zona terraza
+            <input type="radio" name="zona" value="interior"> zona Interior
+            </fieldset>
+            <fieldset>
+                <legend>Servicios extras</legend>
+                <input type="checkbox" name="musica" value="musica"> Musica en vivo
+                <br>
+                <input type="checkbox" name="camarero" value="camarero"> Camarero personalizado
+                <br>
+                <input type="checkbox" name="barra" value="barra"> Barra libre tras la comida
+                <br>
+                <input type="checkbox" name="Otros" value="Otros"> Otros
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Comentarios adicionales</legend>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+            </fieldset>
+            <input type="submit" value="Enviar">
+            <input type="reset">
+    </form>
+    <h4><a href="MiWeb.html">Regresar a la página principal</a></h4>
+</body>
+</html>
