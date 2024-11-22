@@ -12,6 +12,31 @@ public class funciones {
         return (int) (Math.random() * (mayor - menor + 1) + menor);
 
     }
+    public static boolean multiplo (int a, int b){
+        return a % b == 0;
+    }
+
+    public static boolean esPrimos(int num){
+        boolean esPrimo = true;
+        for (int i = 2; i < Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                esPrimo = false;
+                break;
+            }
+        }
+        return esPrimo;
+    }
+
+    //MATRICES Y ARRAYS
+    public static void pintarMatriz(int matriz[][]) {
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                System.out.print(matriz[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
     public static void pintarArray(double[] numeros) {
         for (int i = 0; i < numeros.length; i++) {
             System.out.print("["+numeros[i]+"], ");
@@ -30,18 +55,7 @@ public class funciones {
         return total;
     }
 
-    public static boolean multiplo (int a, int b){
-        return a % b == 0;
-    }
 
-    public static boolean esPrimos(int num){
-        boolean esPrimo = true;
-        for (int i = 2; i < Math.sqrt(num); i++) {
-            if (num % i == 0) {
-                esPrimo = false;
-                break;
-            }
-        }
-        return esPrimo;
-    }
+
+
 }
