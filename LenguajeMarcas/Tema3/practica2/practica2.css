@@ -1,0 +1,29 @@
+table tr td {
+    border: 1px, solid, black;
+    border-collapse: collapse;
+}
+p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 12pt;
+}
+td {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+}
+h1 {
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32pt;
+    font-weight: bold;
+}
+h2 {
+    color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24pt;
+    font-weight: bold;
+}

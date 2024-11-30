@@ -1,0 +1,13 @@
+p{
+    font-family: "Comic Neue", cursive;
+    font-weight: 8;
+    font-size: 8pt;
+    font-style: normal;}
+h1 {
+    color: red;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
