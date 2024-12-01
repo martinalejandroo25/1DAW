@@ -1,4 +1,4 @@
-package Programacion.Tema3.practica1;
+package Programacion.Tema3.practicaArraysMatrices;
 
 import java.util.Arrays;
 
