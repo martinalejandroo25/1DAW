@@ -2,7 +2,6 @@ package Programacion.Tema4.EjercicioClase2;
 
 public class Arma {
     private String nombre;
-    public enum TipoArma {ESPADA,MARTTILLO, HACHA}
 
     public Arma(String nombre) {
         this.nombre = nombre;
@@ -22,4 +21,6 @@ public class Arma {
                 "nombre='" + nombre + '\'' +
                 '}';
     }
+
+    public enum TipoArma {ESPADA, MARTTILLO, HACHA}
 }

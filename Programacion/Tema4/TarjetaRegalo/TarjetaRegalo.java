@@ -30,7 +30,7 @@ public class TarjetaRegalo {
                 '}';
     }
 
-    public void fusionarTarjeta(TarjetaRegalo tr){
+    public void fusionarTarjeta(TarjetaRegalo tr) {
         this.saldo += tr.getSaldo();
         tr.setSaldo(0.0);
     }
