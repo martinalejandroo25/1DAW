@@ -1,0 +1,47 @@
+* {
+    background-color: rgb(179, 250, 179);
+}
+body {
+    padding-left: 5em;
+    padding-right: 5em;
+
+}
+#titulo {
+    letter-spacing: 0.3em;
+    text-shadow: 0.2em -0.2em 0.1em darkgreen;
+    font-size: 4em;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    text-decoration: darkgreen;
+    text-transform: uppercase;
+    
+}
+.finalParrafo {
+    border-bottom: 0.3em solid darkgreen;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 0.5em;
+}
+.finalPagina {
+    border-bottom: 4px solid darkgreen;
+    padding-bottom: 2em;
+}
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+}
+div {
+    align-items: right;
+}
+.recuadro {
+    border: 1px black solid;
+}
+.rojo {
+    color: red;
+    text-decoration: underline double;
+}
+.azul {
+    color: blue;
+    text-transform: uppercase;
+}

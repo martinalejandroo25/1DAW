@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE restaurante>
+<restaurante>
+    <receta>
+        <ingredientes>
+            <in>1 Kg. de cebollas.</in>
+            <in>2 l. de caldo de carne.</in>
+            <in>100 gr. mantequilla.</in>
+            <in>1 cucharada de harina.</in>
+            <in>100 gr. de queso emmental suizo o gruyére rallado.</in>
+            <in>Pan tostado en rebanadas.</in>
+            <in>Tomillo.</in>
+            <in>1 hoja de laurel.</in>
+            <in>Pimienta. </in>
+        </ingredientes>
+
+        <proceso>
+            <pro>Pelar y partir las cebollas en rodajas finas.</pro>
+            <pro>Rehogarlas con la mantequilla, sal y pimienta a fuego lento hasta que estén transparentes sin dorarse.</pro>
+            <pro>Añadir la harina sin dejar de remover.</pro>
+            <pro>Ponerlo en una cazuela con el caldo, el tomillo y el laurel.</pro>
+            <pro>Dejar cocer a fuego lento durante unos 15 minutos.</pro>
+            <pro>Poner las rebanadas de pan encima, espolvorear el queso y gratinar al horno.</pro>
+        </proceso>
+    </receta>
+</restaurante>

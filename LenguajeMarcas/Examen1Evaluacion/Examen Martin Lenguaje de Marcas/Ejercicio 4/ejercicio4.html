@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <h2>Información sobre el Empleado</h2>
+    <form action="">
+        
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="nombre">
+                <legend>Nombre:</legend>
+                <input type="text" id="nombre" name="nombre">
+            </label>
+            <p>Foto <input type="file" name="foto"></p>
+            <br>
+            <label for="Aficiones">
+                <legend>Aficiones:</legend>
+                <input type="checkbox" checked name="musica">Música <br>
+                <input type="checkbox" name="deporte">Deporte <br>
+                <input type="checkbox" checked name="informatica">Informática
+
+            </label>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Datos fiscales</legend>
+            <label for="sueldo">
+                <legend>Sueldo:</legend>
+                <select name="sueldo">
+                    <option value="mil">1000€</option>
+                    <option value="mil">menos de 1000€</option>
+                    <option value="mil">más de 1000€</option>
+                </select>
+            </label>
+            <br>
+            <label for="promocion">
+                <legend>Promocion</legend>
+                <input type="radio" name="promocion" value="paro">En paro<br>
+                <input type="radio" name="promocion" value="autonomo">Autónomo<br>
+                <input type="radio" name="promocion" value="cuenta_ajena">Por Cuenta Ajena <br>
+            </label>
+            
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modulo>
+    <asignatura>
+        <nombre></nombre>
+        <horasSemana></horasSemana>
+        <caracter></caracter>
+        <fechaIni></fechaIni>
+        <fechafin></fechafin>
+    </asignatura>
+    <alumnos>
+        <Alumno>
+            <Nombre>Ana</Nombre>
+            <Apellidos>Fernández Gutiérrez</Apellidos>
+            <NIF>16965696L</NIF>
+            <Telefono>789654321</Telefono>
+            <Email>ana.fdezgtrrez@hotmail.com</Email>
+            <Direccion>
+                <Calle>C/ El Percebe, 13</Calle>
+                <Ciudad>Santander</Ciudad>
+                <CodigoPostal>39302</CodigoPostal>
+            </Direccion>
+            <FaltasAsistencia>Ninguna</FaltasAsistencia>
+            <Notas>Sin datos</Notas>
+        </Alumno>
+        <Alumno>
+            <Nombre>Pepito</Nombre>
+            <Apellidos>Grillo</Apellidos>
+            <NIF>98765432H</NIF>
+            <Telefono>656566555</Telefono>
+            <Email>yhyh@yahoo.com</Email>
+            <Direccion>
+                <Calle>Avd. El Pez, 5</Calle>
+                <Ciudad>Suances</Ciudad>
+                <CodigoPostal>39401</CodigoPostal>
+            </Direccion>
+            <FaltasAsistencia>Ninguna</FaltasAsistencia>
+            <Notas>Apto</Notas>
+        </Alumno>
+    </alumnos>
+</modulo>

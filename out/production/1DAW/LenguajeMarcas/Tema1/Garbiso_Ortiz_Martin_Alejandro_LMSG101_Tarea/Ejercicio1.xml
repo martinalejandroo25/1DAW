@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE agenda>
+<!--1.- Diseñar un documento
+válido en XML que permita estructurar la información de una
+agenda de teléfonos, suponer que la información que podemos tener de una persona es
+su nombre y apellidos, su dirección y sus teléfonos, que pueden ser el teléfono de casa,
+el móvil y el teléfono del trabajo-->
+<agenda>
+    <contacto>
+        <nombre>nombre1</nombre>
+        <apellido>apellido1</apellido>
+        <direccion>
+            <calle>calle1</calle>
+            <ciudad>ciudad1</ciudad>
+            <codPostal>00001</codPostal>
+        </direccion>
+        <telefono>
+        <movil>telefono1</movil>
+        <fijo>telefono2</fijo>
+        <trabajo>telefono3</trabajo>
+        </telefono>
+    </contacto>
+    <contacto>
+        <nombre>nombre2</nombre>
+        <apellido>apellido2</apellido>
+        <direccion>
+            <calle>calle2</calle>
+            <ciudad>ciudad2</ciudad>
+            <codPostal>00002</codPostal>
+        </direccion>
+        
+        <telefono>
+        <movil>telefono1</movil>
+        <fijo>telefono2</fijo>
+        <trabajo>telefono3</trabajo>
+        </telefono>
+    </contacto>
+    <contacto>
+        <nombre>nombre3</nombre>
+        <apellido>apellido3</apellido>
+        <direccion>
+            <calle>calle3</calle>
+            <ciudad>ciudad3</ciudad>
+            <codPostal>00003</codPostal>
+        </direccion>
+        
+        <telefono>
+        <movil>telefono1</movil>
+        <fijo>telefono2</fijo>
+        <trabajo>telefono3</trabajo>
+        </telefono>
+    </contacto>
+</agenda>

@@ -1,0 +1,16 @@
+#arriba {
+    float: inline-start;
+    background-color: orangered;
+}
+#menu {
+    float: left;
+    background-color: blueviolet;
+}
+#derecha {
+    float: right;
+    background-color: blueviolet;
+}
+#abajo {
+    float: inline-end;
+    background-color: aquamarine;
+}

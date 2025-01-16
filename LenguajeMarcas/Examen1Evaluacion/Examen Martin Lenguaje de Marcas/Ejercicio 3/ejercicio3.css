@@ -1,0 +1,29 @@
+ul, li {
+    list-style: none;
+    font-size: 1.5em;
+    display: inline;
+}
+
+a:link {
+    color: red ;
+    text-decoration: none;
+    background-color: black;
+}
+a:hover {
+    color: white;
+    background-color: red;
+    text-decoration: underline;
+}
+a:active {
+    color: orange !important;
+    background-color: transparent;
+}
+a:visited {
+    color: darkgreen;
+}
+
+a:focus{
+    color: blue;
+    text-decoration: underline;
+    background-color: transparent;
+}
