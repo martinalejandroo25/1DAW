@@ -1,0 +1,25 @@
+h1 {
+    line-height: 24pt;
+    text-decoration: underline;
+    text-align: justify;
+    text-indent: 2cm;
+    text-transform: lowercase;
+}
+p {
+    line-height: 36pt;
+    text-decoration: line-through;
+    text-align: right;
+    text-transform: uppercase;
+}
+body {
+    line-height: 24pt;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace; /*no se encuentra la fuente Capital*/
+    text-indent: 1cm;
+}
+td {
+    line-height: 8pt;
+    text-align: left;
+    text-transform: lowercase;
+    text-indent: 2cm;
+}

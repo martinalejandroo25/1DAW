@@ -1,0 +1,21 @@
+table {
+    margin-left: 1cm;
+    margin-right: 2cm;
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+
+    padding-left: 1pt;
+    padding-right: 2pt;
+    padding-top: 1pt;
+    padding-bottom: 2pt;
+
+    border-color: navy;
+    border-style: double;
+    border-width: 2cm;
+}
+
+td {
+    border-width: 1cm;
+    border-color: cyan;
+    border-style: inset;
+}
