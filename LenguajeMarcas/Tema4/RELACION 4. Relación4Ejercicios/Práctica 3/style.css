@@ -1,0 +1,100 @@
+*{
+    color: #333333;
+    font-family: 'Trebuchet MS' Verdana, Arial, Helvetica, Sans-serif
+    
+}
+.contenedor {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    
+}
+.titulo1 {
+    text-decoration: none;
+    color: #B7211F;
+    
+}
+.titulo1:hover {
+    color: black;
+}
+#titulo2 {
+    text-decoration: none;
+    color: grey;
+    line-height: 1;
+    margin-top: 0;
+}
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.lista ul {
+    background-color: #C00;
+    height: 20px;
+    padding: 10px;
+    padding-top: 15px;
+    
+}
+.lista li, .lista a{
+    list-style-type: none;
+    text-decoration: none;
+    display: inline;
+    padding-right: 10px;
+    color: #FFF;
+}
+.lista li:hover a:hover {
+    background-color: white;
+    color: red;
+    text-decoration: underline;
+}
+
+#cajaizq {
+    text-align: justify;
+    float: left;
+    width: 80%;
+}
+#cajaizq h2{
+    font-size: 24px;
+    color: #b7271f;
+}
+#cajaizq h2:hover {
+    color: #666;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+#cajaizq a{
+    text-decoration: none;
+    color: #cb392c;
+}
+#cajaizq a:hover {
+    text-decoration: underline;
+}
+#cajader {
+    background-color: #ffdddd;
+    border: 1px solid #990000;
+    float: right;
+    width: 19%;
+}
+#cajader h2 {
+    font-size: 14px;
+}
+#cajader li {
+    border-bottom: 2px solid #ddd;
+    list-style-type: none;
+    color: #666;
+    font-weight: lighter;
+
+    
+}
+#cajader a {
+    text-decoration: none;
+}
+#cajader a:hover {
+    color: #C00;
+    font-weight: bolder;
+}
+img {
+    display: block;
+    margin-right: auto;
+}
