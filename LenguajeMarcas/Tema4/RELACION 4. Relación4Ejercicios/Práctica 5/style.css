@@ -1,0 +1,129 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuente por defecto */
+body {
+    font-family: Arial, sans-serif;
+    background-color: orangered;
+}
+
+/* Encabezado */
+header {
+    background: #fff;
+    /* Barra negra para el header (puedes variar) */
+    color: #000;
+    padding: 10px;
+}
+
+header h1 a {
+    color: orange;
+}
+
+header h1,
+header h2 {
+    margin: 5px 0;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Navegación */
+nav {
+    background: #000;
+    /* Barra negra para el menú */
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Contenedor general para “main” y “aside” */
+.contenedor {
+    width: 85%;
+    /* Ejemplo: ancho fijo */
+    margin: 0 auto;
+    background-color: white;
+}
+
+.contenedorPrincipal {
+    display: flex; /*he usado flex al final en esta linea porque no sabía como poner el aside al lado del main*/
+}
+/* Contenido principal */
+main {
+    width: 70%;
+    padding: 20px;
+}
+main article {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+main h2 a {
+    color: #4c759c;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+main a {
+    color: orange;
+    text-decoration: none;
+}
+
+/* Barra lateral */
+aside {
+    width: 25%;
+    background: #648ba1;
+    padding-left: 2%;
+    float: left;
+    
+}
+
+/* Títulos */
+aside h2 {
+    margin-bottom: 10px;
+    background: #35526d;
+    color: white;
+}
+aside a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+aside li {
+    list-style: square;
+}
+
+/* Pie de página */
+footer {
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+    background: #666;
+    color: #fff;
+    margin-top: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
