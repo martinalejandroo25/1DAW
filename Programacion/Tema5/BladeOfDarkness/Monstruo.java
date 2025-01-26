@@ -64,6 +64,19 @@ public class Monstruo {
         } else System.out.println("Nivel actual "+nivel+", Máximo alcanzado"); //quiero comprobar si llega bien al nivel 10
     }
 
+    public boolean reducirVida(int puntosD){
+        salud -= puntosD;
+        if (salud <= 0) {
+            salud=0;
+            System.out.println("Monstruo asesinado >:)");
+            return false;
+        } else return true;
+    }
+
+    public void golpear(Jugador jugador) {
+         jugador.reducirVida(getPuntosD());
+    }
+
 
 
 }

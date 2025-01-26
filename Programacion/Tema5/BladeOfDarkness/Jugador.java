@@ -110,7 +110,7 @@ public class Jugador {
         }
 
         public boolean reducirVida(int puntosD){
-        salud-=puntosD;
+            salud-=puntosD;
             if (salud<=0){
                 salud=0;
                 System.out.println("Game Over, Has muerto, pero no pierdas tu determinación");
@@ -121,9 +121,12 @@ public class Jugador {
         }
 
         public void golpear(Monstruo monstruo) {
-
-        if (this.getArmaDerecha() != null) {
-            monstruo.reducirVida(this.getArmaDerecha().getPuntosD());
-        }
+            if (this.getArmaDerecha() != null) {
+                monstruo.reducirVida(this.getArmaDerecha().getPuntosD());
+                if (! this.getArmaDerecha().isDosManos()) {
+                    if (this.getArmaIzquierda() != null) {
+                        monstruo.reducirVida(this.getArmaIzquierda().getPuntosD());
+                    }
+                }            }
         }
 }
