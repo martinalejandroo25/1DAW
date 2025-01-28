@@ -1,17 +1,39 @@
 package Programacion.Tema5.BladeOfDarkness;
 
 public class TestJuego {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Jugador jugador = new Jugador("Jugador 1");
 
-        Arma espada = new Arma("Espada Gen", 2, false);
-        Arma martillo = new Arma("Martillo Gen", 4, true);
+        Arma espada = new Arma("Espada Gen", 34, false);
+        Arma martillo = new Arma("Martillo Gen", 67, true);
 
-        Monstruo m1 = new Monstruo("Monstruo1", 5);
-        Monstruo m2 = new Monstruo("Monstruo2", 6);
-        Monstruo m3 = new Monstruo("Monstruo3", 8);
+        Monstruo m1 = new Monstruo("Monstruo1", 15);
+        Monstruo m2 = new Monstruo("Monstruo2", 10);
+        Monstruo m3 = new Monstruo("Monstruo3", 24);
         Monstruo m4 = new Monstruo("Monstruo4", 3);
 
+        m1.setNivel(3);
+        m1.setSalud(200);
+        jugador.setArmaDerecha(espada);
+        System.out.println(jugador);
+        System.out.println(m1);
 
+        System.out.println("El jugador va a golpear al monstruo");
+        jugador.golpear(m1);
+        jugador.golpear(m1);
+        jugador.golpear(m1);
+        jugador.golpear(m1);
+        jugador.golpear(m1);
+        jugador.golpear(m1);
+        jugador.golpear(m1);
+        jugador.golpear(m1);
+        jugador.golpear(m1);
+        System.out.println("la vida del monstruo restante es de" + m1.getSalud());
+        System.out.println("El monstruo va a atacar");
+        m1.golpear(jugador);
+        m1.golpear(jugador);
+        m1.golpear(jugador);
+        m1.golpear(jugador);
+        System.out.println("Vida restante:"+ jugador.getSalud());
     }
 }

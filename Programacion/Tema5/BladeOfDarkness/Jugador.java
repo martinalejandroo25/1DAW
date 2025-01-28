@@ -120,13 +120,24 @@ public class Jugador {
             }
         }
 
-        public void golpear(Monstruo monstruo) {
-            if (this.getArmaDerecha() != null) {
-                monstruo.reducirVida(this.getArmaDerecha().getPuntosD());
-                if (! this.getArmaDerecha().isDosManos()) {
-                    if (this.getArmaIzquierda() != null) {
-                        monstruo.reducirVida(this.getArmaIzquierda().getPuntosD());
+        public void golpear(Monstruo monstruo) throws Exception {
+
+            if (getSalud() <= 0) {
+                throw new Exception("El jugador fallecido no puede atacar");
+            }
+            else {
+            //comprobar si has matado al monstruo
+            //Subir la experiencia y el nivel si corresponde
+                if(monstruo.getSalud() <= 0) {
+                    System.out.println("Monstruo derrotado, sumas experiencia!!");
+                    experiencia = 10 * monstruo.getNivel();
+                    nivel = experiencia / 100;
+                    if (experiencia >= 1000) {
+                        experiencia = 1000;
+                        nivel = 10;
+                        System.out.println("Nivel y Experiencia máximos alcanzado");
                     }
-                }            }
+                }
+            }
         }
 }

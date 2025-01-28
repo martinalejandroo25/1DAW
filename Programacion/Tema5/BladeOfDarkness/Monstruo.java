@@ -73,10 +73,12 @@ public class Monstruo {
         } else return true;
     }
 
-    public void golpear(Jugador jugador) {
-         jugador.reducirVida(getPuntosD());
+    public void golpear(Jugador jugador) throws Exception {
+        if (getSalud() > 0) {
+            jugador.reducirVida(getPuntosD());
+        } else throw new Exception("Monstruo derrotado no puede atacar");
     }
 
-
+    
 
 }
