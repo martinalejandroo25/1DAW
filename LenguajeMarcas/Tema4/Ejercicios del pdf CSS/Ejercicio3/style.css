@@ -1,0 +1,12 @@
+body {
+    background-image: url(Fuentes\ De\ Informaci\ N\ Wallpaper\ Mr\ Robot.png);
+}
+.caja {
+    width: 12%;
+    font-size: 200%;
+    background-image: none;
+    background-color: rgba(127, 255, 212, 0.3);
+    color: black;
+    float: inline-end;
+    margin-top: 20%;
+}
