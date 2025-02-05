@@ -61,31 +61,41 @@ select avg(precio) from articulos;
 -- m) Obtener el precio medio de los artículos cuyo código de fabricante sea 2
 select avg(precio) from articulos where clave_fab = 2;
 -- n) Obtener el nombre y precio de los artículos ordenados por Nombre
-
+select nombre, precio from articulos order by nombre;
 -- o) Obtener todos los datos de los productos ordenados descendentemente por Precio
-
+select * from articulos order by precio desc;
 -- p) Obtener el nombre y precio de los artículos cuyo precio sea mayor a $ 250 y ordenarlos descendentemente por precio
-
+select nombre, precio from articulos where precio > 250 order by precio desc;
 -- y luego ascendentemente por nombre
-
+select nombre, precio from articulos where precio > 250 order by nombre asc;
 -- q) Obtener un listado completo de los productos, incluyendo por cada articulo los datos del articulo y del fabricante
-
+select a.*, f.* from articulos a
+join fabricantes f on f.clave_fab = a.clave_fab;
 -- r) Obtener la clave de producto, nombre del producto y nombre del fabricante de todos los productos en venta
+select a.clave_art, a.nombre, f.nombre from articulos a
+join fabricantes f on f.clave_fab = a.clave_fab;
+-- s) Obtener el nombre y precio de los artículos donde el fabricante sea Logitech ordenarlos alfabéticamente por nombre del producto
+select a.nombre, a.precio from articulos a
+join fabricantes f on f.clave_fab = a.clave_fab
+where f.nombre like 'logitech'
+order by a.nombre asc;
 
--- s) Obtener el nombre y precio de los artículos donde el fabricante sea Logitech ordenarlos alfabéticamente por nombre
+-- t) Obtener el nombre, precio y nombre de fabricante de los productos que son marca Lexar o Kingston ordenados descendentemente por precio
+select a.nombre, a.precio, f.nombre from articulos a
+join fabricantes f on f.clave_fab = a.clave_fab
+where f.nombre like 'lexar' or  f.nombre like 'kingston'
+order by a.precio desc;
 
--- del producto
-
--- t) Obtener el nombre, precio y nombre de fabricante de los productos que son marca Lexar o Kingston ordenados
-
--- descendentemente por precio
 
 -- u) Añade un nuevo producto: Clave del producto 11, Altavoces de $ 120 del fabricante 2
-
+insert into articulos values ("11", "altavoces", 120, 2);
 -- v) Cambia el nombre del producto 6 a ‘Impresora Laser’
-
+-- update nombreTabla set nombre_columna = nuevoNombre where condicion;
+update articulos set nombre = 'Impresora Laser' where clave_art = 6;
 -- w) Aplicar un descuento del 10% a todos los productos.
-
+update articulos set precio = precio * 1.10;
 -- x) Aplicar un descuento de $ 10 a todos los productos cuyo precio sea mayor o igual a $ 300
-
+update articulos set precio = precio - 10 where precio >= 300;
 -- y) Borra el producto numero 6
+-- delete from tabla where condicion;
+delete from articulos where clave_art = 6;

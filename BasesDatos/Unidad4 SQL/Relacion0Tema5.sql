@@ -86,12 +86,32 @@ join relacion r on r.id_al = a.id_al
 join profesor p on p.id_prof = r.id_prof
 where r.nota >= 5 and nom_prof like "CARMEN TORRES";
 -- 14.- Mostrar el alumno/s que haya obtenido la nota más alta con ‘P01’,
-select nom_al from alumno a
+select nom_al, nota from alumno a
 join relacion r on r.id_al = a.id_al
 join profesor p on p.id_prof = r.id_prof
-where r.id_prof like "p01" order by r.nota asc limit 1;
+where r.id_prof like "p01" order by r.nota desc limit 1;
+
+select nom_al, nota from alumno a
+join relacion r on r.id_al = a.id_al
+join profesor p on p.id_prof = r.id_prof
+where nota=(select max(nota) from relacion r where r.id_prof like "p01");
+
 -- 15.- Mostrar los alumnos (nombre y codigo) que hayan aprobado todo.
 select distinct a.nom_al, a.id_al, r.nota from alumno a
 join relacion r on r.id_al = a.id_al
+where r.id_al not in (select id_al from relacion where nota < 5);
+
+-- EXTRA
+-- cuantos alumnos tiene cada profesor
+select count(id_al) Alumnos, p.nom_prof 'Profesor Asignado' from relacion r
 join profesor p on p.id_prof = r.id_prof
-where (p.id_prof like "p01" and r.nota >=5) or (p.id_prof like "p02" and r.nota >=5);
+group by p.id_prof;
+
+-- media de la nota
+select avg(r.nota), id_prof from relacion r
+group by r.id_prof;
+-- media de la nota con nombre del profesor
+-- media de la nota
+select avg(r.nota), nom_prof from relacion r
+join profesor p on p.id_prof = r.id_prof
+group by r.id_prof
