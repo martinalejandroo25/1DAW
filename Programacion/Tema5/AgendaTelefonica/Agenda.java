@@ -7,7 +7,7 @@ public class Agenda {
     private List<Contacto> contactos;
 
     public boolean existeContacto(Contacto c) {
-        /*for (Contacto contacto : contactos) {
+        for (Contacto contacto : contactos) {
             if (c.equals(contacto)) {
                 System.out.println("Contacto encontrado");
                 return true;
@@ -17,9 +17,9 @@ public class Agenda {
                 return false;
             }
         }
-        return false;*/
-    return this.contactos.contains(c);
-    }
+        return false;
+/*    return this.contactos.contains(c);
+ */    }
 
     public boolean addContacto(Contacto c) {
        /* System.out.println("Nombre del nuevo contacto");

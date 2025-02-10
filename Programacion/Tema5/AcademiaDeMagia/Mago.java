@@ -60,7 +60,7 @@ public class Mago {
 
     public Hechizo buscar(String  nombreHechizo) {
         for (Hechizo hechizo : hechizos) {
-            if (hechizo.getnombre().equalsIgnoreCase(nombreHechizo)) {
+            if (hechizo.getNombre().equalsIgnoreCase(nombreHechizo)) {
                 return hechizo;
             }
         }
