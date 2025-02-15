@@ -11,8 +11,8 @@ public class Hechizo {
         this.potencia = potencia;
     }
 
-    public void esEfectivo(Prueba prueba) {
-        //Volver a terminar más tarde
+    public boolean esEfectivo(Prueba prueba) {
+        return getPotencia() >= prueba.getNivelDificultad();
     }
 
     @Override

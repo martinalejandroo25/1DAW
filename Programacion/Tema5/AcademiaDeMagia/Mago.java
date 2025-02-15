@@ -53,10 +53,11 @@ public class Mago {
     }
 
     public void lanzarHechizo(String nombreHechizo, Prueba prueba) {
-        //Volver a terminar más tarde
+
+        }
     }
 
-    //Método extra buscar
+    //Metodo extra buscar
 
     public Hechizo buscar(String  nombreHechizo) {
         for (Hechizo hechizo : hechizos) {
