@@ -16,6 +16,6 @@ public class TestJuego {
         Prueba prueba3 = new Prueba("derrotar elfo oscuro", 10, 20);
 
         mago.lanzarHechizo("bola de fuego", prueba1);
-
+        System.out.println(prueba1.resolver(mago.getHechizos()));
     }
 }
