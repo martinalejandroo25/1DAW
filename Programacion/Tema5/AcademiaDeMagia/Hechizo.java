@@ -1,4 +1,4 @@
-package Programacion.Tema5.AcademiaDeMagia;
+package tema5.academiaMagia;
 
 import java.util.Objects;
 

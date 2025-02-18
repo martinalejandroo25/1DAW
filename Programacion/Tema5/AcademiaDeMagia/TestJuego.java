@@ -1,21 +1,54 @@
-package Programacion.Tema5.AcademiaDeMagia;
-
-import java.util.ArrayList;
-import java.util.List;
+package tema5.academiaMagia;
 
 public class TestJuego {
     public static void main(String[] args) {
-        List<Hechizo> hechizos = new ArrayList<>();
-        Mago mago = new Mago("Harry Potter", 100, hechizos);
-        hechizos.add(new Hechizo("bola de fuego", 20, 7));
-        hechizos.add(new Hechizo("escudo mágico", 15, 5));
-        hechizos.add(new Hechizo("rayo eléctrico", 25, 9));
 
-        Prueba prueba1 = new Prueba("romper muro", 5, 10);
-        Prueba prueba2 = new Prueba("derrotar orco", 8, 15);
-        Prueba prueba3 = new Prueba("derrotar elfo oscuro", 10, 20);
+        //Crear mago y tres hechizos
+        Mago gandalf = new Mago("Gandalf", 100);
+        Hechizo h1 = new Hechizo("Bola de fuego", 4, 40);
+        Hechizo h2 = new Hechizo("Escudo mágico", 15, 90);
+        Hechizo h3 = new Hechizo("Rayo eléctrico", 5, 30);
 
-        mago.lanzarHechizo("bola de fuego", prueba1);
-        System.out.println(prueba1.resolver(mago.getHechizos()));
+        //Añadir hechizos al mago
+        gandalf.aprenderHechizo(h1);
+        gandalf.aprenderHechizo(h2);
+        gandalf.aprenderHechizo(h3);
+
+        //Crear tres pruebas
+        Prueba pr1 = new Prueba("Romper muro", 10, 5);
+        Prueba pr2 = new Prueba("Lucha contra orco", 15, 8);
+        Prueba pr3 = new Prueba("Lucha contra elfo oscuro", 20, 10);
+
+        //Superar pruebas
+        try {
+            System.out.println("El mago usa Bola de fuego contra " + pr1.getDescripcion());
+            gandalf.lanzarHechizo("bola de fuego", pr1);
+            System.out.println("Superada");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+        try {
+            System.out.println("El mago usa Rayo eléctrico contra " + pr2.getDescripcion());
+            gandalf.lanzarHechizo("rayo eléctrico", pr2);
+            System.out.println("Superada");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+        try {
+            System.out.println("El mago usa Escudo mágico contra " + pr3.getDescripcion());
+            gandalf.lanzarHechizo("escudo mágico", pr3);
+            System.out.println("Superada");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+        System.out.println(gandalf);
+
+
+
+
+
     }
 }

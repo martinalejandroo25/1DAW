@@ -1,24 +1,15 @@
-package Programacion.Tema5.AcademiaDeMagia;
+package tema5.academiaMagia;
 
 public class Prueba {
+
     private String descripcion;
-    private int nivelDificultad;
-    private int recompensa;
+    private Integer nivelDificultad; //Nivel que tiene que tener un hechizo para superar la prueba
+    private Integer recompensa; //Si supero la prueba la energía que le daríamos al mago
 
-    public Prueba(String descripcion, int nivelDificultad, int recompensa) {
+    public Prueba(String descripcion, Integer recompensa, Integer nivelDificultad) {
         this.descripcion = descripcion;
-        this.nivelDificultad = nivelDificultad;
         this.recompensa = recompensa;
-    }
-
-    @Override
-    public String toString() {
-        final StringBuilder sb = new StringBuilder("Prueba{");
-        sb.append("descripcion='").append(descripcion).append('\'');
-        sb.append(", nivelDificultad=").append(nivelDificultad);
-        sb.append(", recompensa=").append(recompensa);
-        sb.append('}');
-        return sb.toString();
+        this.nivelDificultad = nivelDificultad;
     }
 
     public String getDescripcion() {
@@ -29,22 +20,42 @@ public class Prueba {
         this.descripcion = descripcion;
     }
 
-    public int getNivelDificultad() {
+    public Integer getNivelDificultad() {
         return nivelDificultad;
     }
 
-    public void setNivelDificultad(int nivelDificultad) {
+    public void setNivelDificultad(Integer nivelDificultad) {
         this.nivelDificultad = nivelDificultad;
     }
 
-    public int getRecompensa() {
+    public Integer getRecompensa() {
         return recompensa;
     }
 
-    public void setRecompensa(int recompensa) {
+    public void setRecompensa(Integer recompensa) {
         this.recompensa = recompensa;
     }
-    public boolean resolver(Hechizo hechizo){
-        return hechizo.getPotencia() >= this.getNivelDificultad();
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("Prueba{");
+        sb.append("descripcion='").append(descripcion).append('\'');
+        sb.append(", nivelDificultad=").append(nivelDificultad);
+        sb.append(", recompensa=").append(recompensa);
+        sb.append('}');
+        return sb.toString();
+    }
+
+    /**
+     * Devuelve true si la potencia del hechizo es mayor o igual que
+     * el nivel de dificultad de la prueba. False en caso contrario
+     * @param hechizo
+     * @return
+     */
+    public boolean resolver(Hechizo hechizo) {
+        if (hechizo.getPotencia() >= this.getNivelDificultad())
+            return true;
+        else
+            return false;
     }
 }
