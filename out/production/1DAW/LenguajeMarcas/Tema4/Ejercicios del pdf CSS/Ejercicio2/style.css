@@ -1,0 +1,13 @@
+body {
+    background-image: url(Fuentes\ De\ Informaci\ N\ Wallpaper\ Mr\ Robot.png);
+}
+.caja {
+    width: 12%;
+    font-size: 200%;
+    background-image: none;
+    background-color: aquamarine;
+    color: black;
+    float: inline-end;
+    opacity: 0.3;
+    margin-top: 20%;
+}
