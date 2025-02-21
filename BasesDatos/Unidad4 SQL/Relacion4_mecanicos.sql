@@ -11,7 +11,7 @@ create table if not exists mecanico(
 
 create table if not exists coche(
 	mat_co char(8)primary key,
-	smod_co char(20),
+	mod_co char(20),
 	color char(10),
 	tipo char(10)
 );
@@ -57,13 +57,13 @@ insert into mecanico values
 ('ME3', 'ANA LUCAS', 1100, '1968/09/04');
 
 insert into coche values
-('1234-CDF', 'SEAT LEON', 'GRIS',' DIESEL'),
-('0987-CCC', 'RENAULT MEGANE', 'BLANCO',' GASOLINA'),
-('0123-BVC', 'OPEL ASTRA', 'AZUL',' DIESEL'),
-('1456-BNL', 'FORD FOCUS', 'VERDE',' DIESEL'),
-('1111-CSA', 'SEAT TOLEDO', 'ROJO',' GASOLINA'),
-('4567-BCB', 'VOLKSWAGEN POLO', 'BLANCO',' DIESEL'),
-('0987-BFG', 'FORD FIESTA', 'NEGRO',' GASOLINA');
+('1234-CDF', 'SEAT LEON', 'GRIS','DIESEL'),
+('0987-CCC', 'RENAULT MEGANE', 'BLANCO','GASOLINA'),
+('0123-BVC', 'OPEL ASTRA', 'AZUL','DIESEL'),
+('1456-BNL', 'FORD FOCUS', 'VERDE','DIESEL'),
+('1111-CSA', 'SEAT TOLEDO', 'ROJO','GASOLINA'),
+('4567-BCB', 'VOLKSWAGEN POLO', 'BLANCO','DIESEL'),
+('0987-BFG', 'FORD FIESTA', 'NEGRO','GASOLINA');
 
 insert into periodos values
 ('PE1', '2003/04/09', '2003/04/10'),
@@ -118,22 +118,57 @@ insert into relacion4 values
 
 
 -- 1.- DATOS DEL EMPLEADO DE MAYOR SUELDO.
-select * from mecanico;
+select * from mecanico
+where sueldo=(select max(sueldo) from mecanico);
 -- 2.- DATOS DEL EMPLEADO MAYOR.
 select * from mecanico
-where 
+where fec_nac =(select min(fec_nac) from mecanico);
 -- 3.- DATOS DEL EMPLEADO MENOR.
-
+select * from mecanico
+where fec_nac =(select max(fec_nac) from mecanico);
 -- 4.- DATOS DE TODOS LOS COCHES DIESEL.
-
+select * from coche where tipo like 'diesel';
 -- 5.- DATOS DEL COCHE QUE MAS HA IDO AL TALLER.
+select count(r.mat_co), c.*
+from relacion4 r, coche c
+where r.mat_co = c.mat_co
+group by r.mat_co
+having count(r.mat_co)=(select count(mat_co)
+						from relacion4
+                        group by mat_co
+                        order by 1 desc limit 1); 
 
+/*select count(r.mat_co) as veces, c.*
+from coche c
+inner join relacion4 r on r.mat_co = c.mat_co
+group by r.mat_co
+having count(r.mat_co) = (select count(r.mat_co) as veces
+							from relacion4 r
+							group by r.mat.co
+                            order by 1 desc
+                            limit 1);*/
 -- 6.- PRECIO TOTAL DE TODAS LAS REPARACIONES.
+select sum(precio) as "Precio total"
+from relacion4;
 
 -- 7.- NOMBRE DE PIEZA Y TIPO DE LA PIEZA MAS USADA.
-
+select p.nom_piez, count(p.id_piez)
+from pieza p, relacion4 r
+where p.id_piez = r.id_piez
+group by p.nom_piez
+having count(r.mat_co)=(select count(id_piez)
+						from relacion4
+                        group by id_piez
+                        order by 1 desc limit 1); 
 -- 8.- NOMBRE Y TIPO DE LA PIEZA MENOS USADA.
-
+select p.nom_piez, count(p.id_piez)
+from pieza p, relacion4 r
+where p.id_piez = r.id_piez
+group by p.nom_piez
+having count(r.mat_co)=(select count(id_piez)
+						from relacion4
+                        group by id_piez
+                        order by 1 asc limit 1); 
 -- 9.- MATRICULA, MARCA, MODELO COLOR PIEZA Y TIPO DE TODOS LOS COCHES REPARADOS.
 
 -- 10.- MODELO DE PIEZA Y TIPO PUESTAS A ‘0123-BVC’

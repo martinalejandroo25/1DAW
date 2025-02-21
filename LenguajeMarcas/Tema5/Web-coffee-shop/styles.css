@@ -1,0 +1,35 @@
+.container {
+    background-image: url(images/bodybkg.gif);
+}
+.intro h2 {
+    color: white;
+
+}
+.intro {
+    position: absolute;
+}
+
+article {
+    list-style: none;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    
+} 
+article img {
+    border: white solid 10px;
+}
+footer {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    column-gap: 20px;
+    column-count: 3;
+    column-rule: 2px solid black;
+}
+footer a {
+    color: grey;
+}
