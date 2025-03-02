@@ -13,11 +13,6 @@ public class Jugador extends Personaje{
         this.armaIzquierda=null;
     }
 
-
-    public void setNivel(int nivel) {
-        this.nivel = nivel;
-    }
-
     public int getExperiencia() {
         return experiencia;
     }
@@ -70,7 +65,7 @@ public class Jugador extends Personaje{
         }
 
         public void tomarPocion(int puntosS){
-            salud+=puntosS;
+            Personaje.getSalud()+=puntosS;
             if (salud>10000){
                 salud=10000;
             }
