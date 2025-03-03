@@ -3,9 +3,7 @@ package Programacion.Tema5.EjerciciosPOOpdf.Ejercicio1;
 import java.util.Objects;
 
 public class Persona {
-    // Miembros: nombre, edad, dni, sexo (‘H’ para hombre, ‘M’ para mujer, ‘O’ para otro), peso y
-    //altura. No se permitirá el acceso directo a ellos (piensa qué modificador de acceso es el más
-    //adecuado).
+    // Miembros: nombre, edad, dni, sexo (‘H’ para hombre, ‘M’ para mujer, ‘O’ para otro), peso y altura.
     private String nombre;
     private int edad;
     private String dni;
@@ -56,10 +54,13 @@ public class Persona {
     public int calcularIMC(
     ) {
         double imc = peso / Math.pow(2, altura);
-       if (imc < 20)
+       //Devuelve 1 si está en su peso ideal
+        if (imc < 20)
            return 1;
+        //Devuelve 0 si está por debajo de su peso ideal
        else if (imc >=20 && imc <=25)
            return 0;
+       // Devuelve -1 si tiene sobrepeso
        else return -1;
                 
     }

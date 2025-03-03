@@ -65,9 +65,9 @@ public class Jugador extends Personaje{
         }
 
         public void tomarPocion(int puntosS){
-            Personaje.getSalud()+=puntosS;
-            if (salud>10000){
-                salud=10000;
+            setSalud(getSalud() + puntosS);
+            if (getSalud() >10000){
+                setSalud(10000);
             }
         }
 
@@ -84,10 +84,10 @@ public class Jugador extends Personaje{
                 if(monstruo.getSalud() <= 0) {
                     System.out.println("Monstruo derrotado, sumas experiencia!!");
                     experiencia = 10 * monstruo.getNivel();
-                    nivel = experiencia / 100;
+                    setNivel(experiencia / 100);
                     if (experiencia >= 1000) {
                         experiencia = 1000;
-                        nivel = 10;
+                        setNivel(10);
                         System.out.println("Nivel y Experiencia máximos alcanzado");
                     }
                 }

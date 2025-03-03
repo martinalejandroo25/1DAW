@@ -20,6 +20,8 @@ public class Test {
 
         Persona persona = new Persona(nombre, edad, dni, sexo, peso, altura);
         System.out.println(persona.toString());
+        System.out.println(persona.calcularIMC());
+        System.out.println(persona.esMayorEdad());
 
     }
 }
