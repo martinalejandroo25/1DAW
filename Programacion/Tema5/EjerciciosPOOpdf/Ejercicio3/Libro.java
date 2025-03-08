@@ -24,6 +24,7 @@ public class Libro {
         this.precioCompra = 0;
     }
 
+
     @Override
     public String toString() {
         //metodo toString() para mostrar la información relativa al libro, con el siguiente formato: “El libro W con ISBN X creado por el autor Y tiene Z páginas”. Implementa también el metodo equals.

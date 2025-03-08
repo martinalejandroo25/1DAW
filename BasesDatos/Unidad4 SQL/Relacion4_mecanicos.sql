@@ -170,9 +170,14 @@ having count(r.mat_co)=(select count(id_piez)
                         group by id_piez
                         order by 1 asc limit 1); 
 -- 9.- MATRICULA, MARCA, MODELO COLOR PIEZA Y TIPO DE TODOS LOS COCHES REPARADOS.
-
+select c.mat_co,  c.mod_co, c.color, r. id_piez, t.nom_tipo
+from relacion4 r
+inner join coche c on r.mat_co = c.mat_co
+inner join pieza p on p.id_piez = r.id_piez
+inner join tipo t on t.id_tipo = p.id_tipo
+group by c.mat_co, r.id_piez;
 -- 10.- MODELO DE PIEZA Y TIPO PUESTAS A ‘0123-BVC’
-
+select 
 -- 11.-DINERO QUE HA GASTADO EN REPARACIONES 1234-CDF
 
 -- 12.- DATOS DEL COCHE QUE MAS HA GASTADO EN REPARACIONES
