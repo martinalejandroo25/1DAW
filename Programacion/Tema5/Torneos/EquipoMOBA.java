@@ -9,6 +9,14 @@ public class EquipoMOBA extends Equipo {
         this.estrategia = estrategia;
     }
 
+    public int getEstrategia() {
+        return estrategia;
+    }
+
+    public void setEstrategia(int estrategia) {
+        this.estrategia = estrategia;
+    }
+
     //Calcula los puntos en función del nivel y la estrategia
     @Override
     public int calcularPuntos() {

@@ -9,6 +9,14 @@ public class EquipoFPS extends Equipo{
         this.punteria = punteria;
     }
 
+    public int getPunteria() {
+        return punteria;
+    }
+
+    public void setPunteria(int punteria) {
+        this.punteria = punteria;
+    }
+
     //Calcula los puntos en función del nivel y puntería
     @Override
     public int calcularPuntos() {

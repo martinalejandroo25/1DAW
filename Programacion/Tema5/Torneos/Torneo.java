@@ -11,6 +11,7 @@ public class Torneo {
         this.equipos = equipos;
     }
 
+
     public void inscribirEquipo(Equipo equipo) {
         equipos.add(equipo);
     }
@@ -18,9 +19,10 @@ public class Torneo {
     //devuelva el equipo ganador (el que tenga más puntos al calcular
     //calcularPuntos()).
     public Equipo jugarTorneo() {
-        for (int i = 0; i < equipos.toArray().length; i++) {
-            System.out.println(i+"." + equipos.(i) + "- Puntos");
-        }
+        /*for (int i = 0; i < equipos.toArray().length; i++) {
+            System.out.println(i+"." + equipos.get(i).getNombre() +"("+"Nivel: "+equipos.get(i).getNivel()+", Estrategia: " + equipos.get(i)."" "- Puntos");
+
+        }*/
     }
 
     public void imprimirEquipo(){
