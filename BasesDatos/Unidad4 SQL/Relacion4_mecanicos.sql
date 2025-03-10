@@ -118,87 +118,166 @@ insert into relacion4 values
 
 
 -- 1.- DATOS DEL EMPLEADO DE MAYOR SUELDO.
-select * from mecanico
-where sueldo=(select max(sueldo) from mecanico);
+select nom_mec, sueldo from mecanico
+where sueldo = (select sueldo from mecanico
+				order by 1 desc limit 1);
 -- 2.- DATOS DEL EMPLEADO MAYOR.
-select * from mecanico
-where fec_nac =(select min(fec_nac) from mecanico);
+select nom_mec, fec_nac from mecanico
+where fec_nac = (select fec_nac from mecanico
+				order by fec_nac asc limit 1);
 -- 3.- DATOS DEL EMPLEADO MENOR.
-select * from mecanico
-where fec_nac =(select max(fec_nac) from mecanico);
+select nom_mec, fec_nac from mecanico
+where fec_nac = (select fec_nac from mecanico
+				order by fec_nac desc limit 1);
 -- 4.- DATOS DE TODOS LOS COCHES DIESEL.
-select * from coche where tipo like 'diesel';
+select * from coche
+where tipo like 'diesel';
 -- 5.- DATOS DEL COCHE QUE MAS HA IDO AL TALLER.
-select count(r.mat_co), c.*
-from relacion4 r, coche c
-where r.mat_co = c.mat_co
-group by r.mat_co
-having count(r.mat_co)=(select count(mat_co)
-						from relacion4
-                        group by mat_co
-                        order by 1 desc limit 1); 
+SELECT c.*, COUNT(p.id_per) -- Selecciona todas las columnas de la tabla 'coche' (c) y cuenta el número de períodos asociados a cada coche
+FROM relacion4 r
+INNER JOIN coche c ON c.mat_co = r.mat_co -- Une 'relacion4' con 'coche' usando la matrícula del coche como clave de unión
+INNER JOIN periodos p ON p.id_per = r.id_per -- Une 'relacion4' con 'periodos' utilizando el identificador de período
+GROUP BY r.mat_co -- Agrupa por la matrícula del coche para poder contar cuántos períodos están asociados a cada uno
+HAVING COUNT(r.mat_co) = ( -- Filtra los coches que tengan el número máximo de períodos asociados
+    SELECT COUNT(mat_co) -- Cuenta cuántas veces aparece cada matrícula en 'relacion4'
+    FROM relacion4
+    GROUP BY mat_co -- Agrupa por matrícula para contar cuántas veces aparece cada coche
+    ORDER BY 1 DESC -- Ordena de mayor a menor la cantidad de veces que aparece cada matrícula
+    LIMIT 1 -- Obtiene el valor máximo de períodos asociados a un coche
+);
 
-/*select count(r.mat_co) as veces, c.*
-from coche c
-inner join relacion4 r on r.mat_co = c.mat_co
-group by r.mat_co
-having count(r.mat_co) = (select count(r.mat_co) as veces
-							from relacion4 r
-							group by r.mat.co
-                            order by 1 desc
-                            limit 1);*/
 -- 6.- PRECIO TOTAL DE TODAS LAS REPARACIONES.
-select sum(precio) as "Precio total"
-from relacion4;
-
+select sum(precio) from relacion4;
 -- 7.- NOMBRE DE PIEZA Y TIPO DE LA PIEZA MAS USADA.
-select p.nom_piez, count(p.id_piez)
-from pieza p, relacion4 r
-where p.id_piez = r.id_piez
-group by p.nom_piez
-having count(r.mat_co)=(select count(id_piez)
-						from relacion4
-                        group by id_piez
-                        order by 1 desc limit 1); 
+-- rehacer para entenderlo
+select count(r.id_piez), p.nom_piez, t.nom_tipo
+from relacion4 r
+inner join pieza p on r.id_piez = p.id_piez
+inner join tipo t on t.id_tipo = p.id_tipo
+group by r.id_piez
+having count (r.id_piez) = (select count(id_piez ) from relacion4
+							group by id_piez
+                            order by 1 limit 1);
 -- 8.- NOMBRE Y TIPO DE LA PIEZA MENOS USADA.
-select p.nom_piez, count(p.id_piez)
-from pieza p, relacion4 r
-where p.id_piez = r.id_piez
-group by p.nom_piez
-having count(r.mat_co)=(select count(id_piez)
-						from relacion4
-                        group by id_piez
-                        order by 1 asc limit 1); 
+select count(r.id_piez), p.nom_piez, t.nom_tipo
+from relacion4 r
+inner join pieza p on p.id_piez = r.id_piez
+inner join tipo t on t.id_tipo = p.id_tipo
+group by r.id_piez
+having count(r.id_piez)=(select count(id_piez) from relacion4
+							group by id_piez
+                            order by 1 limit 1);
 -- 9.- MATRICULA, MARCA, MODELO COLOR PIEZA Y TIPO DE TODOS LOS COCHES REPARADOS.
-
+select r.mat_co, c.mod_co, c.color, p.nom_piez, t.nom_tipo from relacion4 r
+inner join coche c on c.mat_co = r.mat_co
+inner join pieza p on p.id_piez = r.id_piez
+inner join tipo t on t.id_tipo = p.id_tipo
+order by r.mat_co;
 -- 10.- MODELO DE PIEZA Y TIPO PUESTAS A ‘0123-BVC’
-
+select distinct r.mat_co, p.id_piez, p.nom_piez, t.nom_tipo
+from relacion4 r
+inner join pieza p on p.id_piez = r.id_piez
+inner join tipo t on t.id_tipo = p.id_tipo
+where r.mat_co like '0123-BVC';
 -- 11.-DINERO QUE HA GASTADO EN REPARACIONES 1234-CDF
-
+   select mat_co, sum(precio) as 'Gastos totales'from relacion4
+   where mat_co like '1234-CDF'
+   group by 1;
 -- 12.- DATOS DEL COCHE QUE MAS HA GASTADO EN REPARACIONES
-
+select c.*, sum(precio) from relacion4 r
+inner join coche c on c.mat_co = r.mat_co
+group by r.mat_co
+having sum(precio) = (select sum(precio) from relacion4
+					group by mat_co
+					order by 1 desc limit 1);
 -- 13- DATOS DEL COCHE QUE MENOS HA GASTADO EN REPARACIONES.
-
+select c.*, sum(precio) from relacion4 r
+inner join coche c on c.mat_co = r.mat_co
+group by r.mat_co
+having sum(precio) = (select sum(precio) from relacion4
+					group by mat_co
+                    order by 1 asc limit 1);
 -- 14.- DATOS DEL COCHE QUE MENOS HA GASTADO EN EL TALLER.
-
+-- la respuesta es la misma que la 13
 -- 15.- TOTAL DE TODAS LAS REPARACIONES DE ‘ANA LUCAS’.
+select m.nom_mec, count(r.mat_co) as 'Total reparaciones' from mecanico m
+inner join relacion4 r on r.id_mec = m.id_mec
+where m.nom_mec like 'ana lucas'
+group by 1;
 
+-- me confundí con el enunciado
+/*select m.nom_mec, count(r.mat_co) from relacion4 r
+inner join mecanico m on m.id_mec = r.id_mec
+group by nom_mec
+having count(r.mat_co) = (select count(r.mat_co) from relacion4
+						order by 1 desc limit 1); */
 -- 16.- DATOS DE LOS COCHES Y LAS PIEZAS PUESTAS POR ‘JUAN ROMUALDO’.
-
+select c.*, p.* /*, m.nom_mec */ from relacion4 r
+inner join coche c on c.mat_co = r.mat_co
+inner join pieza p on p.id_piez = r.id_piez
+-- comprobacion inner join mecanico m on m.id_mec = r.id_mec
+ where r.id_mec=(select id_mec from mecanico 
+				where nom_mec like 'JUAN ROMUALDO');
 -- 17.- FECHA DE INICIO Y FIN DEL PERIODO EN QUE MAS SE HA TRABAJADO.
+select count(r.id_per), p.* from relacion4 r
+inner join periodos p on p.id_per = r.id_per
+group by r.id_per
+having count(r.id_per)=(select count(r.id_per)
+						from relacion4 r
+                        group by r.id_per
+                        order by 1 desc limit 1);
 
 -- 18.- FECHA DE INICIO Y FIN DEL PERIODO QUE MENOS SE HA TRABAJADO.
+select count(r.id_per), p.* from relacion4 r
+inner join periodos p on p.id_per = r.id_per
+group by r.id_per
+having count(r.id_per)=(select count(id_per)
+						from relacion4 r
+                        group by id_per
+                        order by 1 asc limit 1);
 
 -- 19.-DINERO QUE SE HA HECHO EN EL PERIODO PE2
-
+select id_per, sum(precio) from relacion4
+where id_per = 'pe2';
 -- 20.- DATOS DE LOS COCHES LA QUE SE LE HALLA PUESTO UN EMBRAGE
-
+select c.*, p.nom_piez from coche c
+inner join relacion4 r on r.mat_co = c.mat_co
+inner join pieza p on p.id_piez = r.id_piez
+where p.nom_piez like 'embrage';
 -- 21.- DATOS DE LOS COCHES A LOS QUE SE LES HALLA CAMBIADO EL ACEITE.
-
+select c.*, p.nom_piez from coche c
+inner join relacion4 r on r.mat_co = c.mat_co
+inner join pieza p on p.id_piez = r.id_piez
+where p.nom_piez like 'aceite';
 -- 22.- DATOS DE LOS MECANICOS QUE HALLAN PUESTO ALGUNA PIEZA DE TIPO ‘ELECTRICIDAD’.
+select distinct m.*, t.nom_tipo from mecanico m
+inner join relacion4 r on r.id_mec = m.id_mec
+inner join pieza p on p.id_piez = r.id_piez
+inner join tipo t on t.id_tipo = p.id_tipo
+where t.nom_tipo like 'electricidad';
 
 -- 23.- MONTANTE ECONOMICO DE TODAS LAS PIEZAS DE TIPO CHAPA.
-
--- 24.- TIPODE PIEZA QUE MAS DINERO HA DEJADO EN EL TALLER.
-
+select t.nom_tipo, sum(r.precio) from relacion4 r
+inner join pieza p on p.id_piez = r.id_piez
+inner join tipo t on t.id_tipo = p.id_tipo
+where t.nom_tipo like 'chapa'
+group by 1;
+-- 24.- TIPO DE PIEZA QUE MAS DINERO HA DEJADO EN EL TALLER.
+select t.nom_tipo, sum(r.precio) from relacion4 r
+inner join pieza p on p.id_piez = r.id_piez
+inner join tipo t on t.id_tipo = p.id_tipo
+group by 1
+having sum(r.precio) = (select sum(r.precio) from relacion4 r
+						inner join pieza p on p.id_piez = r.id_piez
+                        inner join tipo t on t.id_tipo = p.id_tipo
+                        group by t.id_tipo
+                        order by 1 desc limit 1);
 -- 25.-DATOS DEL MECANICO QUE MENOS HA TRABAJADO.
+select m.*, count(r.id_per) from relacion4 r
+inner join mecanico m on m.id_mec = r.id_mec
+inner join periodos p on p.id_per = r.id_per
+group by 1
+having count(r.id_per)=(select count(r.id_per) from periodos p
+						inner join relacion4 r on r.id_per = p.id_per
+                        group by r.id_mec
+                        order by 1 asc limit 1);
