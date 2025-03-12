@@ -1,6 +1,6 @@
 package Programacion.Tema5.BladeOfDarkness;
 
-public class TestJuego {
+public class  TestJuego {
     public static void main(String[] args) throws Exception {
         Jugador jugador = new Jugador("Jugador 1", 4, 50);
 

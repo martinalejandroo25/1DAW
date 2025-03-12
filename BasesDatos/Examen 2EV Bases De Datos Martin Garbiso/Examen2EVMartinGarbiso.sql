@@ -194,7 +194,7 @@ insert into empleado values
 -- 14.Actualiza la tabla empleados para incrementar el salario de los empleados de la región de Madrid en un 10%.
 
  update empleado set salario = (salario * 1.10)
- where id_emp = (select e.id_emp from empleado e
+ where id_emp in (select e.id_emp from empleado e
 				inner join hoteles h on e.id_hotel = h.id_hotel
 				inner join ciudad c on c.codigo_postal = h.codigo_postal
 				inner join region r on r.id_reg = c.id_reg

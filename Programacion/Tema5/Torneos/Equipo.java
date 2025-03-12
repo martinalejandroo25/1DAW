@@ -1,21 +1,25 @@
 package Programacion.Tema5.Torneos;
 
+import java.util.ArrayList;
+
 public abstract class Equipo {
-    protected String nombre;
-    protected int nivel;
+    private String nombre;
+    private int nivel;
 
     public Equipo(String nombre, int nivel) {
         this.nombre = nombre;
         this.nivel = nivel;
     }
+
     public abstract int calcularPuntos();
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Equipo{");
-        sb.append("nombre='").append(nombre).append('\'');
-        sb.append(", nivel=").append(nivel);
-        sb.append('}');
+        final StringBuilder sb = new StringBuilder();
+        sb.append(nombre).append('\'');
+        sb.append(" (nivel: ").append(nivel);
+        sb.append(')');
+        sb.append(" - Puntos: ").append(calcularPuntos());
         return sb.toString();
     }
 

@@ -1,9 +1,10 @@
 package Programacion.Tema5.Torneos;
 
-public class EquipoFPS extends Equipo{
+public class EquipoFPS extends Equipo {
     private int punteria;
 
-    //Constructor con Super
+    //Constructor que crea nuevo equipo FPS con su nombre, nivel y punteria
+
     public EquipoFPS(String nombre, int nivel, int punteria) {
         super(nombre, nivel);
         this.punteria = punteria;
@@ -17,9 +18,9 @@ public class EquipoFPS extends Equipo{
         this.punteria = punteria;
     }
 
-    //Calcula los puntos en función del nivel y puntería
+    //Calcula los puntos del equipo FPS según su nivel y punteria
     @Override
     public int calcularPuntos() {
-        return nivel + (punteria * 5);
+        return getNivel() + (getPunteria() * 5);
     }
 }

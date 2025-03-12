@@ -13,13 +13,13 @@ public class Libreria {
         }
 
         //El metodo vender pondrá el precio de venta y le
-    //cambiará el estado a “vendido = true”.
-        public void vender(String ISBN, double precioVenta) {
+/*    //cambiará el estado a “vendido = true”.
+        Public void vender(String ISBN, double precioVenta) {
 
-        libro.setPrecioVenta(precioVenta);
+        Libro.setPrecioVenta(precioVenta);
         libro.setVendido(true);
     }
-
+*/
     //un metodo en Librería que calcule las
     //ganancias de todos los libros que hayas vendido.
     public double calcularGanancias() {
@@ -30,5 +30,9 @@ public class Libreria {
                 }
             }
             return ganancias;
+    }
+
+    public void vender(Libro libro) {
+
     }
 }

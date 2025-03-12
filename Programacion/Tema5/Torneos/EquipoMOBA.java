@@ -3,12 +3,13 @@ package Programacion.Tema5.Torneos;
 public class EquipoMOBA extends Equipo {
     private int estrategia;
 
-    //COnstructor con super
+    //Constructor que crea nuevo equipo MOBA con su nombre, nivel y estrategia
     public EquipoMOBA(String nombre, int nivel, int estrategia) {
         super(nombre, nivel);
         this.estrategia = estrategia;
     }
 
+//GETTERS Y SETTERS
     public int getEstrategia() {
         return estrategia;
     }
@@ -17,9 +18,10 @@ public class EquipoMOBA extends Equipo {
         this.estrategia = estrategia;
     }
 
-    //Calcula los puntos en función del nivel y la estrategia
+    //Calcula los puntos del equipo MOBA según su nivel y estrategia
     @Override
     public int calcularPuntos() {
-        return nivel * estrategia;
+        return getNivel() * getEstrategia();
     }
+
 }
