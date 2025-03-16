@@ -1,0 +1,32 @@
+.contenedor {
+    display: flex;
+    font-family: sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    padding: 10px;
+    flex-grow: 1;
+}
+footer {
+    text-align: center;
+    background-color: grey;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

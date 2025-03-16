@@ -1,0 +1,19 @@
+nav ul {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style: none;
+    width: fit-content;
+    
+}
+nav li {
+    padding: 10px;
+    background-color: rgba(123,198,199,0.8);
+    margin: 1px;
+}
+nav a {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+    
+}

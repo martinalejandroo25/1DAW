@@ -1,0 +1,12 @@
+.Capitulo {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.Capitulo h1 {
+    text-align: center;
+}

@@ -1,0 +1,32 @@
+.contenedor{
+    display: flex;
+    height: 100vh;
+    gap: 2px;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+nav {
+    background-color: aquamarine;  
+    gap: 2px;
+    padding: 12px 24px;
+    width: 15%;
+}
+nav ul, nav ul a {
+    padding: 5px;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    
+}
+nav li {
+    display: flex;
+    align-items: baseline;
+    border-bottom: 1px solid grey;
+
+}
+main {
+    background-color: lightgreen;
+    gap: 2px;
+    width: 85%;
+}
