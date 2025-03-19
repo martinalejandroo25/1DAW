@@ -1,0 +1,40 @@
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.tarjeta {
+    display: flex;
+    font-family: sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    padding: 10px;
+    flex-grow: 1;
+}
+footer {
+    text-align: center;
+    background-color: grey;
+    color: white;
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

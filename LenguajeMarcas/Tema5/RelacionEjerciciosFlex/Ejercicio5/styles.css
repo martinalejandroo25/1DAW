@@ -1,0 +1,17 @@
+.contenedor {
+    display: flex;
+    height: 100vh;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 2px;
+}
+nav {
+    background-color: aquamarine;
+    width: 20%;
+    padding: 12px 24px;
+}
+main {
+    width: 80%;
+    padding: 12px 24px;
+    background-color: chartreuse;
+}

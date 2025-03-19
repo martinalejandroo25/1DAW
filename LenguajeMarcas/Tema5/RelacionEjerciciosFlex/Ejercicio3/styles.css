@@ -1,0 +1,19 @@
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+}
+nav li {
+    display: flex;
+    flex: 1;
+    border: 1px, solid;
+    margin: 1px;
+    background-color: aquamarine;
+
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+}
