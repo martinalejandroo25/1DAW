@@ -1,10 +1,6 @@
-package Programacion.Tema7;
-
-import com.sun.source.doctree.SeeTree;
+package Programacion.Tema7.PracticaClaseHashSet;
 
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
 
 public class Aula {
     //2. Crea una clase Aula que tenga un ArrayList<Alumno>, con una propiedad nombre y

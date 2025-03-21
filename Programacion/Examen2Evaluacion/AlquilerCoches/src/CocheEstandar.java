@@ -1,3 +1,5 @@
+package Programacion.Examen2Evaluacion.AlquilerCoches.src;
+
 public class CocheEstandar extends Coche{
     //atributos
     private boolean aireAcondicionado;

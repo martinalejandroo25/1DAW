@@ -1,3 +1,5 @@
+package Programacion.Examen2Evaluacion.AlquilerCoches.src;
+
 public class CochePremium extends Coche{
 
     //atributos

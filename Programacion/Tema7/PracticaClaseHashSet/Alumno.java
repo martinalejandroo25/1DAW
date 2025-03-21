@@ -1,4 +1,4 @@
-package Programacion.Tema7;
+package Programacion.Tema7.PracticaClaseHashSet;
 
 import java.util.Objects;
 

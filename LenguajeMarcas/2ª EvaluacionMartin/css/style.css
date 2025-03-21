@@ -1,0 +1,147 @@
+/*ENCABEZADO*/
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+h1, h2{
+    text-transform: uppercase;
+
+}
+header a {
+    text-decoration: none;
+    color: black;
+}
+/*NAVEGADOR*/
+nav {
+    display: flex;
+    justify-content: flex-start;
+}
+nav ul, nav a{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+    gap: 5px;
+    color: black;
+}
+nav li:hover, nav a:hover {
+    border-radius: 5px;
+    color: white;
+    background-color: #e95d3c;
+}
+
+/*Imagen banner*/
+.banner{
+    display: flex;
+    justify-content: center;
+}
+
+/*Seccion articulos*/
+section {
+display: flex;
+padding-top: 5%;
+padding-bottom: 10%;
+}
+
+article p {
+    width: fit-content;
+}
+
+.boton {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #e95d3c;
+}
+.boton:hover{
+    background-color: red;
+}
+
+/*Principal*/
+main {
+    display: flex;
+}
+.columnaIzquierda{
+    
+    width: 70%;
+}
+.columnaIzquierda h2 {
+    font-size: xx-large;
+    margin: 0;
+}
+.columnaIzquierda span {
+    font-size: larger;
+    text-transform: uppercase;
+}
+.parrafo1 {
+    padding-top: 5%;
+}
+.columnaIzquierda p a {
+    color: #ff0000;
+}
+.parrafo3 {
+    padding-bottom: 5%;
+}
+.columnaCentral{
+width: fit-content;
+padding-left: 5%;
+padding-right: 5%;
+}
+.columnaCentral h2 {
+    padding-left: 10%;
+}
+.columnaCentral ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.columnaCentral li {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10%;
+    
+}
+.columnaCentral img {
+    padding: 10px;
+}
+
+.columnaDerecha h2{
+    width: max-content;
+    padding-left: 10%;   
+}
+.columnaDerecha ul, .columnaDerecha a{
+    list-style: none;
+    color: #ff0000;
+    width: max-content;
+}
+.columnaDerecha li{
+    padding: 5%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/img01.jpg);
+    padding: 5% 10%;
+    color: grey;
+}
+footer a {
+    text-decoration: none;
+    color: grey;
+}

@@ -1,0 +1,15 @@
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+nav ol {
+    background-color: rgba(123,198,199,0.8);
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: black;
+}
