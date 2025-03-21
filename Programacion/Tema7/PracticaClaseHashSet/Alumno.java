@@ -9,12 +9,6 @@ email, edad, ciudad. Constructor, getters, setters, toString. EQUALS POR DNI
 
 
 
-4. Luego añade un alumno repetido y comprueba que aparece repetido.
-
-5. Implementa la clase AulaNueva con un HashSet<Alumno> y comprueba que el repetido no
-se añade.
-
-6. ¿Muestra en el mismo orden listarTodos en Aula que en AulaNueva? ¿Por qué?
 
 7. ¿Hay una manera de quitar repetidos de un ArrayList de forma fácil?*/
     private String dni;

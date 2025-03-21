@@ -12,9 +12,9 @@ public class Aula {
     //el ArrayList. Getters, setters, toString, addAlumno, removeAlumno, listarTodos
     private String nombre;
     private String ubicacion;
-    HashSet<Alumno> alumnos;
+    ArrayList<Alumno> alumnos;
     public Aula(ArrayList<Alumno> alumnos, String nombre, String ubicacion) {
-        this.alumnos = new HashSet<>();
+        this.alumnos = new ArrayList<>();
         this.nombre = nombre;
         this.ubicacion = ubicacion;
     }
@@ -25,8 +25,10 @@ public class Aula {
     public void removeAlumno(Alumno al){
         alumnos.remove(al);
     }
-    public void listarTodos(){
-        System.out.println(alumnos.toString());
+    public void listarAlumnos(){
+        for (Alumno al : alumnos){
+            System.out.println(al.getDni() +" : " + al.getNombre() + " " + al.getApellidos());
+        }
     }
 
 
@@ -40,11 +42,11 @@ public class Aula {
         return sb.toString();
     }
 
-    public HashSet<Alumno> getAlumnos() {
+    public ArrayList<Alumno> getAlumnos() {
         return alumnos;
     }
 
-    public void setAlumnos(HashSet<Alumno> alumnos) {
+    public void setAlumnos(ArrayList<Alumno> alumnos) {
         this.alumnos = alumnos;
     }
 
