@@ -39,7 +39,6 @@ public class Pelicula {
         return sb.toString();
     }
 
-
     public ArrayList<Director> getDirectores() {
         return directores;
     }
