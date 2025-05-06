@@ -82,5 +82,5 @@ public class Registro {
         public void clear() {
 
         }
-    }
+    };
 }
