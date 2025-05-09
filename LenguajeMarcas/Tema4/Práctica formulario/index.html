@@ -3,16 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica Formularios</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario HTML5</title>
 </head>
 <body>
-    <form action="">
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre">
-        <label for="apel1">Primer Apellido</label>
-        <input type="text" name="apel1">
-        <label for="apel2">Segundo Apellido</label>
-        <input type="text" name="apel2">
+    <h1>Recogida de Datos</h1>
+    <form method="get" action="">
+        <fieldset class="fieldsetGrid">
+                <legend> <p>A. Datos Personales</p></legend>
+                <label for="nombre" >1.Nombre
+                    <input required autofocus type="text" name="nombre">
+                </label>
+                <label for="apel1">2.Primer Apellido
+                    <input required type="text" name="apel1">
+                </label>
+                <label for="apel2">3.Segundo Apellido
+                    <input required type="text" name="apel2">
+                </label>
+                <label for="tlf">4.Telefono
+                    <input type="tel" name="tlf">
+                </label>
+                <label for="email">5.Email
+                    <input required type="email" name="email">
+                </label>
+                <label for="url">6.Pagina Web
+                    <input type="url" name="url" placeholder="Escribe la URL de tu pagina web personal">
+                </label>
+                <label for="localidad">7.Localidad
+                    <select name="localidad">
+                        <option value="cuevas">Cuevas</option>
+                        <option value="vera">Vera</option>
+                        <option value="garrucha">Garrucha</option>
+                    </select>
+                </label>
+        </fieldset>
+        <fieldset>
+            <legend><p>B. Datos del pedido</p></legend>
+            <label for="datetime">8.Fecha y hora
+                <input type="datetime-local" name="datetime">
+            </label>
+            <label for="numero">9.Numero
+                <input type="number" name="numero" min="-1" max="10">
+            </label>
+            <label for="color">10.Color pedido
+                <input type="color" name="color">
+            </label>
+        </fieldset>
+        <fieldset id="entrega">
+            <legend><p>C. Datos entrega</p></legend>
+            <div class="fechahoraentrega">
+                <label for="fecha">12.Fecha de entrega
+                    <input type="date" name="fecha">
+                </label>
+                <label for="hora">13.Hora
+                    <input type="time" name="hora">
+                </label>
+            </div>
+            <label for="factura">14.Documentacion presentada:
+                <input type="checkbox" name="factura">Factura
+                <input type="checkbox" name="certificado">Certificado
+            </label>
+            <label for="recoger">15. Recogida: 
+                <input type="radio" name="recoger">tienda
+                <input type="radio" name="recoger">casa
+            </label>
+        </fieldset>
+        <fieldset id="informacion">
+            <legend><p>D. Más información</p></legend>
+            <label for="busca">
+                16.Busca aqui
+                <input type="search" name="busca">
+                <input type="submit" value="Buscar">
+            </label>
+            <label for="comentarios">17.Otros Comentarios
+                <textarea name="comentarios" placeholder="Introduce tus comentarios"></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Enviar" id="enviar">
     </form>
 </body>
 </html>
