@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: orange;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+section {
+    padding: 24px;
+    text-align: center;
+    min-height: 100vh;
+
+}
+.izquierdo {
+    flex: 1;
+}
+.central {
+    flex: 2;
+}
+.derecho {
+    flex: 1;
+}
+.lateral {
+    background-color: grey;
+    color: white;
+}
