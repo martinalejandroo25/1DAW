@@ -6,7 +6,7 @@ public class Cancion {
     private Integer lanzamientoYear;
     private Integer duracionSegs;
     private double popularidad;
-    private Genero genero;
+    Genero genero;
 
     public Cancion(String titulo, Artista artista, Integer lanzamientoYear, Integer duracionSegs, double popularidad, Genero genero) {
         this.titulo = titulo;
@@ -55,6 +55,10 @@ public class Cancion {
 
     public void setPopularidad(double popularidad) {
         this.popularidad = popularidad;
+    }
+
+    public Genero getGenero() {
+        return genero;
     }
 
     @Override

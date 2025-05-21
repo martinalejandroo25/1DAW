@@ -1,15 +1,15 @@
 package Programacion.Tema7.EjerciciosStreams.Canciones;
 
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
+import java.util.function.Consumer;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
-import static java.util.stream.Collectors.counting;
-import static java.util.stream.Collectors.groupingBy;
+import static java.util.stream.Collectors.*;
 
 public class Main {
     public static void main(String[] args) {
-        List<Cancion> canciones = List.of(
+        List<Cancion> canciones = new ArrayList<>(List.of(
                 new Cancion("Blinding Lights", new Artista("The Weeknd", "Canadá"), 2024, 200, 90.5, Genero.POP),
                 new Cancion("Levitating", new Artista("Dua Lipa", "Reino Unido"), 2024, 203, 88.7, Genero.POP),
                 new Cancion("Lost Souls", new Artista("Foo Fighters", "EE. UU."), 2024, 210, 91.0, Genero.ROCK),
@@ -19,7 +19,7 @@ public class Main {
                 new Cancion("Shining Star", new Artista("Doja Cat", "EE. UU."), 2025, 185, 88.7, Genero.HIPHOP),
                 new Cancion("Crimson Skies", new Artista("Foo Fighters", "EE. UU."), 2025, 225, 93.3, Genero.ROCK),
                 new Cancion("Kiss Me More", new Artista("Doja Cat", "EE. UU."), 2024, 205, 87.1, Genero.POP)
-        );
+        ));
 
         System.out.println("1. Muestra las canciones de 2025");
         canciones.stream()
@@ -56,5 +56,61 @@ public class Main {
                                 counting()                                         //valor: contar cuantos hay
                         )
                 ));
+        System.out.println();
+        System.out.println("6. Muestra las canciones agrupadas por genero, cuantas por cada uno");
+        List<Cancion> cancionList = canciones.stream().toList();
+        Map<Genero, Long> cancionesPorGenero = cancionList.stream()
+                .collect(
+                        groupingBy(Cancion::getGenero, //clave: el enum Genero
+                                counting() // downstream: contar elementos
+                ));
+        cancionesPorGenero.forEach((genero, count)
+                -> System.out.println(genero + " " + count));
+
+        System.out.println();
+        System.out.println("7. Comprueba si hay alguna canción con más del 95% de popularidad, y 90%");
+        canciones.stream()
+                .filter(cancion -> cancion.getPopularidad() > 90)
+                .peek(cancion -> System.out.println("mayor al 90% -> " + cancion))
+                .filter(cancion -> cancion.getPopularidad() > 95)
+                .peek(cancion -> System.out.println("mayor al 95% -> " + cancion))
+                .forEach(System.out::println);
+        System.out.println();
+        System.out.println("8. Muestra las tres canciones de más duración");
+        Comparator<Cancion> cancionComparator = Comparator.comparing(Cancion::getDuracionSegs);
+        Collections.sort(canciones, cancionComparator.reversed());
+        canciones.stream()
+                .limit(3)
+                .forEach(System.out::println);
+
+        System.out.println();
+        System.out.println("9. Genera una lista: titulo – artista, de todas las canciones ordenada alfabéticamente.");
+
+        List<String> CancionArtista = canciones.stream()
+                // Convertimos cada cancion en un String "título - artista"
+                .map(c -> c.getTitulo() + " - " + c.getArtista().getNombre())
+                // Ordenamos esas cadenas alfabeticamente
+                .sorted()
+                // Recogemos el resultado en una List<String>
+                .collect(toList());
+
+        CancionArtista.forEach(System.out::println);
+
+        System.out.println();
+        System.out.println("10. Muestra la duración media de las canciones");
+        canciones.stream()
+                .mapToDouble(Cancion::getDuracionSegs)
+                .average()
+                .ifPresent(System.out::println);
+
+        System.out.println();
+        System.out.println("11. Muestra las estadísticas de popularidad (summarizingDouble)");
+        DoubleSummaryStatistics stats = canciones.stream()
+                .collect(summarizingDouble(Cancion::getPopularidad));
+        System.out.println(stats.getCount());
+        System.out.println(stats.getMin());
+        System.out.println(stats.getMax());
+        System.out.println(stats.getAverage());
+        System.out.println(stats.getSum());
     }
 }

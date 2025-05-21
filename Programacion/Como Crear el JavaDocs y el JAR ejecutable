@@ -1,0 +1,50 @@
+Tutorial: Generar Javadoc y empaquetar un .JAR en IntelliJ IDEA Ultimate
+=======================================================================
+
+1. Preparar tu proyecto
+   ---------------------
+   • Abre tu proyecto Java en IntelliJ IDEA Ultimate.
+   • Asegúrate de que el código compile sin errores.
+
+2. Generar la documentación Javadoc
+   ---------------------------------
+   1. Ve al menú **Tools** → **Generate JavaDoc…**
+   2. En el diálogo que aparece:
+      - **Output directory**: elige la carpeta donde se guardará la documentación (por ejemplo, `docs/javadoc`).
+      - **Scope**: selecciona “Project” o el módulo/paquete concreto que quieras documentar.
+      - **Additional command line parameters** (opcional):
+        Ejemplo: `-author -version -encoding UTF-8 -locale es_ES`
+   3. Haz clic en **OK**.
+   4. IntelliJ ejecutará `javadoc` y generará archivos HTML en la carpeta seleccionada.
+
+3. Configurar y crear un artefacto JAR
+   ------------------------------------
+   1. Ve al menú **File** → **Project Structure…** (o presiona `Ctrl+Alt+Shift+S`).
+   2. En la sección **Artifacts**, haz clic en el icono ➕ y elige **JAR** → **From modules with dependencies…**
+   3. En el diálogo:
+      - **Module**: selecciona tu módulo principal.
+      - **Main Class**: define la clase que contiene el método `public static void main(String[] args)`.
+      - **Extracted to the target JAR**: deja la opción predeterminada para incluir dependencias si las necesitas.
+   4. Haz clic en **OK** y luego en **Apply** → **OK** para cerrar el Project Structure.
+
+4. Construir el JAR
+   -----------------
+   1. Ve al menú **Build** → **Build Artifacts…**
+   2. Selecciona tu artefacto JAR y elige **Build**.
+   3. IntelliJ creará el archivo `.jar` en el directorio `out/artifacts/<nombre_artefacto>/`.
+
+5. Probar el JAR generado
+   -----------------------
+   • Abre una terminal y navega hasta la carpeta del JAR:
+     ```
+     cd out/artifacts/MiProyectoJar
+     ```
+   • Ejecuta:
+     ```
+     java -jar MiProyecto.jar
+     ```
+
+¡Listo! Ahora tienes:
+- La documentación Javadoc en `docs/javadoc`.
+- Tu archivo ejecutable `MiProyecto.jar` en `out/artifacts/`.
+
