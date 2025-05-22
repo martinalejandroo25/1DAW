@@ -1,0 +1,66 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr, 2fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 1px;
+    background: #fff;
+}
+
+.grid>div {
+    background-color: darkcyan;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.celda1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.celda2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.celda3 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.celda4 {
+    grid-column: 2;
+    grid-row: 2 / 4;
+}
+
+/* anida y ocupa filas 2–3 */
+.celda5 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+/* Grid anidado dentro de celda4 */
+.nested {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* dos columnas iguales */
+    grid-template-rows: auto 1fr;
+    /* header + dos filas */
+    gap: 1px;
+    background: #fff;
+}
+
+.nested>.nested-header {
+    grid-column: 1 / 3;
+    /* ocupa ambas columnas */
+    background: #90a4ae;
+    color: #000;
+}
+
+.nested>.nested-item {
+    background: #b0bec5;
+    color: #000;
+    padding: .5em;
+    text-align: center;
+}

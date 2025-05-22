@@ -1,0 +1,30 @@
+body {
+    width: 50%;
+}
+.container {
+    display: grid;
+    grid-template-areas: ". celda1 celda1"
+                        "celda2 celda3 celda3"
+                        "celda2 celda3 celda3"
+                        "celda4 celda4 celda4";
+    gap: 1px;
+}
+.container div {
+    text-align: center;
+    color: white;
+}
+.celda1 {
+    grid-area: celda1;
+    background-color: orangered;
+}
+.celda2 {
+    grid-area: celda2;
+    background-color: darkcyan;}
+.celda3 {
+    grid-area: celda3;
+    background-color: darkcyan;
+}
+.celda4 {
+    grid-area: celda4;
+    background-color: darkgrey;
+}

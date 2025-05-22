@@ -1,0 +1,118 @@
+/* ===================================================================
+    CSS Grid Layout – Cheatsheet práctico
+   =================================================================== */
+
+/* 1. Activar Grid en el contenedor */
+.grid-container {
+    display: grid;
+    /* convierte a grid (2D) */
+    /* display: inline-grid; */
+    /* contenedor inline */
+}
+
+/* 2. Definir columnas y filas */
+.grid-container {
+    grid-template-columns: 300px 1fr 2fr;
+    /* ancho fijo/fracciones */
+    grid-template-rows: 50px auto 100px;
+    /* alto fijo/auto */
+    /* fr = fracción del espacio sobrante */
+}
+
+/* 3. Funciones útiles para pistas */
+.grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    /* repetir columnas */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* auto-fill/auto-fit + minmax para rejillas adaptables */
+}
+
+/* 4. Espaciado entre pistas */
+.grid-container {
+    column-gap: 1em;
+    /* separación horizontal */
+    row-gap: .5em;
+    /* separación vertical */
+    /* shorthand: gap: 1em .5em; */
+}
+
+/* 5. Alineación de la rejilla completa */
+.grid-container {
+    justify-content: center;
+    /* alinea todo el bloque horizontal */
+    align-content: start;
+    /* alinea todo el bloque vertical */
+}
+
+/* 6. Alineación de items individuales */
+.grid-container {
+    justify-items: center;
+    /* alinea hijos en su celda (horiz.) */
+    align-items: start;
+    /* alinea hijos en su celda (vert.) */
+    /* shorthand: place-items: center start; */
+}
+
+/* 7. Ubicar manualmente un elemento */
+.item {
+    grid-column: 2 / 4;
+    /* línea vertical inicio / fin */
+    grid-row: 1 / 3;
+    /* línea horizontal inicio / fin */
+    /* shorthand: grid-area: 1 / 2 / 3 / 4; */
+}
+
+/* 8. Zonas con nombres */
+.grid-container {
+    grid-template-areas:
+        "header header"
+        "nav    main"
+        "nav    footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/* 9. Control de flujo implícito */
+.grid-container {
+    grid-auto-flow: row;
+    /* fila (default), column, dense */
+    grid-auto-rows: 100px;
+    /* alto de filas creadas automáticamente */
+    grid-auto-columns: 200px;
+}
+
+/* 10. Área única (shorthand absoluto) */
+.unique {
+    grid-area: rowStart / colStart / rowEnd / colEnd;
+    /* ejemplo: grid-area: 2 / 1 / 4 / 3; */
+}
+
+/* 11. Ejemplo completo */
+.example {
+    display: grid;
+    grid-template:
+        "hd hd" auto
+        "sb mn" 1fr "ft ft" auto
+        / 2fr 1fr;
+    /* columnas 2:1 */
+    gap: 10px;
+    justify-content: stretch;
+    align-items: start;
+}
+
+/* Fin de cheatsheet */
+```

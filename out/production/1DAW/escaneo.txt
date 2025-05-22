@@ -1,0 +1,341 @@
+martin@almno01-To-Be-Filled-By-O-E-M:~$ sudo nmap -p- --open -sS -sC -sV --min-rate 5000 -n -vvv -Pn 192.168.8.1/24
+Host discovery disabled (-Pn). All addresses will be marked 'up' and scan times may be slower.
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-05-12 19:30 CEST
+NSE: Loaded 156 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 19:30
+Completed NSE at 19:30, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 19:30
+Completed NSE at 19:30, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 19:30
+Completed NSE at 19:30, 0.00s elapsed
+Initiating ARP Ping Scan at 19:30
+Scanning 256 hosts [1 port/host]
+Completed ARP Ping Scan at 19:30, 0.26s elapsed (256 total hosts)
+Initiating SYN Stealth Scan at 19:30
+Scanning 192.168.8.1 [65535 ports]
+Discovered open port 111/tcp on 192.168.8.1
+Discovered open port 80/tcp on 192.168.8.1
+Discovered open port 25/tcp on 192.168.8.1
+Discovered open port 8080/tcp on 192.168.8.1
+Discovered open port 53/tcp on 192.168.8.1
+Discovered open port 21/tcp on 192.168.8.1
+Discovered open port 5005/tcp on 192.168.8.1
+Discovered open port 3128/tcp on 192.168.8.1
+Discovered open port 3142/tcp on 192.168.8.1
+Discovered open port 5666/tcp on 192.168.8.1
+Discovered open port 9102/tcp on 192.168.8.1
+Discovered open port 389/tcp on 192.168.8.1
+Discovered open port 3030/tcp on 192.168.8.1
+Discovered open port 4949/tcp on 192.168.8.1
+Discovered open port 5006/tcp on 192.168.8.1
+Discovered open port 8090/tcp on 192.168.8.1
+Discovered open port 5008/tcp on 192.168.8.1
+Discovered open port 8443/tcp on 192.168.8.1
+Discovered open port 5007/tcp on 192.168.8.1
+Completed SYN Stealth Scan at 19:30, 2.98s elapsed (65535 total ports)
+Initiating Service scan at 19:30
+Scanning 18 services on 192.168.8.1
+Completed Service scan at 19:32, 123.69s elapsed (19 services on 1 host)
+NSE: Script scanning 192.168.8.1.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 19:32
+NSE: [ftp-bounce 192.168.8.1:21] PORT response: 500 Comando PORT ilegal
+Completed NSE at 19:32, 15.26s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 19:32
+Completed NSE at 19:32, 7.76s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 19:32
+Completed NSE at 19:32, 0.01s elapsed
+Nmap scan report for 192.168.8.1
+Host is up, received arp-response (0.00042s latency).
+Scanned at 2025-05-12 19:30:23 CEST for 150s
+Not shown: 65496 closed tcp ports (reset), 19 filtered tcp ports (no-response), 1 filtered tcp ports (port-unreach)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE           REASON         VERSION
+21/tcp   open  ftp               syn-ack ttl 64
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| drwxr-xr-x   2 127      132          4096 Apr 30 12:23 _altStore
+| drwxr-xr-x   6 0        0            4096 Sep 28  2020 catcornerdda
+| drwxr-xr-x   6 0        0            4096 Sep 28  2020 catcornerdda2
+| drwxr-xr-x   3 127      132          4096 May 10  2022 centros.edu.guadalinex.org
+| lrwxrwxrwx   1 0        0               1 May 18  2011 Edu -> /Edu
+| drwxr-xr-x   2 0        0            4096 May  6 20:24 eosfocal
+| -rw-r--r--   1 127      132         10560 May 12 04:25 _exfail_cnt
+| drwxr-xr-x   6 0        0            4096 May 12 01:14 fenix
+| drwxr-xr-x   5 0        0            4096 May 12 01:15 fenixscmd
+| drwxr-xr-x   6 0        0            4096 May 12 01:15 fenixscpdi
+| drwxrwxrwx   6 0        0            4096 May 12 01:15 focal [NSE: writeable]
+| drwxr-xr-x   5 0        0            4096 May 12 01:16 focalscmd
+| drwxrwxrwx   6 0        0            4096 May 12 01:16 focalscpdi [NSE: writeable]
+| drwxr-xr-x   6 0        0            4096 May 12 01:15 focal-update
+| drwxr-xr-x   2 0        0            4096 Jan  4  2024 gedufenix
+| drwxr-xr-x   2 33       33           4096 Sep 27  2021 gedupersonalizado
+| drwxr-xr-x   6 0        0            4096 Nov 16  2020 heroes
+| lrwxrwxrwx   1 0        0              17 Oct 17  2020 heroessc -> /focalsc
+| lrwxrwxrwx   1 0        0              19 Oct 17  2020 heroesscmd -> /focalscmd
+| lrwxrwxrwx   1 0        0              20 Oct 17  2020 heroesscpdi -> /focalscpdi
+| drwxr-xr-x   6 0        0            4096 Sep 28  2020 precisedda
+| drwxr-xr-x   6 0        0            4096 Sep 28  2020 precisedda2
+| drwx------   2 2002     0            4096 May 18  2011 privado
+| drwx------   2 2001     0            4096 May 18  2011 publico
+| -rwxr-xr-x   1 ftp      0             166 Nov  4  2008 welcome.msg
+| drwxr-xr-x   4 127      132          4096 May 10  2022 _xstore
+|_drwxr-xr-x   9 0        0            4096 Dec 22  2020 zocodda
+| fingerprint-strings: 
+|   GenericLines: 
+|     220 ProFTPD Server (Debian) [192.168.8.1]
+|     Comando invalido: intenta ser mas creativo
+|     Comando invalido: intenta ser mas creativo
+|   Help: 
+|     220 ProFTPD Server (Debian) [192.168.8.1]
+|     214-Los siguientes comandos son desconocidos (* =>'s no implementado):
+|     214-CWD XCWD CDUP XCUP SMNT* QUIT PORT PASV 
+|     214-EPRT EPSV ALLO* RNFR RNTO DELE MDTM RMD 
+|     214-XRMD MKD XMKD PWD XPWD SIZE SYST HELP 
+|     214-NOOP FEAT OPTS HOST CLNT AUTH* CCC* CONF* 
+|     214-ENC* MIC* PBSZ* PROT* TYPE STRU MODE RETR 
+|     214-STOR STOU APPE REST ABOR USER PASS ACCT* 
+|     214-REIN* LIST NLST STAT SITE MLSD MLST 
+|     Dirigir comentarios a root@f0.04002052.04.andared.ced.junta-andalucia.es
+|   NULL, SMBProgNeg, SSLSessionReq: 
+|_    220 ProFTPD Server (Debian) [192.168.8.1]
+25/tcp   open  smtp              syn-ack ttl 64 Postfix smtpd
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=f0.04002052.04.andared.ced.junta-andalucia.es
+| Subject Alternative Name: DNS:f0.04002052.04.andared.ced.junta-andalucia.es
+| Issuer: commonName=f0.04002052.04.andared.ced.junta-andalucia.es
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2020-08-07T07:50:48
+| Not valid after:  2030-08-05T07:50:48
+| MD5:   de5c:fd21:68f1:4a6c:97c2:e31a:2e63:0c37
+| SHA-1: 43ce:3c91:9b1e:28ac:945d:3fe9:c6f6:c20c:c115:b572
+| -----BEGIN CERTIFICATE-----
+| MIIDRTCCAi2gAwIBAgIUXDfv3h4jsTfNZ/wE3RYSxSC9FhwwDQYJKoZIhvcNAQEL
+| BQAwODE2MDQGA1UEAwwtZjAuMDQwMDIwNTIuMDQuYW5kYXJlZC5jZWQuanVudGEt
+| YW5kYWx1Y2lhLmVzMB4XDTIwMDgwNzA3NTA0OFoXDTMwMDgwNTA3NTA0OFowODE2
+| MDQGA1UEAwwtZjAuMDQwMDIwNTIuMDQuYW5kYXJlZC5jZWQuanVudGEtYW5kYWx1
+| Y2lhLmVzMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxuE08Cn46SUL
+| 6l/QCd87MIKW3C2ZK0BNKlv1lRqSH+ehvOE+MwPfmHi4Hest/6hSc42VFmKLep2b
+| AU9OAJOxyK5mV7AJ8o2xcUCeuSaMzjxltjDUmUJrkLLIu9ndQ4hjv0+WemRbgdGH
+| Ze7oI+X6dd6LeVo/l7n7CqhpUb1+KdgajfC1hJ8mkuID0H9qAUCRaDPkH5HbNgNA
+| /035PEWuKp9E4rA6jJFoK8mF1JQNM7jmtN6gpv9HgEb0kS9vFnAEXBNmraJQfl8q
+| kfSWePj1nD55+L/9DfAVoUa/Z2my9Wlpq1AUI6SenVSctiFYNoKMT2xELP2e/40r
+| 6GX9eU0bqwIDAQABo0cwRTAJBgNVHRMEAjAAMDgGA1UdEQQxMC+CLWYwLjA0MDAy
+| MDUyLjA0LmFuZGFyZWQuY2VkLmp1bnRhLWFuZGFsdWNpYS5lczANBgkqhkiG9w0B
+| AQsFAAOCAQEAPJKbqRdH3EPt4+eu6+cpVPJPMs7ygpEwqhusE8Yan4+o92YKgHqV
+| Fw4SBD3BZX3Cj2NXuPO2KJ5jL264t7Qz9ROvQI9/yD0XVWTdF72w3rdtMqlIEEQr
+| o0m0A6RMVT6l28lmirV9rYi1Z7YYzpHsjNQK2ZvrGAEkqqQio8/iP8lFgkF18q1S
+| Rdg/3EjN/0OKMJkqETuy97+sXzmnBgsCH9tAgcyrjEcHTwwmKFRcz1QdHSuQHK2G
+| qkHMXm24bAUNykb220X8RZJyb8bgdrRYmcBMjsO9eM1areAbVzsMgJoDi2YmX3W/
+| KjROqKq0e2OqfJR86k1XbSGhVhJZ65Nh7w==
+|_-----END CERTIFICATE-----
+|_smtp-commands: f0.04002052.04.andared.ced.junta-andalucia.es, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, CHUNKING
+53/tcp   open  domain            syn-ack ttl 64 ISC BIND 9.11.5-P4-5.1 (Debian Linux)
+| dns-nsid: 
+|_  bind.version: 9.11.5-P4-5.1-Debian
+80/tcp   open  http              syn-ack ttl 64 Apache httpd 2.4.38 ((Debian) mod_fcgid/2.3.9 PHP/7.3.4-2)
+|_http-server-header: Apache/2.4.38 (Debian) mod_fcgid/2.3.9 PHP/7.3.4-2
+| http-methods: 
+|   Supported Methods: HEAD GET POST OPTIONS TRACE
+|_  Potentially risky methods: TRACE
+|_http-title: Site doesn't have a title (text/html).
+111/tcp  open  rpcbind           syn-ack ttl 64 2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|_  100000  3,4          111/udp6  rpcbind
+389/tcp  open  ldap              syn-ack ttl 64 (Anonymous bind OK)
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=f0/organizationName=Junta de Andalucia/stateOrProvinceName=Andalucia/countryName=ES/organizationalUnitName=Consejeria de Educacion y Ciencia/localityName=Andalucia
+| Issuer: commonName=f0/organizationName=Junta de Andalucia/stateOrProvinceName=Andalucia/countryName=ES/organizationalUnitName=Consejeria de Educacion y Ciencia/localityName=Andalucia
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: md5WithRSAEncryption
+| Not valid before: 2004-07-19T12:28:55
+| Not valid after:  2014-07-17T12:28:55
+| MD5:   98e2:818f:8e01:c3c2:fde0:fef6:f49d:a659
+| SHA-1: 847f:081a:84d0:099b:b90b:5b43:18c4:8da0:7b27:c700
+| -----BEGIN CERTIFICATE-----
+| MIIDejCCAuOgAwIBAgIBADANBgkqhkiG9w0BAQQFADCBizELMAkGA1UEBhMCRVMx
+| EjAQBgNVBAgTCUFuZGFsdWNpYTESMBAGA1UEBxMJQW5kYWx1Y2lhMRswGQYDVQQK
+| ExJKdW50YSBkZSBBbmRhbHVjaWExKjAoBgNVBAsTIUNvbnNlamVyaWEgZGUgRWR1
+| Y2FjaW9uIHkgQ2llbmNpYTELMAkGA1UEAxMCZjAwHhcNMDQwNzE5MTIyODU1WhcN
+| MTQwNzE3MTIyODU1WjCBizELMAkGA1UEBhMCRVMxEjAQBgNVBAgTCUFuZGFsdWNp
+| YTESMBAGA1UEBxMJQW5kYWx1Y2lhMRswGQYDVQQKExJKdW50YSBkZSBBbmRhbHVj
+| aWExKjAoBgNVBAsTIUNvbnNlamVyaWEgZGUgRWR1Y2FjaW9uIHkgQ2llbmNpYTEL
+| MAkGA1UEAxMCZjAwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKtfcHuoLFqG
+| 4BPmtsNOl6czbie0+ntPeIgvsLLAj60mItCf9afvUzJbXUUyI8A4BObyQrU6O78N
+| LmAPYmXWkdqK9M7BAkkEsPLQEf2dKF2vJM+1pBltCV1dYqYsdf5AByFgwIGm/c+8
+| PyJD7511+1SNig9oSVIu3MjCPmIhWSBDAgMBAAGjgeswgegwHQYDVR0OBBYEFNPz
+| AdtN3jaWa6uoaqlInY1lAWhNMIG4BgNVHSMEgbAwga2AFNPzAdtN3jaWa6uoaqlI
+| nY1lAWhNoYGRpIGOMIGLMQswCQYDVQQGEwJFUzESMBAGA1UECBMJQW5kYWx1Y2lh
+| MRIwEAYDVQQHEwlBbmRhbHVjaWExGzAZBgNVBAoTEkp1bnRhIGRlIEFuZGFsdWNp
+| YTEqMCgGA1UECxMhQ29uc2VqZXJpYSBkZSBFZHVjYWNpb24geSBDaWVuY2lhMQsw
+| CQYDVQQDEwJmMIIBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4GBAF3I
+| E+tkfEXhp6vbBSBqSLHR6iqGJX9Pb5gkVEDwWK/7FXtJzQjyvbOsnCf64ByKlQG3
+| 25cg13nLa63/nhRspKqhCtSuOhby49RZYLK9GlCAKKlSSfT+xSEIK3GI+5uZCsTp
+| cPZABVVnGZwf1k1jzi30dzCv2PUzVdwz/mkgmP4v
+|_-----END CERTIFICATE-----
+3030/tcp open  http              syn-ack ttl 64 CherryPy wsgiserver
+|_http-server-header: localhost
+|_http-title: Site doesn't have a title (text/html).
+3128/tcp open  http-proxy        syn-ack ttl 64 Squid http proxy 4.6
+|_http-server-header: squid/4.6
+|_http-title: ERROR: The requested URL could not be retrieved
+3142/tcp open  http              syn-ack ttl 64 Debian Apt-Cacher NG httpd 3.2
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-title: Not Found or APT Reconfiguration required
+4949/tcp open  tcpwrapped        syn-ack ttl 64
+5005/tcp open  http              syn-ack ttl 64 Gunicorn 19.9.0
+|_http-title: Site doesn't have a title (application/json).
+|_http-server-header: gunicorn/19.9.0
+5006/tcp open  http              syn-ack ttl 64 Gunicorn 19.9.0
+|_http-title: Site doesn't have a title (application/json).
+|_http-server-header: gunicorn/19.9.0
+5007/tcp open  http              syn-ack ttl 64 Gunicorn 19.9.0
+|_http-title: Site doesn't have a title (application/json).
+|_http-server-header: gunicorn/19.9.0
+5008/tcp open  http              syn-ack ttl 64 Gunicorn 19.9.0
+|_http-server-header: gunicorn/19.9.0
+|_http-title: Site doesn't have a title (application/json).
+5666/tcp open  tcpwrapped        syn-ack ttl 64
+8080/tcp open  http-proxy        syn-ack ttl 64 Apache/2.4.38 (Debian) mod_fcgid/2.3.9 PHP/7.3.4-2
+|_http-server-header: Apache/2.4.38 (Debian) mod_fcgid/2.3.9 PHP/7.3.4-2
+|_http-title: ERROR: The requested URL could not be retrieved
+| fingerprint-strings: 
+|   FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, LDAPSearchReq, RTSPRequest, Socks5: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/html
+|     Connection: Close
+|     <HTML><HEAD><TITLE>e2guardian - 400 Bad Request</TITLE></HEAD><BODY><H1>e2guardian - 400 Bad Request</H1>La URL solicitada est
+|_    formada.</BODY></HTML>
+8090/tcp open  ssl/opsmessaging? syn-ack ttl 64
+| ssl-cert: Subject: commonName=jesse/organizationName=Delta/stateOrProvinceName=TW/countryName=TW/emailAddress=jesse.zhuo@delta.com.tw/organizationalUnitName=RUBU/localityName=TN
+| Issuer: commonName=jesse/organizationName=Delta/stateOrProvinceName=TW/countryName=TW/emailAddress=jesse.zhuo@delta.com.tw/organizationalUnitName=RUBU/localityName=TN
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: md5WithRSAEncryption
+| Not valid before: 2009-12-18T02:31:33
+| Not valid after:  2019-12-16T02:31:33
+| MD5:   ac4d:077c:f08f:bd04:119f:1fcb:fba5:0144
+| SHA-1: 9944:e514:52e6:d26b:44cc:f7fb:fb48:0398:7d21:6585
+| -----BEGIN CERTIFICATE-----
+| MIIDUDCCArmgAwIBAgIBADANBgkqhkiG9w0BAQQFADB+MQswCQYDVQQGEwJUVzEL
+| MAkGA1UECBMCVFcxCzAJBgNVBAcTAlROMQ4wDAYDVQQKEwVEZWx0YTENMAsGA1UE
+| CxMEUlVCVTEOMAwGA1UEAxMFamVzc2UxJjAkBgkqhkiG9w0BCQEWF2plc3NlLnpo
+| dW9AZGVsdGEuY29tLnR3MB4XDTA5MTIxODAyMzEzM1oXDTE5MTIxNjAyMzEzM1ow
+| fjELMAkGA1UEBhMCVFcxCzAJBgNVBAgTAlRXMQswCQYDVQQHEwJUTjEOMAwGA1UE
+| ChMFRGVsdGExDTALBgNVBAsTBFJVQlUxDjAMBgNVBAMTBWplc3NlMSYwJAYJKoZI
+| hvcNAQkBFhdqZXNzZS56aHVvQGRlbHRhLmNvbS50dzCBnzANBgkqhkiG9w0BAQEF
+| AAOBjQAwgYkCgYEA02OyMs/3MeuCIsZzsbnFOVa03EkZcfwEY01Sa8axX/ik0IMJ
+| atetXIZ+rYR+IdGO6W901AgB0BnLPEmd8nSzxk8S6VStGn9n9BP4eojtUty53K2I
+| 1dBxQ8Zt43lVuY1Q1/l5AbQGDCavmzOuamgIjNjtLkqIhK1t/sggKpMABH8CAwEA
+| AaOB3TCB2jAdBgNVHQ4EFgQURCmvy3Jumyt9jy67QvviYvUnm/owgaoGA1UdIwSB
+| ojCBn4AURCmvy3Jumyt9jy67QvviYvUnm/qhgYOkgYAwfjELMAkGA1UEBhMCVFcx
+| CzAJBgNVBAgTAlRXMQswCQYDVQQHEwJUTjEOMAwGA1UEChMFRGVsdGExDTALBgNV
+| BAsTBFJVQlUxDjAMBgNVBAMTBWplc3NlMSYwJAYJKoZIhvcNAQkBFhdqZXNzZS56
+| aHVvQGRlbHRhLmNvbS50d4IBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUA
+| A4GBAKW4X+CKHSkDW3YYxI8rYyCR+2+1M7GmdGxhnSLtNVvCGhhk2VbIVf+Xus0F
+| SywnbYeivzKgfe7LtRK9QDXB5gCsefes7jXHGshjOvz/pmStoCxAp+HwyPEID8sr
+| ooIKO2+6MCkbrN7J8oKpZHjCblEhDFRDM19NXpEMkXfHzMAy
+|_-----END CERTIFICATE-----
+|_ssl-date: 2025-05-12T17:32:45+00:00; 0s from scanner time.
+| sslv2: 
+|   SSLv2 supported
+|_  ciphers: none
+8443/tcp open  https-alt?        syn-ack ttl 64
+9102/tcp open  jetdirect?        syn-ack ttl 64
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port21-TCP:V=7.94SVN%I=7%D=5/12%Time=68223038%P=x86_64-pc-linux-gnu%r(N
+SF:ULL,2B,"220\x20ProFTPD\x20Server\x20\(Debian\)\x20\[192\.168\.8\.1\]\r\
+SF:n")%r(GenericLines,8B,"220\x20ProFTPD\x20Server\x20\(Debian\)\x20\[192\
+SF:.168\.8\.1\]\r\n500\x20Comando\x20invalido:\x20intenta\x20ser\x20mas\x2
+SF:0creativo\r\n500\x20Comando\x20invalido:\x20intenta\x20ser\x20mas\x20cr
+SF:eativo\r\n")%r(Help,2A3,"220\x20ProFTPD\x20Server\x20\(Debian\)\x20\[19
+SF:2\.168\.8\.1\]\r\n214-Los\x20siguientes\x20comandos\x20son\x20desconoci
+SF:dos\x20\(\*\x20=>'s\x20no\x20implementado\):\r\n214-CWD\x20\x20\x20\x20
+SF:\x20XCWD\x20\x20\x20\x20CDUP\x20\x20\x20\x20XCUP\x20\x20\x20\x20SMNT\*\
+SF:x20\x20\x20QUIT\x20\x20\x20\x20PORT\x20\x20\x20\x20PASV\x20\x20\x20\x20
+SF:\r\n214-EPRT\x20\x20\x20\x20EPSV\x20\x20\x20\x20ALLO\*\x20\x20\x20RNFR\
+SF:x20\x20\x20\x20RNTO\x20\x20\x20\x20DELE\x20\x20\x20\x20MDTM\x20\x20\x20
+SF:\x20RMD\x20\x20\x20\x20\x20\r\n214-XRMD\x20\x20\x20\x20MKD\x20\x20\x20\
+SF:x20\x20XMKD\x20\x20\x20\x20PWD\x20\x20\x20\x20\x20XPWD\x20\x20\x20\x20S
+SF:IZE\x20\x20\x20\x20SYST\x20\x20\x20\x20HELP\x20\x20\x20\x20\r\n214-NOOP
+SF:\x20\x20\x20\x20FEAT\x20\x20\x20\x20OPTS\x20\x20\x20\x20HOST\x20\x20\x2
+SF:0\x20CLNT\x20\x20\x20\x20AUTH\*\x20\x20\x20CCC\*\x20\x20\x20\x20CONF\*\
+SF:x20\x20\x20\r\n214-ENC\*\x20\x20\x20\x20MIC\*\x20\x20\x20\x20PBSZ\*\x20
+SF:\x20\x20PROT\*\x20\x20\x20TYPE\x20\x20\x20\x20STRU\x20\x20\x20\x20MODE\
+SF:x20\x20\x20\x20RETR\x20\x20\x20\x20\r\n214-STOR\x20\x20\x20\x20STOU\x20
+SF:\x20\x20\x20APPE\x20\x20\x20\x20REST\x20\x20\x20\x20ABOR\x20\x20\x20\x2
+SF:0USER\x20\x20\x20\x20PASS\x20\x20\x20\x20ACCT\*\x20\x20\x20\r\n214-REIN
+SF:\*\x20\x20\x20LIST\x20\x20\x20\x20NLST\x20\x20\x20\x20STAT\x20\x20\x20\
+SF:x20SITE\x20\x20\x20\x20MLSD\x20\x20\x20\x20MLST\x20\x20\x20\x20\r\n214\
+SF:x20Dirigir\x20comentarios\x20a\x20root@f0\.04002052\.04\.andared\.ced\.
+SF:junta-andalucia\.es\r\n")%r(SSLSessionReq,2B,"220\x20ProFTPD\x20Server\
+SF:x20\(Debian\)\x20\[192\.168\.8\.1\]\r\n")%r(SMBProgNeg,2B,"220\x20ProFT
+SF:PD\x20Server\x20\(Debian\)\x20\[192\.168\.8\.1\]\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8080-TCP:V=7.94SVN%I=7%D=5/12%Time=68223038%P=x86_64-pc-linux-gnu%r
+SF:(GetRequest,E4,"HTTP/1\.1\x20400\x20Bad\x20Request\nContent-Type:\x20te
+SF:xt/html\r\nConnection:\x20Close\r\n\r\n<HTML><HEAD><TITLE>e2guardian\x2
+SF:0-\x20400\x20Bad\x20Request</TITLE></HEAD><BODY><H1>e2guardian\x20-\x20
+SF:400\x20Bad\x20Request</H1>La\x20URL\x20solicitada\x20est\xc3\xa1\x20mal
+SF:\x20formada\.</BODY></HTML>\r\n")%r(HTTPOptions,E4,"HTTP/1\.1\x20400\x2
+SF:0Bad\x20Request\nContent-Type:\x20text/html\r\nConnection:\x20Close\r\n
+SF:\r\n<HTML><HEAD><TITLE>e2guardian\x20-\x20400\x20Bad\x20Request</TITLE>
+SF:</HEAD><BODY><H1>e2guardian\x20-\x20400\x20Bad\x20Request</H1>La\x20URL
+SF:\x20solicitada\x20est\xc3\xa1\x20mal\x20formada\.</BODY></HTML>\r\n")%r
+SF:(RTSPRequest,E4,"HTTP/1\.1\x20400\x20Bad\x20Request\nContent-Type:\x20t
+SF:ext/html\r\nConnection:\x20Close\r\n\r\n<HTML><HEAD><TITLE>e2guardian\x
+SF:20-\x20400\x20Bad\x20Request</TITLE></HEAD><BODY><H1>e2guardian\x20-\x2
+SF:0400\x20Bad\x20Request</H1>La\x20URL\x20solicitada\x20est\xc3\xa1\x20ma
+SF:l\x20formada\.</BODY></HTML>\r\n")%r(FourOhFourRequest,E4,"HTTP/1\.1\x2
+SF:0400\x20Bad\x20Request\nContent-Type:\x20text/html\r\nConnection:\x20Cl
+SF:ose\r\n\r\n<HTML><HEAD><TITLE>e2guardian\x20-\x20400\x20Bad\x20Request<
+SF:/TITLE></HEAD><BODY><H1>e2guardian\x20-\x20400\x20Bad\x20Request</H1>La
+SF:\x20URL\x20solicitada\x20est\xc3\xa1\x20mal\x20formada\.</BODY></HTML>\
+SF:r\n")%r(Socks5,E4,"HTTP/1\.1\x20400\x20Bad\x20Request\nContent-Type:\x2
+SF:0text/html\r\nConnection:\x20Close\r\n\r\n<HTML><HEAD><TITLE>e2guardian
+SF:\x20-\x20400\x20Bad\x20Request</TITLE></HEAD><BODY><H1>e2guardian\x20-\
+SF:x20400\x20Bad\x20Request</H1>La\x20URL\x20solicitada\x20est\xc3\xa1\x20
+SF:mal\x20formada\.</BODY></HTML>\r\n")%r(GenericLines,E4,"HTTP/1\.1\x2040
+SF:0\x20Bad\x20Request\nContent-Type:\x20text/html\r\nConnection:\x20Close
+SF:\r\n\r\n<HTML><HEAD><TITLE>e2guardian\x20-\x20400\x20Bad\x20Request</TI
+SF:TLE></HEAD><BODY><H1>e2guardian\x20-\x20400\x20Bad\x20Request</H1>La\x2
+SF:0URL\x20solicitada\x20est\xc3\xa1\x20mal\x20formada\.</BODY></HTML>\r\n
+SF:")%r(LDAPSearchReq,E4,"HTTP/1\.1\x20400\x20Bad\x20Request\nContent-Type
+SF::\x20text/html\r\nConnection:\x20Close\r\n\r\n<HTML><HEAD><TITLE>e2guar
+SF:dian\x20-\x20400\x20Bad\x20Request</TITLE></HEAD><BODY><H1>e2guardian\x
+SF:20-\x20400\x20Bad\x20Request</H1>La\x20URL\x20solicitada\x20est\xc3\xa1
+SF:\x20mal\x20formada\.</BODY></HTML>\r\n");
+MAC Address: 00:15:17:BC:D3:86 (Intel Corporate)
+Service Info: Host:  f0.04002052.04.andared.ced.junta-andalucia.es; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: 0s
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 19:32
+Completed NSE at 19:32, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 19:32
+Completed NSE at 19:32, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 19:32
+Completed NSE at 19:32, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 256 IP addresses (1 host up) scanned in 150.43 seconds
+           Raw packets sent: 66066 (2.899MB) | Rcvd: 65518 (2.621MB)

@@ -1,0 +1,105 @@
+
+body{
+    width: 62%;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    background-color: lightgray;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+}
+form{
+    padding: 2%;
+    background-color: rgb(234, 234, 216);
+}
+fieldset{
+    border: none;
+}
+#datos_personales{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   
+    grid-template-rows: repeat(3, 1fr); 
+    background-color: lightgray;
+}
+#datos_personales legend{
+    background-color: white;
+    border: 2px solid lightgray;
+}
+#requisitos{
+    background-color: lightgoldenrodyellow;
+}
+#requisitos ul{
+    list-style: none;
+}
+#requisitos legend{
+    background-color: white;
+    border: 2px solid lightgoldenrodyellow;
+}
+#solicitud {
+    background-color: rgb(60, 168, 222);
+
+}
+#solicitud legend{
+    background-color: white;
+    border: 2px solid rgb(60, 168, 222);
+}
+#preferencia{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem 1rem;    
+    font-weight: bold;
+}
+#preferencia label {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+} 
+#preferencia input {
+    width: 50%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    }
+#documentacion{
+    background-color: pink;
+}
+#documentacion legend{
+    background-color: white;
+    border: 2px solid pink;
+}
+#comunicacion{
+    background-color: orange;
+}
+#comunicacion legend{
+    background-color: white;
+    border: 2px solid orange;
+}
+#firma{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+}
+#enviar{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: auto;    
+}
+#footer1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 4px dashed blue;
+    text-align: center;
+    
+}
+#footer2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
