@@ -1,4 +1,4 @@
-.grid {
+.container {
     display: grid;
     grid-template-columns: 1fr, 2fr;
     grid-template-rows: repeat(3, auto);
@@ -6,7 +6,7 @@
     background: #fff;
 }
 
-.grid>div {
+.container>div {
     background-color: darkcyan;
     color: white;
     padding: 1em;
@@ -41,24 +41,21 @@
 }
 
 /* Grid anidado dentro de celda4 */
-.nested {
+.anidado {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* dos columnas iguales */
     grid-template-rows: auto 1fr;
-    /* header + dos filas */
     gap: 1px;
     background: #fff;
 }
 
-.nested>.nested-header {
+.anidado>.anidado-header {
     grid-column: 1 / 3;
-    /* ocupa ambas columnas */
     background: #90a4ae;
     color: #000;
 }
 
-.nested>.nested-item {
+.anidado>.anidado-item {
     background: #b0bec5;
     color: #000;
     padding: .5em;
