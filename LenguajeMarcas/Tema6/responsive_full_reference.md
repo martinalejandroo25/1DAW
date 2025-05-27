@@ -34,7 +34,6 @@ padding: 1rem;
 - D: diseña un formulario de 2 columnas que pase a 1 columna bajo 600px.
 
 7. Plantilla rápida:
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
