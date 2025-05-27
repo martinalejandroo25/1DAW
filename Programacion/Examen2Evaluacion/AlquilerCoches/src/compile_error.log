@@ -1,0 +1,83 @@
+CocheEstandar.java:3: error: cannot find symbol
+public class CocheEstandar extends Coche{
+                                   ^
+  symbol: class Coche
+CocheEstandar.java:10: error: cannot find symbol
+    public CocheEstandar(long id, String marca, String modelo, String matricula, int year, TipoCombustible combustible, TipoCoche tipo, Double precioBase, boolean aireAcondicionado) {
+                                                                                           ^
+  symbol:   class TipoCombustible
+  location: class CocheEstandar
+CocheEstandar.java:10: error: cannot find symbol
+    public CocheEstandar(long id, String marca, String modelo, String matricula, int year, TipoCombustible combustible, TipoCoche tipo, Double precioBase, boolean aireAcondicionado) {
+                                                                                                                        ^
+  symbol:   class TipoCoche
+  location: class CocheEstandar
+CocheEstandar.java:12: error: cannot find symbol
+        this.setTipo(TipoCoche.SEDAN);
+                     ^
+  symbol:   variable TipoCoche
+  location: class CocheEstandar
+CocheEstandar.java:29: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+CocheEstandar.java:32: error: cannot find symbol
+            sb.append("id=").append(super.getId());
+                                    ^
+  symbol:   variable super
+  location: class CocheEstandar
+CocheEstandar.java:33: error: cannot find symbol
+            sb.append(", marca='").append(super.getMarca()).append('\'');
+                                          ^
+  symbol:   variable super
+  location: class CocheEstandar
+CocheEstandar.java:34: error: cannot find symbol
+            sb.append(", modelo='").append(super.getModelo()).append('\'');
+                                           ^
+  symbol:   variable super
+  location: class CocheEstandar
+CocheEstandar.java:35: error: cannot find symbol
+            sb.append(", matricula='").append(super.getMatricula()).append('\'');
+                                              ^
+  symbol:   variable super
+  location: class CocheEstandar
+CocheEstandar.java:36: error: cannot find symbol
+            sb.append(", year=").append(super.getYear());
+                                        ^
+  symbol:   variable super
+  location: class CocheEstandar
+CocheEstandar.java:37: error: cannot find symbol
+            sb.append(", combustible=").append(super.getCombustible());
+                                               ^
+  symbol:   variable super
+  location: class CocheEstandar
+CocheEstandar.java:38: error: cannot find symbol
+            sb.append(", tipo=").append(super.getTipo());
+                                        ^
+  symbol:   variable super
+  location: class CocheEstandar
+CocheEstandar.java:39: error: cannot find symbol
+            sb.append(", precioBase=").append(super.getPrecioBase());
+                                              ^
+  symbol:   variable super
+  location: class CocheEstandar
+CocheEstandar.java:40: error: cannot find symbol
+            sb.append(", disponible=").append(super.isDisponible());
+                                              ^
+  symbol:   variable super
+  location: class CocheEstandar
+CocheEstandar.java:46: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+CocheEstandar.java:48: error: cannot find symbol
+        return this.isDisponible()
+                   ^
+  symbol: method isDisponible()
+CocheEstandar.java:49: error: cannot find symbol
+                ? (this.getPrecioBase() * dias + (5*dias))
+                       ^
+  symbol: method getPrecioBase()
+CocheEstandar.java:50: error: cannot find symbol
+                : (this.getPrecioBase() * dias);
+                       ^
+  symbol: method getPrecioBase()
+18 errors

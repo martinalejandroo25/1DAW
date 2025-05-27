@@ -1,0 +1,4170 @@
+Programacion/ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java - ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:3: error: cannot find symbol
+import Programacion.ProgramacionFuncionalOpenWebinars.Developer;
+                                                     ^
+  symbol:   class Developer
+  location: package Programacion.ProgramacionFuncionalOpenWebinars
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:4: error: cannot find symbol
+import Programacion.ProgramacionFuncionalOpenWebinars.Task;
+                                                     ^
+  symbol:   class Task
+  location: package Programacion.ProgramacionFuncionalOpenWebinars
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:27: error: cannot find symbol
+    private static List<Developer> getDevelopers(){
+                        ^
+  symbol:   class Developer
+  location: class WhileMain
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:12: error: cannot find symbol
+        List<Developer> devs = getDevelopers();
+             ^
+  symbol:   class Developer
+  location: class WhileMain
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:16: error: cannot find symbol
+                .takeWhile(task -> task.getHours() <= 6)
+                                       ^
+  symbol:   method getHours()
+  location: variable task of type Object
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:23: error: cannot find symbol
+                .dropWhile(task -> task.getHours() <= 6)
+                                       ^
+  symbol:   method getHours()
+  location: variable task of type Object
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:28: error: cannot find symbol
+        Task task1 = new Task(1L, "task1", 5);
+        ^
+  symbol:   class Task
+  location: class WhileMain
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:28: error: cannot find symbol
+        Task task1 = new Task(1L, "task1", 5);
+                         ^
+  symbol:   class Task
+  location: class WhileMain
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:29: error: cannot find symbol
+        Task task2 = new Task(2L, "task2", 4);
+        ^
+  symbol:   class Task
+  location: class WhileMain
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:29: error: cannot find symbol
+        Task task2 = new Task(2L, "task2", 4);
+                         ^
+  symbol:   class Task
+  location: class WhileMain
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:30: error: cannot find symbol
+        Task task3 = new Task(3L, "task3", 6);
+        ^
+  symbol:   class Task
+  location: class WhileMain
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:30: error: cannot find symbol
+        Task task3 = new Task(3L, "task3", 6);
+                         ^
+  symbol:   class Task
+  location: class WhileMain
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:31: error: cannot find symbol
+        Developer dev1 = new Developer("dev1", 20, List.of(task1, task2, task3));
+        ^
+  symbol:   class Developer
+  location: class WhileMain
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:31: error: cannot find symbol
+        Developer dev1 = new Developer("dev1", 20, List.of(task1, task2, task3));
+                             ^
+  symbol:   class Developer
+  location: class WhileMain
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:33: error: cannot find symbol
+        Task task4 = new Task(4L, "task4", 2);
+        ^
+  symbol:   class Task
+  location: class WhileMain
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:33: error: cannot find symbol
+        Task task4 = new Task(4L, "task4", 2);
+                         ^
+  symbol:   class Task
+  location: class WhileMain
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:34: error: cannot find symbol
+        Task task5 = new Task(5L, "task5", 10);
+        ^
+  symbol:   class Task
+  location: class WhileMain
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:34: error: cannot find symbol
+        Task task5 = new Task(5L, "task5", 10);
+                         ^
+  symbol:   class Task
+  location: class WhileMain
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:35: error: cannot find symbol
+        Task task6 = new Task(6L, "task6", 7);
+        ^
+  symbol:   class Task
+  location: class WhileMain
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:35: error: cannot find symbol
+        Task task6 = new Task(6L, "task6", 7);
+                         ^
+  symbol:   class Task
+  location: class WhileMain
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:36: error: cannot find symbol
+        Developer dev2 = new Developer("dev2", 30, List.of(task4, task5, task6));
+        ^
+  symbol:   class Developer
+  location: class WhileMain
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:36: error: cannot find symbol
+        Developer dev2 = new Developer("dev2", 30, List.of(task4, task5, task6));
+                             ^
+  symbol:   class Developer
+  location: class WhileMain
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:38: error: cannot find symbol
+        Task task7 = new Task(7L, "task7", 5);
+        ^
+  symbol:   class Task
+  location: class WhileMain
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:38: error: cannot find symbol
+        Task task7 = new Task(7L, "task7", 5);
+                         ^
+  symbol:   class Task
+  location: class WhileMain
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:39: error: cannot find symbol
+        Task task8 = new Task(8L, "task8", 4);
+        ^
+  symbol:   class Task
+  location: class WhileMain
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:39: error: cannot find symbol
+        Task task8 = new Task(8L, "task8", 4);
+                         ^
+  symbol:   class Task
+  location: class WhileMain
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:40: error: cannot find symbol
+        Task task9 = new Task(9L, "task9", 6);
+        ^
+  symbol:   class Task
+  location: class WhileMain
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:40: error: cannot find symbol
+        Task task9 = new Task(9L, "task9", 6);
+                         ^
+  symbol:   class Task
+  location: class WhileMain
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:41: error: cannot find symbol
+        Developer dev3 = new Developer("dev3", 30, List.of(task7, task8, task9));
+        ^
+  symbol:   class Developer
+  location: class WhileMain
+ProgramacionFuncionalOpenWebinars/TakeWhile/WhileMain.java:41: error: cannot find symbol
+        Developer dev3 = new Developer("dev3", 30, List.of(task7, task8, task9));
+                             ^
+  symbol:   class Developer
+  location: class WhileMain
+30 errors
+Programacion/ProgramacionFuncionalOpenWebinars/comparator/ComparatorMain.java - ProgramacionFuncionalOpenWebinars/comparator/ComparatorMain.java:3: error: cannot find symbol
+import Programacion.ProgramacionFuncionalOpenWebinars.Product;
+                                                     ^
+  symbol:   class Product
+  location: package Programacion.ProgramacionFuncionalOpenWebinars
+ProgramacionFuncionalOpenWebinars/comparator/ComparatorMain.java:17: error: cannot find symbol
+        Product producto1 = new Product("1", "producto1", 49.99, false);
+        ^
+  symbol:   class Product
+  location: class ComparatorMain
+ProgramacionFuncionalOpenWebinars/comparator/ComparatorMain.java:17: error: cannot find symbol
+        Product producto1 = new Product("1", "producto1", 49.99, false);
+                                ^
+  symbol:   class Product
+  location: class ComparatorMain
+ProgramacionFuncionalOpenWebinars/comparator/ComparatorMain.java:18: error: cannot find symbol
+        Product producto2 = new Product("2", "producto2", 19.99, false);
+        ^
+  symbol:   class Product
+  location: class ComparatorMain
+ProgramacionFuncionalOpenWebinars/comparator/ComparatorMain.java:18: error: cannot find symbol
+        Product producto2 = new Product("2", "producto2", 19.99, false);
+                                ^
+  symbol:   class Product
+  location: class ComparatorMain
+ProgramacionFuncionalOpenWebinars/comparator/ComparatorMain.java:21: error: cannot find symbol
+        Comparator<Product> productComparator = Comparator.comparing(Product::getPrice);
+                   ^
+  symbol:   class Product
+  location: class ComparatorMain
+ProgramacionFuncionalOpenWebinars/comparator/ComparatorMain.java:21: error: cannot find symbol
+        Comparator<Product> productComparator = Comparator.comparing(Product::getPrice);
+                                                                     ^
+  symbol:   variable Product
+  location: class ComparatorMain
+ProgramacionFuncionalOpenWebinars/comparator/ComparatorMain.java:25: error: cannot find symbol
+        List<Product> products = new ArrayList<>(List.of(
+             ^
+  symbol:   class Product
+  location: class ComparatorMain
+ProgramacionFuncionalOpenWebinars/comparator/ComparatorMain.java:26: error: cannot find symbol
+                new Product("1", "producto1", 9.99, false),
+                    ^
+  symbol:   class Product
+  location: class ComparatorMain
+ProgramacionFuncionalOpenWebinars/comparator/ComparatorMain.java:27: error: cannot find symbol
+                new Product("2", "producto2", 5.99, false),
+                    ^
+  symbol:   class Product
+  location: class ComparatorMain
+ProgramacionFuncionalOpenWebinars/comparator/ComparatorMain.java:28: error: cannot find symbol
+                new Product("3", "producto3", 39.99, false),
+                    ^
+  symbol:   class Product
+  location: class ComparatorMain
+ProgramacionFuncionalOpenWebinars/comparator/ComparatorMain.java:29: error: cannot find symbol
+                new Product("1", "producto1", 19.99, false)
+                    ^
+  symbol:   class Product
+  location: class ComparatorMain
+12 errors
+Programacion/ProgramacionFuncionalOpenWebinars/collect/CollectMain.java - ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:4: error: cannot find symbol
+import Programacion.ProgramacionFuncionalOpenWebinars.Developer;
+                                                     ^
+  symbol:   class Developer
+  location: package Programacion.ProgramacionFuncionalOpenWebinars
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:5: error: cannot find symbol
+import Programacion.ProgramacionFuncionalOpenWebinars.Product;
+                                                     ^
+  symbol:   class Product
+  location: package Programacion.ProgramacionFuncionalOpenWebinars
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:6: error: cannot find symbol
+import Programacion.ProgramacionFuncionalOpenWebinars.Task;
+                                                     ^
+  symbol:   class Task
+  location: package Programacion.ProgramacionFuncionalOpenWebinars
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:7: error: package Programacion.Streamsopenwebinars.OperacionesIntermedias does not exist
+import Programacion.Streamsopenwebinars.OperacionesIntermedias.Producto;
+                                                              ^
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:55: error: cannot find symbol
+    private static List<Developer> getDevelopers(){
+                        ^
+  symbol:   class Developer
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:18: error: cannot find symbol
+        List<Product> products = new ArrayList<>(List.of(
+             ^
+  symbol:   class Product
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:19: error: cannot find symbol
+                new Product("1", "producto1", 9.99, false),
+                    ^
+  symbol:   class Product
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:20: error: cannot find symbol
+                new Product("2", "producto2", 5.99, false),
+                    ^
+  symbol:   class Product
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:21: error: cannot find symbol
+                new Product("3", "producto3", 39.99, false),
+                    ^
+  symbol:   class Product
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:22: error: cannot find symbol
+                new Product("1", "producto4", 19.99, false)
+                    ^
+  symbol:   class Product
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:24: error: cannot find symbol
+    Set<Product> productSet = products.stream()
+        ^
+  symbol:   class Product
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:30: error: cannot find symbol
+                 .map(Product::getName)
+                      ^
+  symbol:   variable Product
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:35: error: cannot find symbol
+                .collect(Collectors.summarizingDouble(Product::getPrice));
+                                                      ^
+  symbol:   variable Product
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:43: error: cannot find symbol
+        List<Developer> devs = getDevelopers();
+             ^
+  symbol:   class Developer
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:44: error: cannot find symbol
+        Map<Integer, List<Developer>> devGroups = devs.stream()
+                          ^
+  symbol:   class Developer
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:45: error: cannot find symbol
+                .collect(Collectors.groupingBy(Developer::getAge));
+                                               ^
+  symbol:   variable Developer
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:50: error: cannot find symbol
+                .mapToDouble(Product::getPrice) // obten los precios
+                             ^
+  symbol:   variable Product
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:56: error: cannot find symbol
+        Task task1 = new Task(1L, "task1", 5);
+        ^
+  symbol:   class Task
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:56: error: cannot find symbol
+        Task task1 = new Task(1L, "task1", 5);
+                         ^
+  symbol:   class Task
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:57: error: cannot find symbol
+        Task task2 = new Task(2L, "task2", 4);
+        ^
+  symbol:   class Task
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:57: error: cannot find symbol
+        Task task2 = new Task(2L, "task2", 4);
+                         ^
+  symbol:   class Task
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:58: error: cannot find symbol
+        Task task3 = new Task(3L, "task3", 6);
+        ^
+  symbol:   class Task
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:58: error: cannot find symbol
+        Task task3 = new Task(3L, "task3", 6);
+                         ^
+  symbol:   class Task
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:59: error: cannot find symbol
+        Developer dev1 = new Developer("dev1", 30, List.of(task1, task2, task3));
+        ^
+  symbol:   class Developer
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:59: error: cannot find symbol
+        Developer dev1 = new Developer("dev1", 30, List.of(task1, task2, task3));
+                             ^
+  symbol:   class Developer
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:61: error: cannot find symbol
+        Task task4 = new Task(4L, "task4", 2);
+        ^
+  symbol:   class Task
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:61: error: cannot find symbol
+        Task task4 = new Task(4L, "task4", 2);
+                         ^
+  symbol:   class Task
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:62: error: cannot find symbol
+        Task task5 = new Task(5L, "task5", 10);
+        ^
+  symbol:   class Task
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:62: error: cannot find symbol
+        Task task5 = new Task(5L, "task5", 10);
+                         ^
+  symbol:   class Task
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:63: error: cannot find symbol
+        Task task6 = new Task(6L, "task6", 7);
+        ^
+  symbol:   class Task
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:63: error: cannot find symbol
+        Task task6 = new Task(6L, "task6", 7);
+                         ^
+  symbol:   class Task
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:64: error: cannot find symbol
+        Developer dev2 = new Developer("dev2", 30, List.of(task4, task5, task6));
+        ^
+  symbol:   class Developer
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:64: error: cannot find symbol
+        Developer dev2 = new Developer("dev2", 30, List.of(task4, task5, task6));
+                             ^
+  symbol:   class Developer
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:66: error: cannot find symbol
+        Task task7 = new Task(7L, "task7", 5);
+        ^
+  symbol:   class Task
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:66: error: cannot find symbol
+        Task task7 = new Task(7L, "task7", 5);
+                         ^
+  symbol:   class Task
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:67: error: cannot find symbol
+        Task task8 = new Task(8L, "task8", 4);
+        ^
+  symbol:   class Task
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:67: error: cannot find symbol
+        Task task8 = new Task(8L, "task8", 4);
+                         ^
+  symbol:   class Task
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:68: error: cannot find symbol
+        Task task9 = new Task(9L, "task9", 6);
+        ^
+  symbol:   class Task
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:68: error: cannot find symbol
+        Task task9 = new Task(9L, "task9", 6);
+                         ^
+  symbol:   class Task
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:69: error: cannot find symbol
+        Developer dev3 = new Developer("dev3", 30, List.of(task7, task8, task9));
+        ^
+  symbol:   class Developer
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:69: error: cannot find symbol
+        Developer dev3 = new Developer("dev3", 30, List.of(task7, task8, task9));
+                             ^
+  symbol:   class Developer
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:71: error: cannot find symbol
+        Developer dev4 = new Developer("dev4", 30, List.of());
+        ^
+  symbol:   class Developer
+  location: class CollectMain
+ProgramacionFuncionalOpenWebinars/collect/CollectMain.java:71: error: cannot find symbol
+        Developer dev4 = new Developer("dev4", 30, List.of());
+                             ^
+  symbol:   class Developer
+  location: class CollectMain
+43 errors
+Programacion/ProgramacionFuncionalOpenWebinars/map/MapDemo.java - ProgramacionFuncionalOpenWebinars/map/MapDemo.java:3: error: cannot find symbol
+import Programacion.ProgramacionFuncionalOpenWebinars.Developer;
+                                                     ^
+  symbol:   class Developer
+  location: package Programacion.ProgramacionFuncionalOpenWebinars
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:4: error: cannot find symbol
+import Programacion.ProgramacionFuncionalOpenWebinars.Task;
+                                                     ^
+  symbol:   class Task
+  location: package Programacion.ProgramacionFuncionalOpenWebinars
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:42: error: cannot find symbol
+    private static List<Developer> getDevelopers(){
+                        ^
+  symbol:   class Developer
+  location: class MapDemo
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:21: error: cannot find symbol
+        List<Developer> developers = getDevelopers();
+             ^
+  symbol:   class Developer
+  location: class MapDemo
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:24: error: cannot find symbol
+                .filter(task -> task.getHours() > 5)
+                                    ^
+  symbol:   method getHours()
+  location: variable task of type Object
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:43: error: cannot find symbol
+        Task task1 = new Task(1L, "task1", 5);
+        ^
+  symbol:   class Task
+  location: class MapDemo
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:43: error: cannot find symbol
+        Task task1 = new Task(1L, "task1", 5);
+                         ^
+  symbol:   class Task
+  location: class MapDemo
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:44: error: cannot find symbol
+        Task task2 = new Task(2L, "task2", 4);
+        ^
+  symbol:   class Task
+  location: class MapDemo
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:44: error: cannot find symbol
+        Task task2 = new Task(2L, "task2", 4);
+                         ^
+  symbol:   class Task
+  location: class MapDemo
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:45: error: cannot find symbol
+        Task task3 = new Task(3L, "task3", 6);
+        ^
+  symbol:   class Task
+  location: class MapDemo
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:45: error: cannot find symbol
+        Task task3 = new Task(3L, "task3", 6);
+                         ^
+  symbol:   class Task
+  location: class MapDemo
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:46: error: cannot find symbol
+        Developer dev1 = new Developer("dev1", 30, List.of(task1, task2, task3));
+        ^
+  symbol:   class Developer
+  location: class MapDemo
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:46: error: cannot find symbol
+        Developer dev1 = new Developer("dev1", 30, List.of(task1, task2, task3));
+                             ^
+  symbol:   class Developer
+  location: class MapDemo
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:48: error: cannot find symbol
+        Task task4 = new Task(4L, "task4", 2);
+        ^
+  symbol:   class Task
+  location: class MapDemo
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:48: error: cannot find symbol
+        Task task4 = new Task(4L, "task4", 2);
+                         ^
+  symbol:   class Task
+  location: class MapDemo
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:49: error: cannot find symbol
+        Task task5 = new Task(5L, "task5", 10);
+        ^
+  symbol:   class Task
+  location: class MapDemo
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:49: error: cannot find symbol
+        Task task5 = new Task(5L, "task5", 10);
+                         ^
+  symbol:   class Task
+  location: class MapDemo
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:50: error: cannot find symbol
+        Task task6 = new Task(6L, "task6", 7);
+        ^
+  symbol:   class Task
+  location: class MapDemo
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:50: error: cannot find symbol
+        Task task6 = new Task(6L, "task6", 7);
+                         ^
+  symbol:   class Task
+  location: class MapDemo
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:51: error: cannot find symbol
+        Developer dev2 = new Developer("dev2", 30, List.of(task4, task5, task6));
+        ^
+  symbol:   class Developer
+  location: class MapDemo
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:51: error: cannot find symbol
+        Developer dev2 = new Developer("dev2", 30, List.of(task4, task5, task6));
+                             ^
+  symbol:   class Developer
+  location: class MapDemo
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:53: error: cannot find symbol
+        Task task7 = new Task(7L, "task7", 5);
+        ^
+  symbol:   class Task
+  location: class MapDemo
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:53: error: cannot find symbol
+        Task task7 = new Task(7L, "task7", 5);
+                         ^
+  symbol:   class Task
+  location: class MapDemo
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:54: error: cannot find symbol
+        Task task8 = new Task(8L, "task8", 4);
+        ^
+  symbol:   class Task
+  location: class MapDemo
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:54: error: cannot find symbol
+        Task task8 = new Task(8L, "task8", 4);
+                         ^
+  symbol:   class Task
+  location: class MapDemo
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:55: error: cannot find symbol
+        Task task9 = new Task(9L, "task9", 6);
+        ^
+  symbol:   class Task
+  location: class MapDemo
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:55: error: cannot find symbol
+        Task task9 = new Task(9L, "task9", 6);
+                         ^
+  symbol:   class Task
+  location: class MapDemo
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:56: error: cannot find symbol
+        Developer dev3 = new Developer("dev3", 30, List.of(task7, task8, task9));
+        ^
+  symbol:   class Developer
+  location: class MapDemo
+ProgramacionFuncionalOpenWebinars/map/MapDemo.java:56: error: cannot find symbol
+        Developer dev3 = new Developer("dev3", 30, List.of(task7, task8, task9));
+                             ^
+  symbol:   class Developer
+  location: class MapDemo
+29 errors
+Programacion/ProgramacionFuncionalOpenWebinars/Developer.java - ProgramacionFuncionalOpenWebinars/Developer.java:8: error: cannot find symbol
+    private List<Task> tasks;
+                 ^
+  symbol:   class Task
+  location: class Developer
+ProgramacionFuncionalOpenWebinars/Developer.java:10: error: cannot find symbol
+    public Developer(String name, Integer age, List<Task> tasks) {
+                                                    ^
+  symbol:   class Task
+  location: class Developer
+ProgramacionFuncionalOpenWebinars/Developer.java:32: error: cannot find symbol
+    public List<Task> getTasks() {
+                ^
+  symbol:   class Task
+  location: class Developer
+ProgramacionFuncionalOpenWebinars/Developer.java:36: error: cannot find symbol
+    public void setTasks(List<Task> tasks) {
+                              ^
+  symbol:   class Task
+  location: class Developer
+4 errors
+Programacion/Examen2Evaluacion/AlquilerCoches/src/Alquiler.java - Alquiler.java:11: error: cannot find symbol
+    private Cliente cliente;
+            ^
+  symbol:   class Cliente
+  location: class Alquiler
+Alquiler.java:12: error: cannot find symbol
+    private Coche coche;
+            ^
+  symbol:   class Coche
+  location: class Alquiler
+Alquiler.java:20: error: cannot find symbol
+    public Alquiler(Cliente cliente, Coche coche, LocalDate fechaInicio, LocalDate fechaFin) {
+                    ^
+  symbol:   class Cliente
+  location: class Alquiler
+Alquiler.java:20: error: cannot find symbol
+    public Alquiler(Cliente cliente, Coche coche, LocalDate fechaInicio, LocalDate fechaFin) {
+                                     ^
+  symbol:   class Coche
+  location: class Alquiler
+Alquiler.java:39: error: cannot find symbol
+    public Cliente getCliente() {
+           ^
+  symbol:   class Cliente
+  location: class Alquiler
+Alquiler.java:43: error: cannot find symbol
+    public void setCliente(Cliente cliente) {
+                           ^
+  symbol:   class Cliente
+  location: class Alquiler
+Alquiler.java:47: error: cannot find symbol
+    public Coche getCoche() {
+           ^
+  symbol:   class Coche
+  location: class Alquiler
+Alquiler.java:51: error: cannot find symbol
+    public void setCoche(Coche coche) {
+                         ^
+  symbol:   class Coche
+  location: class Alquiler
+8 errors
+Programacion/Examen2Evaluacion/AlquilerCoches/src/Agencia.java - Agencia.java:8: error: cannot find symbol
+    private ArrayList<Coche> coches;
+                      ^
+  symbol:   class Coche
+  location: class Agencia
+Agencia.java:9: error: cannot find symbol
+    private ArrayList<Alquiler> alquileres;
+                      ^
+  symbol:   class Alquiler
+  location: class Agencia
+Agencia.java:19: error: cannot find symbol
+    public void addCoche(Coche c){
+                         ^
+  symbol:   class Coche
+  location: class Agencia
+Agencia.java:22: error: cannot find symbol
+    public void removeCoche(Coche c){
+                            ^
+  symbol:   class Coche
+  location: class Agencia
+Agencia.java:45: error: cannot find symbol
+    public Coche buscarCocheDisponible(TipoCoche Tipo) throws NoHayCochesDisponibles{
+                                       ^
+  symbol:   class TipoCoche
+  location: class Agencia
+Agencia.java:45: error: cannot find symbol
+    public Coche buscarCocheDisponible(TipoCoche Tipo) throws NoHayCochesDisponibles{
+           ^
+  symbol:   class Coche
+  location: class Agencia
+Agencia.java:45: error: cannot find symbol
+    public Coche buscarCocheDisponible(TipoCoche Tipo) throws NoHayCochesDisponibles{
+                                                              ^
+  symbol:   class NoHayCochesDisponibles
+  location: class Agencia
+Agencia.java:58: error: cannot find symbol
+    public boolean realizarAlquiler(Cliente cliente, TipoCoche tipo, LocalDate fechaInicio, LocalDate fechaFin) {
+                                    ^
+  symbol:   class Cliente
+  location: class Agencia
+Agencia.java:58: error: cannot find symbol
+    public boolean realizarAlquiler(Cliente cliente, TipoCoche tipo, LocalDate fechaInicio, LocalDate fechaFin) {
+                                                     ^
+  symbol:   class TipoCoche
+  location: class Agencia
+Agencia.java:28: error: cannot find symbol
+        for (Coche coche : coches)  {
+             ^
+  symbol:   class Coche
+  location: class Agencia
+Agencia.java:36: error: cannot find symbol
+        for(Alquiler al : alquileres){
+            ^
+  symbol:   class Alquiler
+  location: class Agencia
+Agencia.java:46: error: cannot find symbol
+        for (Coche co : coches){
+             ^
+  symbol:   class Coche
+  location: class Agencia
+Agencia.java:60: error: cannot find symbol
+            Coche co = buscarCocheDisponible(tipo);
+            ^
+  symbol:   class Coche
+  location: class Agencia
+Agencia.java:62: error: cannot find symbol
+            alquileres.add(new Alquiler(cliente, co, fechaInicio, fechaFin));
+                               ^
+  symbol:   class Alquiler
+  location: class Agencia
+14 errors
+Programacion/Examen2Evaluacion/AlquilerCoches/src/CochePremium.java - CochePremium.java:3: error: cannot find symbol
+public class CochePremium extends Coche{
+                                  ^
+  symbol: class Coche
+CochePremium.java:11: error: cannot find symbol
+    public CochePremium(long id, String marca, String modelo, String matricula, int year, TipoCombustible combustible, TipoCoche tipo, Double precioBase, boolean gps, boolean seguroExtra) {
+                                                                                          ^
+  symbol:   class TipoCombustible
+  location: class CochePremium
+CochePremium.java:11: error: cannot find symbol
+    public CochePremium(long id, String marca, String modelo, String matricula, int year, TipoCombustible combustible, TipoCoche tipo, Double precioBase, boolean gps, boolean seguroExtra) {
+                                                                                                                       ^
+  symbol:   class TipoCoche
+  location: class CochePremium
+CochePremium.java:13: error: cannot find symbol
+        this.setTipo(TipoCoche.DEPORTIVO);
+                     ^
+  symbol:   variable TipoCoche
+  location: class CochePremium
+CochePremium.java:39: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+CochePremium.java:42: error: cannot find symbol
+        sb.append("id=").append(super.getId());
+                                ^
+  symbol:   variable super
+  location: class CochePremium
+CochePremium.java:43: error: cannot find symbol
+        sb.append(", marca='").append(super.getMarca()).append('\'');
+                                      ^
+  symbol:   variable super
+  location: class CochePremium
+CochePremium.java:44: error: cannot find symbol
+        sb.append(", modelo='").append(super.getModelo()).append('\'');
+                                       ^
+  symbol:   variable super
+  location: class CochePremium
+CochePremium.java:45: error: cannot find symbol
+        sb.append(", matricula='").append(super.getMatricula()).append('\'');
+                                          ^
+  symbol:   variable super
+  location: class CochePremium
+CochePremium.java:46: error: cannot find symbol
+        sb.append(", year=").append(super.getYear());
+                                    ^
+  symbol:   variable super
+  location: class CochePremium
+CochePremium.java:47: error: cannot find symbol
+        sb.append(", combustible=").append(super.getCombustible());
+                                           ^
+  symbol:   variable super
+  location: class CochePremium
+CochePremium.java:48: error: cannot find symbol
+        sb.append(", tipo=").append(super.getTipo());
+                                    ^
+  symbol:   variable super
+  location: class CochePremium
+CochePremium.java:49: error: cannot find symbol
+        sb.append(", precioBase=").append(super.getPrecioBase());
+                                          ^
+  symbol:   variable super
+  location: class CochePremium
+CochePremium.java:50: error: cannot find symbol
+        sb.append(", disponible=").append(super.isDisponible()).append(' ');
+                                          ^
+  symbol:   variable super
+  location: class CochePremium
+CochePremium.java:57: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+CochePremium.java:59: error: cannot find symbol
+        double precioTotal = ((this.getPrecioBase() * 1.2) * dias);
+                                   ^
+  symbol: method getPrecioBase()
+16 errors
+Programacion/Examen2Evaluacion/AlquilerCoches/src/Coche.java - Coche.java:13: error: cannot find symbol
+    private TipoCombustible combustible;
+            ^
+  symbol:   class TipoCombustible
+  location: class Coche
+Coche.java:14: error: cannot find symbol
+    private TipoCoche tipo;
+            ^
+  symbol:   class TipoCoche
+  location: class Coche
+Coche.java:22: error: cannot find symbol
+    public Coche(long id, String marca, String modelo, String matricula, int year, TipoCombustible combustible, TipoCoche tipo, Double precioBase) {
+                                                                                   ^
+  symbol:   class TipoCombustible
+  location: class Coche
+Coche.java:22: error: cannot find symbol
+    public Coche(long id, String marca, String modelo, String matricula, int year, TipoCombustible combustible, TipoCoche tipo, Double precioBase) {
+                                                                                                                ^
+  symbol:   class TipoCoche
+  location: class Coche
+Coche.java:77: error: cannot find symbol
+    public TipoCombustible getCombustible() {
+           ^
+  symbol:   class TipoCombustible
+  location: class Coche
+Coche.java:81: error: cannot find symbol
+    public void setCombustible(TipoCombustible combustible) {
+                               ^
+  symbol:   class TipoCombustible
+  location: class Coche
+Coche.java:85: error: cannot find symbol
+    public TipoCoche getTipo() {
+           ^
+  symbol:   class TipoCoche
+  location: class Coche
+Coche.java:89: error: cannot find symbol
+    public void setTipo(TipoCoche tipo) {
+                        ^
+  symbol:   class TipoCoche
+  location: class Coche
+8 errors
+Programacion/Examen2Evaluacion/AlquilerCoches/src/Cliente.java - Cliente.java:5: error: cannot find symbol
+public class Cliente extends Persona{
+                             ^
+  symbol: class Persona
+Cliente.java:20: error: cannot find symbol
+        this.setNombre(cliente.getNombre());
+                              ^
+  symbol:   method getNombre()
+  location: variable cliente of type Cliente
+Cliente.java:21: error: cannot find symbol
+        this.setApellido(cliente.getApellido());
+                                ^
+  symbol:   method getApellido()
+  location: variable cliente of type Cliente
+Cliente.java:22: error: cannot find symbol
+        this.setDni(cliente.getDni());
+                           ^
+  symbol:   method getDni()
+  location: variable cliente of type Cliente
+Cliente.java:23: error: cannot find symbol
+        this.setEmail(cliente.getEmail());
+                             ^
+  symbol:   method getEmail()
+  location: variable cliente of type Cliente
+Cliente.java:24: error: cannot find symbol
+        this.setDireccion(cliente.getDireccion());
+                                 ^
+  symbol:   method getDireccion()
+  location: variable cliente of type Cliente
+Cliente.java:25: error: cannot find symbol
+        this.setTelefono(cliente.getTelefono());
+                                ^
+  symbol:   method getTelefono()
+  location: variable cliente of type Cliente
+7 errors
+Programacion/Examen2Evaluacion/AlquilerCoches/src/Main.java - Main.java:17: error: cannot find symbol
+        Agencia agencia = new Agencia();
+        ^
+  symbol:   class Agencia
+  location: class Main
+Main.java:17: error: cannot find symbol
+        Agencia agencia = new Agencia();
+                              ^
+  symbol:   class Agencia
+  location: class Main
+Main.java:18: error: cannot find symbol
+        ArrayList<Coche> coches = new ArrayList<>(20);
+                  ^
+  symbol:   class Coche
+  location: class Main
+Main.java:23: error: cannot find symbol
+                    coches.add(new CocheEstandar(i, "Marca1", "modelo1", "GHF1234", 2025, TipoCombustible.GASOLINA, TipoCoche.SEDAN, 45.00, true));
+                                   ^
+  symbol:   class CocheEstandar
+  location: class Main
+Main.java:23: error: cannot find symbol
+                    coches.add(new CocheEstandar(i, "Marca1", "modelo1", "GHF1234", 2025, TipoCombustible.GASOLINA, TipoCoche.SEDAN, 45.00, true));
+                                                                                          ^
+  symbol:   variable TipoCombustible
+  location: class Main
+Main.java:23: error: cannot find symbol
+                    coches.add(new CocheEstandar(i, "Marca1", "modelo1", "GHF1234", 2025, TipoCombustible.GASOLINA, TipoCoche.SEDAN, 45.00, true));
+                                                                                                                    ^
+  symbol:   variable TipoCoche
+  location: class Main
+Main.java:27: error: cannot find symbol
+                    coches.add(new CocheEstandar(i, "Marca1", "modelo1", "GHF1234", 2025, TipoCombustible.DIESEL, TipoCoche.SUV, 34.00, false));
+                                   ^
+  symbol:   class CocheEstandar
+  location: class Main
+Main.java:27: error: cannot find symbol
+                    coches.add(new CocheEstandar(i, "Marca1", "modelo1", "GHF1234", 2025, TipoCombustible.DIESEL, TipoCoche.SUV, 34.00, false));
+                                                                                          ^
+  symbol:   variable TipoCombustible
+  location: class Main
+Main.java:27: error: cannot find symbol
+                    coches.add(new CocheEstandar(i, "Marca1", "modelo1", "GHF1234", 2025, TipoCombustible.DIESEL, TipoCoche.SUV, 34.00, false));
+                                                                                                                  ^
+  symbol:   variable TipoCoche
+  location: class Main
+Main.java:32: error: cannot find symbol
+                    coches.add(new CochePremium(i, "Marca1", "modelo1", "GHF1234", 2025, TipoCombustible.GASOLINA, TipoCoche.SEDAN, 45.00, true, false));
+                                   ^
+  symbol:   class CochePremium
+  location: class Main
+Main.java:32: error: cannot find symbol
+                    coches.add(new CochePremium(i, "Marca1", "modelo1", "GHF1234", 2025, TipoCombustible.GASOLINA, TipoCoche.SEDAN, 45.00, true, false));
+                                                                                         ^
+  symbol:   variable TipoCombustible
+  location: class Main
+Main.java:32: error: cannot find symbol
+                    coches.add(new CochePremium(i, "Marca1", "modelo1", "GHF1234", 2025, TipoCombustible.GASOLINA, TipoCoche.SEDAN, 45.00, true, false));
+                                                                                                                   ^
+  symbol:   variable TipoCoche
+  location: class Main
+Main.java:35: error: cannot find symbol
+                    coches.add(new CochePremium(i, "Marca1", "modelo1", "GHF1234", 2025, TipoCombustible.DIESEL, TipoCoche.SUV, 34.00, false, true));
+                                   ^
+  symbol:   class CochePremium
+  location: class Main
+Main.java:35: error: cannot find symbol
+                    coches.add(new CochePremium(i, "Marca1", "modelo1", "GHF1234", 2025, TipoCombustible.DIESEL, TipoCoche.SUV, 34.00, false, true));
+                                                                                         ^
+  symbol:   variable TipoCombustible
+  location: class Main
+Main.java:35: error: cannot find symbol
+                    coches.add(new CochePremium(i, "Marca1", "modelo1", "GHF1234", 2025, TipoCombustible.DIESEL, TipoCoche.SUV, 34.00, false, true));
+                                                                                                                 ^
+  symbol:   variable TipoCoche
+  location: class Main
+Main.java:39: error: cannot find symbol
+        for (Coche co : coches) {
+             ^
+  symbol:   class Coche
+  location: class Main
+Main.java:74: error: cannot find symbol
+                        System.out.println(TipoCoche.valueOf(tipocoche.toUpperCase()));
+                                           ^
+  symbol:   variable TipoCoche
+  location: class Main
+Main.java:75: error: cannot find symbol
+                        Coche co = agencia.buscarCocheDisponible(TipoCoche.valueOf(tipocoche.toUpperCase()));
+                        ^
+  symbol:   class Coche
+  location: class Main
+Main.java:75: error: cannot find symbol
+                        Coche co = agencia.buscarCocheDisponible(TipoCoche.valueOf(tipocoche.toUpperCase()));
+                                                                 ^
+  symbol:   variable TipoCoche
+  location: class Main
+Main.java:100: error: cannot find symbol
+                        Cliente cli = new Cliente(nombre, apellido, dni, email, direccion, telefono, licenciaConducir, fechaLicencia);
+                        ^
+  symbol:   class Cliente
+  location: class Main
+Main.java:100: error: cannot find symbol
+                        Cliente cli = new Cliente(nombre, apellido, dni, email, direccion, telefono, licenciaConducir, fechaLicencia);
+                                          ^
+  symbol:   class Cliente
+  location: class Main
+Main.java:121: error: cannot find symbol
+                        if (agencia.realizarAlquiler(cli, TipoCoche.valueOf(tipocoche.toUpperCase()), fechaIni, fechaFin)) {
+                                                          ^
+  symbol:   variable TipoCoche
+  location: class Main
+22 errors
+Programacion/Examen2Evaluacion/AlquilerCoches/src/CocheEstandar.java - CocheEstandar.java:3: error: cannot find symbol
+public class CocheEstandar extends Coche{
+                                   ^
+  symbol: class Coche
+CocheEstandar.java:10: error: cannot find symbol
+    public CocheEstandar(long id, String marca, String modelo, String matricula, int year, TipoCombustible combustible, TipoCoche tipo, Double precioBase, boolean aireAcondicionado) {
+                                                                                           ^
+  symbol:   class TipoCombustible
+  location: class CocheEstandar
+CocheEstandar.java:10: error: cannot find symbol
+    public CocheEstandar(long id, String marca, String modelo, String matricula, int year, TipoCombustible combustible, TipoCoche tipo, Double precioBase, boolean aireAcondicionado) {
+                                                                                                                        ^
+  symbol:   class TipoCoche
+  location: class CocheEstandar
+CocheEstandar.java:12: error: cannot find symbol
+        this.setTipo(TipoCoche.SEDAN);
+                     ^
+  symbol:   variable TipoCoche
+  location: class CocheEstandar
+CocheEstandar.java:29: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+CocheEstandar.java:32: error: cannot find symbol
+            sb.append("id=").append(super.getId());
+                                    ^
+  symbol:   variable super
+  location: class CocheEstandar
+CocheEstandar.java:33: error: cannot find symbol
+            sb.append(", marca='").append(super.getMarca()).append('\'');
+                                          ^
+  symbol:   variable super
+  location: class CocheEstandar
+CocheEstandar.java:34: error: cannot find symbol
+            sb.append(", modelo='").append(super.getModelo()).append('\'');
+                                           ^
+  symbol:   variable super
+  location: class CocheEstandar
+CocheEstandar.java:35: error: cannot find symbol
+            sb.append(", matricula='").append(super.getMatricula()).append('\'');
+                                              ^
+  symbol:   variable super
+  location: class CocheEstandar
+CocheEstandar.java:36: error: cannot find symbol
+            sb.append(", year=").append(super.getYear());
+                                        ^
+  symbol:   variable super
+  location: class CocheEstandar
+CocheEstandar.java:37: error: cannot find symbol
+            sb.append(", combustible=").append(super.getCombustible());
+                                               ^
+  symbol:   variable super
+  location: class CocheEstandar
+CocheEstandar.java:38: error: cannot find symbol
+            sb.append(", tipo=").append(super.getTipo());
+                                        ^
+  symbol:   variable super
+  location: class CocheEstandar
+CocheEstandar.java:39: error: cannot find symbol
+            sb.append(", precioBase=").append(super.getPrecioBase());
+                                              ^
+  symbol:   variable super
+  location: class CocheEstandar
+CocheEstandar.java:40: error: cannot find symbol
+            sb.append(", disponible=").append(super.isDisponible());
+                                              ^
+  symbol:   variable super
+  location: class CocheEstandar
+CocheEstandar.java:46: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+CocheEstandar.java:48: error: cannot find symbol
+        return this.isDisponible()
+                   ^
+  symbol: method isDisponible()
+CocheEstandar.java:49: error: cannot find symbol
+                ? (this.getPrecioBase() * dias + (5*dias))
+                       ^
+  symbol: method getPrecioBase()
+CocheEstandar.java:50: error: cannot find symbol
+                : (this.getPrecioBase() * dias);
+                       ^
+  symbol: method getPrecioBase()
+18 errors
+Programacion/Tema5/EjercicioEqualsCopia/TestTelefonoMovil.java - Tema5/EjercicioEqualsCopia/TestTelefonoMovil.java:5: error: cannot find symbol
+        TelefonoMovil t1 = new TelefonoMovil("test1", "123456789", "ES", 234.0);
+        ^
+  symbol:   class TelefonoMovil
+  location: class TestTelefonoMovil
+Tema5/EjercicioEqualsCopia/TestTelefonoMovil.java:5: error: cannot find symbol
+        TelefonoMovil t1 = new TelefonoMovil("test1", "123456789", "ES", 234.0);
+                               ^
+  symbol:   class TelefonoMovil
+  location: class TestTelefonoMovil
+Tema5/EjercicioEqualsCopia/TestTelefonoMovil.java:6: error: cannot find symbol
+        TelefonoMovil t2 = new TelefonoMovil(t1);
+        ^
+  symbol:   class TelefonoMovil
+  location: class TestTelefonoMovil
+Tema5/EjercicioEqualsCopia/TestTelefonoMovil.java:6: error: cannot find symbol
+        TelefonoMovil t2 = new TelefonoMovil(t1);
+                               ^
+  symbol:   class TelefonoMovil
+  location: class TestTelefonoMovil
+Tema5/EjercicioEqualsCopia/TestTelefonoMovil.java:7: error: cannot find symbol
+        TelefonoMovil t3 = t1;
+        ^
+  symbol:   class TelefonoMovil
+  location: class TestTelefonoMovil
+5 errors
+Programacion/Tema5/AgendaTelefonica/Test.java - Tema5/AgendaTelefonica/Test.java:8: error: cannot find symbol
+        Agenda agenda = new Agenda();
+        ^
+  symbol:   class Agenda
+  location: class Test
+Tema5/AgendaTelefonica/Test.java:8: error: cannot find symbol
+        Agenda agenda = new Agenda();
+                            ^
+  symbol:   class Agenda
+  location: class Test
+Tema5/AgendaTelefonica/Test.java:10: error: cannot find symbol
+        agenda.addContacto(new Contacto("Juan", "123456789"));
+                               ^
+  symbol:   class Contacto
+  location: class Test
+Tema5/AgendaTelefonica/Test.java:11: error: cannot find symbol
+        agenda.addContacto(new Contacto("Alicia", "987654321"));
+                               ^
+  symbol:   class Contacto
+  location: class Test
+Tema5/AgendaTelefonica/Test.java:12: error: cannot find symbol
+        agenda.addContacto(new Contacto("Andressa", "765432109"));
+                               ^
+  symbol:   class Contacto
+  location: class Test
+Tema5/AgendaTelefonica/Test.java:34: error: cannot find symbol
+                agenda.addContacto(new Contacto(nombre, numero));
+                                       ^
+  symbol:   class Contacto
+  location: class Test
+Tema5/AgendaTelefonica/Test.java:44: error: cannot find symbol
+                Contacto contacto = agenda.buscarContacto(nombre);
+                ^
+  symbol:   class Contacto
+  location: class Test
+7 errors
+Programacion/Tema5/AgendaTelefonica/Agenda.java - Tema5/AgendaTelefonica/Agenda.java:7: error: cannot find symbol
+    private List<Contacto> contactos;
+                 ^
+  symbol:   class Contacto
+  location: class Agenda
+Tema5/AgendaTelefonica/Agenda.java:9: error: cannot find symbol
+    public boolean existeContacto(Contacto c) {
+                                  ^
+  symbol:   class Contacto
+  location: class Agenda
+Tema5/AgendaTelefonica/Agenda.java:24: error: cannot find symbol
+    public boolean addContacto(Contacto c) {
+                               ^
+  symbol:   class Contacto
+  location: class Agenda
+Tema5/AgendaTelefonica/Agenda.java:41: error: cannot find symbol
+    public Contacto buscarContacto(String nombre) {
+           ^
+  symbol:   class Contacto
+  location: class Agenda
+Tema5/AgendaTelefonica/Agenda.java:58: error: cannot find symbol
+    public boolean eliminarContacto(Contacto c) {
+                                    ^
+  symbol:   class Contacto
+  location: class Agenda
+Tema5/AgendaTelefonica/Agenda.java:10: error: cannot find symbol
+        for (Contacto contacto : contactos) {
+             ^
+  symbol:   class Contacto
+  location: class Agenda
+Tema5/AgendaTelefonica/Agenda.java:51: error: cannot find symbol
+    int posicion = this.contactos.indexOf(new Contacto(nombre, ""));
+                                              ^
+  symbol:   class Contacto
+  location: class Agenda
+7 errors
+Programacion/Tema5/AcademiaDeMagia/TestJuego.java - Tema5/AcademiaDeMagia/TestJuego.java:7: error: cannot find symbol
+        Mago gandalf = new Mago("Gandalf", 100);
+        ^
+  symbol:   class Mago
+  location: class TestJuego
+Tema5/AcademiaDeMagia/TestJuego.java:7: error: cannot find symbol
+        Mago gandalf = new Mago("Gandalf", 100);
+                           ^
+  symbol:   class Mago
+  location: class TestJuego
+Tema5/AcademiaDeMagia/TestJuego.java:8: error: cannot find symbol
+        Hechizo h1 = new Hechizo("Bola de fuego", 4, 40);
+        ^
+  symbol:   class Hechizo
+  location: class TestJuego
+Tema5/AcademiaDeMagia/TestJuego.java:8: error: cannot find symbol
+        Hechizo h1 = new Hechizo("Bola de fuego", 4, 40);
+                         ^
+  symbol:   class Hechizo
+  location: class TestJuego
+Tema5/AcademiaDeMagia/TestJuego.java:9: error: cannot find symbol
+        Hechizo h2 = new Hechizo("Escudo mágico", 15, 90);
+        ^
+  symbol:   class Hechizo
+  location: class TestJuego
+Tema5/AcademiaDeMagia/TestJuego.java:9: error: cannot find symbol
+        Hechizo h2 = new Hechizo("Escudo mágico", 15, 90);
+                         ^
+  symbol:   class Hechizo
+  location: class TestJuego
+Tema5/AcademiaDeMagia/TestJuego.java:10: error: cannot find symbol
+        Hechizo h3 = new Hechizo("Rayo eléctrico", 5, 30);
+        ^
+  symbol:   class Hechizo
+  location: class TestJuego
+Tema5/AcademiaDeMagia/TestJuego.java:10: error: cannot find symbol
+        Hechizo h3 = new Hechizo("Rayo eléctrico", 5, 30);
+                         ^
+  symbol:   class Hechizo
+  location: class TestJuego
+Tema5/AcademiaDeMagia/TestJuego.java:18: error: cannot find symbol
+        Prueba pr1 = new Prueba("Romper muro", 10, 5);
+        ^
+  symbol:   class Prueba
+  location: class TestJuego
+Tema5/AcademiaDeMagia/TestJuego.java:18: error: cannot find symbol
+        Prueba pr1 = new Prueba("Romper muro", 10, 5);
+                         ^
+  symbol:   class Prueba
+  location: class TestJuego
+Tema5/AcademiaDeMagia/TestJuego.java:19: error: cannot find symbol
+        Prueba pr2 = new Prueba("Lucha contra orco", 15, 8);
+        ^
+  symbol:   class Prueba
+  location: class TestJuego
+Tema5/AcademiaDeMagia/TestJuego.java:19: error: cannot find symbol
+        Prueba pr2 = new Prueba("Lucha contra orco", 15, 8);
+                         ^
+  symbol:   class Prueba
+  location: class TestJuego
+Tema5/AcademiaDeMagia/TestJuego.java:20: error: cannot find symbol
+        Prueba pr3 = new Prueba("Lucha contra elfo oscuro", 20, 10);
+        ^
+  symbol:   class Prueba
+  location: class TestJuego
+Tema5/AcademiaDeMagia/TestJuego.java:20: error: cannot find symbol
+        Prueba pr3 = new Prueba("Lucha contra elfo oscuro", 20, 10);
+                         ^
+  symbol:   class Prueba
+  location: class TestJuego
+14 errors
+Programacion/Tema5/AcademiaDeMagia/Prueba.java - Tema5/AcademiaDeMagia/Prueba.java:55: error: cannot find symbol
+    public boolean resolver(Hechizo hechizo) {
+                            ^
+  symbol:   class Hechizo
+  location: class Prueba
+1 error
+Programacion/Tema5/AcademiaDeMagia/Mago.java - Tema5/AcademiaDeMagia/Mago.java:9: error: cannot find symbol
+    private ArrayList<Hechizo> hechizos; //Hechizos que el mago tiene aprendidos
+                      ^
+  symbol:   class Hechizo
+  location: class Mago
+Tema5/AcademiaDeMagia/Mago.java:33: error: cannot find symbol
+    public ArrayList<Hechizo> getHechizos() {
+                     ^
+  symbol:   class Hechizo
+  location: class Mago
+Tema5/AcademiaDeMagia/Mago.java:37: error: cannot find symbol
+    public void setHechizos(ArrayList<Hechizo> hechizos) {
+                                      ^
+  symbol:   class Hechizo
+  location: class Mago
+Tema5/AcademiaDeMagia/Mago.java:56: error: cannot find symbol
+    public void aprenderHechizo(Hechizo hechizo) {
+                                ^
+  symbol:   class Hechizo
+  location: class Mago
+Tema5/AcademiaDeMagia/Mago.java:96: error: cannot find symbol
+    public void lanzarHechizo(String nombreHechizo, Prueba prueba) throws Exception {
+                                                    ^
+  symbol:   class Prueba
+  location: class Mago
+Tema5/AcademiaDeMagia/Mago.java:128: error: cannot find symbol
+    private Hechizo buscar(String nombreHechizo) {
+            ^
+  symbol:   class Hechizo
+  location: class Mago
+Tema5/AcademiaDeMagia/Mago.java:98: error: cannot find symbol
+        Hechizo miHechizo = this.buscar(nombreHechizo);
+        ^
+  symbol:   class Hechizo
+  location: class Mago
+Tema5/AcademiaDeMagia/Mago.java:129: error: cannot find symbol
+        for(Hechizo hechizo: this.hechizos) {
+            ^
+  symbol:   class Hechizo
+  location: class Mago
+8 errors
+Programacion/Tema5/AcademiaDeMagia/Hechizo.java - Tema5/AcademiaDeMagia/Hechizo.java:71: error: cannot find symbol
+    public boolean esEfectivo(Prueba prueba) {
+                              ^
+  symbol:   class Prueba
+  location: class Hechizo
+1 error
+Programacion/Tema5/EjerciciosPOOpdf/Ejercicio3/Libreria.java - Tema5/EjerciciosPOOpdf/Ejercicio3/Libreria.java:6: error: cannot find symbol
+    private ArrayList<Libro> libreria = new ArrayList<Libro>(1000);
+                      ^
+  symbol:   class Libro
+  location: class Libreria
+Tema5/EjerciciosPOOpdf/Ejercicio3/Libreria.java:10: error: cannot find symbol
+        public void adquirir(Libro libro, double precioCompra) {
+                             ^
+  symbol:   class Libro
+  location: class Libreria
+Tema5/EjerciciosPOOpdf/Ejercicio3/Libreria.java:35: error: cannot find symbol
+    public void vender(Libro libro) {
+                       ^
+  symbol:   class Libro
+  location: class Libreria
+Tema5/EjerciciosPOOpdf/Ejercicio3/Libreria.java:6: error: cannot find symbol
+    private ArrayList<Libro> libreria = new ArrayList<Libro>(1000);
+                                                      ^
+  symbol:   class Libro
+  location: class Libreria
+Tema5/EjerciciosPOOpdf/Ejercicio3/Libreria.java:27: error: cannot find symbol
+            for (Libro libro : libreria) {
+                 ^
+  symbol:   class Libro
+  location: class Libreria
+5 errors
+Programacion/Tema5/EjerciciosPOOpdf/Ejercicio3/Test.java - Tema5/EjerciciosPOOpdf/Ejercicio3/Test.java:5: error: cannot find symbol
+        Libreria libreria = new Libreria();
+        ^
+  symbol:   class Libreria
+  location: class Test
+Tema5/EjerciciosPOOpdf/Ejercicio3/Test.java:5: error: cannot find symbol
+        Libreria libreria = new Libreria();
+                                ^
+  symbol:   class Libreria
+  location: class Test
+Tema5/EjerciciosPOOpdf/Ejercicio3/Test.java:7: error: cannot find symbol
+        libreria.adquirir(new Libro("ISBN0001", "Libro 1", "Autor 1", 230, false), 19.99);
+                              ^
+  symbol:   class Libro
+  location: class Test
+Tema5/EjerciciosPOOpdf/Ejercicio3/Test.java:8: error: cannot find symbol
+        libreria.adquirir(new Libro("ISBN0002", "Libro 2", "Autor 2", 250, false), 25.99);
+                              ^
+  symbol:   class Libro
+  location: class Test
+Tema5/EjerciciosPOOpdf/Ejercicio3/Test.java:9: error: cannot find symbol
+        libreria.adquirir(new Libro("ISBN0003", "Libro 3", "Autor 3", 140, false), 14.85);
+                              ^
+  symbol:   class Libro
+  location: class Test
+Tema5/EjerciciosPOOpdf/Ejercicio3/Test.java:11: error: cannot find symbol
+        libreria.vender(new Libro("ISBN0002", "libro1", "autor1", 123, false));
+                            ^
+  symbol:   class Libro
+  location: class Test
+Tema5/EjerciciosPOOpdf/Ejercicio3/Test.java:12: error: cannot find symbol
+        libreria.vender(new Libro("ISBN0001", "libro1", "autor1", 123, false));
+                            ^
+  symbol:   class Libro
+  location: class Test
+Tema5/EjerciciosPOOpdf/Ejercicio3/Test.java:13: error: cannot find symbol
+        libreria.vender(new Libro("ISBN0003", "libro1", "autor1", 123, false));
+                            ^
+  symbol:   class Libro
+  location: class Test
+8 errors
+Programacion/Tema5/EjerciciosPOOpdf/Ejercicio1/Test.java - Tema5/EjerciciosPOOpdf/Ejercicio1/Test.java:21: error: cannot find symbol
+        Persona persona = new Persona(nombre, edad, dni, sexo, peso, altura);
+        ^
+  symbol:   class Persona
+  location: class Test
+Tema5/EjerciciosPOOpdf/Ejercicio1/Test.java:21: error: cannot find symbol
+        Persona persona = new Persona(nombre, edad, dni, sexo, peso, altura);
+                              ^
+  symbol:   class Persona
+  location: class Test
+2 errors
+Programacion/Tema5/EjerciciosPOOpdf/Ejercicio2/Test.java - Tema5/EjerciciosPOOpdf/Ejercicio2/Test.java:5: error: cannot find symbol
+        Password p1 = new Password();
+        ^
+  symbol:   class Password
+  location: class Test
+Tema5/EjerciciosPOOpdf/Ejercicio2/Test.java:5: error: cannot find symbol
+        Password p1 = new Password();
+                          ^
+  symbol:   class Password
+  location: class Test
+Tema5/EjerciciosPOOpdf/Ejercicio2/Test.java:6: error: cannot find symbol
+        Password p2 = new Password(4);
+        ^
+  symbol:   class Password
+  location: class Test
+Tema5/EjerciciosPOOpdf/Ejercicio2/Test.java:6: error: cannot find symbol
+        Password p2 = new Password(4);
+                          ^
+  symbol:   class Password
+  location: class Test
+4 errors
+Programacion/Tema5/BladeOfDarkness/TestJuego.java - Tema5/BladeOfDarkness/TestJuego.java:5: error: cannot find symbol
+        Jugador jugador = new Jugador("Jugador 1", 4, 50);
+        ^
+  symbol:   class Jugador
+  location: class TestJuego
+Tema5/BladeOfDarkness/TestJuego.java:5: error: cannot find symbol
+        Jugador jugador = new Jugador("Jugador 1", 4, 50);
+                              ^
+  symbol:   class Jugador
+  location: class TestJuego
+Tema5/BladeOfDarkness/TestJuego.java:7: error: cannot find symbol
+        Arma espada = new Arma("Espada Gen", 34, false);
+        ^
+  symbol:   class Arma
+  location: class TestJuego
+Tema5/BladeOfDarkness/TestJuego.java:7: error: cannot find symbol
+        Arma espada = new Arma("Espada Gen", 34, false);
+                          ^
+  symbol:   class Arma
+  location: class TestJuego
+Tema5/BladeOfDarkness/TestJuego.java:8: error: cannot find symbol
+        Arma martillo = new Arma("Martillo Gen", 67, true);
+        ^
+  symbol:   class Arma
+  location: class TestJuego
+Tema5/BladeOfDarkness/TestJuego.java:8: error: cannot find symbol
+        Arma martillo = new Arma("Martillo Gen", 67, true);
+                            ^
+  symbol:   class Arma
+  location: class TestJuego
+Tema5/BladeOfDarkness/TestJuego.java:10: error: cannot find symbol
+        Monstruo m1 = new Monstruo("Monstruo1", 15, 50, 20);
+        ^
+  symbol:   class Monstruo
+  location: class TestJuego
+Tema5/BladeOfDarkness/TestJuego.java:10: error: cannot find symbol
+        Monstruo m1 = new Monstruo("Monstruo1", 15, 50, 20);
+                          ^
+  symbol:   class Monstruo
+  location: class TestJuego
+Tema5/BladeOfDarkness/TestJuego.java:11: error: cannot find symbol
+        Monstruo m2 = new Monstruo("Monstruo2", 10, 50, 20);
+        ^
+  symbol:   class Monstruo
+  location: class TestJuego
+Tema5/BladeOfDarkness/TestJuego.java:11: error: cannot find symbol
+        Monstruo m2 = new Monstruo("Monstruo2", 10, 50, 20);
+                          ^
+  symbol:   class Monstruo
+  location: class TestJuego
+Tema5/BladeOfDarkness/TestJuego.java:12: error: cannot find symbol
+        Monstruo m3 = new Monstruo("Monstruo3", 24, 50, 20);
+        ^
+  symbol:   class Monstruo
+  location: class TestJuego
+Tema5/BladeOfDarkness/TestJuego.java:12: error: cannot find symbol
+        Monstruo m3 = new Monstruo("Monstruo3", 24, 50, 20);
+                          ^
+  symbol:   class Monstruo
+  location: class TestJuego
+Tema5/BladeOfDarkness/TestJuego.java:13: error: cannot find symbol
+        Monstruo m4 = new Monstruo("Monstruo4", 3, 50, 20);
+        ^
+  symbol:   class Monstruo
+  location: class TestJuego
+Tema5/BladeOfDarkness/TestJuego.java:13: error: cannot find symbol
+        Monstruo m4 = new Monstruo("Monstruo4", 3, 50, 20);
+                          ^
+  symbol:   class Monstruo
+  location: class TestJuego
+14 errors
+Programacion/Tema5/BladeOfDarkness/Partida.java - Tema5/BladeOfDarkness/Partida.java:7: error: cannot find symbol
+    private Jugador jugador;
+            ^
+  symbol:   class Jugador
+  location: class Partida
+Tema5/BladeOfDarkness/Partida.java:8: error: cannot find symbol
+    private ArrayList<Monstruo> monstruos;
+                      ^
+  symbol:   class Monstruo
+  location: class Partida
+Tema5/BladeOfDarkness/Partida.java:10: error: cannot find symbol
+    public Partida(Jugador jugador, ArrayList<Monstruo> monstruos) {
+                   ^
+  symbol:   class Jugador
+  location: class Partida
+Tema5/BladeOfDarkness/Partida.java:10: error: cannot find symbol
+    public Partida(Jugador jugador, ArrayList<Monstruo> monstruos) {
+                                              ^
+  symbol:   class Monstruo
+  location: class Partida
+Tema5/BladeOfDarkness/Partida.java:15: error: cannot find symbol
+    public Jugador getJugador() {
+           ^
+  symbol:   class Jugador
+  location: class Partida
+Tema5/BladeOfDarkness/Partida.java:19: error: cannot find symbol
+    public void setJugador(Jugador jugador) {
+                           ^
+  symbol:   class Jugador
+  location: class Partida
+Tema5/BladeOfDarkness/Partida.java:27: error: cannot find symbol
+            for (Monstruo monstruo : monstruos) {
+                 ^
+  symbol:   class Monstruo
+  location: class Partida
+7 errors
+Programacion/Tema5/BladeOfDarkness/Jugador.java - Tema5/BladeOfDarkness/Jugador.java:3: error: cannot find symbol
+public class Jugador extends Personaje{
+                             ^
+  symbol: class Personaje
+Tema5/BladeOfDarkness/Jugador.java:6: error: cannot find symbol
+    private Arma armaDerecha;
+            ^
+  symbol:   class Arma
+  location: class Jugador
+Tema5/BladeOfDarkness/Jugador.java:7: error: cannot find symbol
+    private Arma armaIzquierda;
+            ^
+  symbol:   class Arma
+  location: class Jugador
+Tema5/BladeOfDarkness/Jugador.java:24: error: cannot find symbol
+    public Arma getArmaDerecha() {
+           ^
+  symbol:   class Arma
+  location: class Jugador
+Tema5/BladeOfDarkness/Jugador.java:28: error: cannot find symbol
+    public void setArmaDerecha(Arma armaDerecha) {
+                               ^
+  symbol:   class Arma
+  location: class Jugador
+Tema5/BladeOfDarkness/Jugador.java:32: error: cannot find symbol
+    public Arma getArmaIzquierda() {
+           ^
+  symbol:   class Arma
+  location: class Jugador
+Tema5/BladeOfDarkness/Jugador.java:36: error: cannot find symbol
+    public void setArmaIzquierda(Arma armaIzquierda) {
+                                 ^
+  symbol:   class Arma
+  location: class Jugador
+Tema5/BladeOfDarkness/Jugador.java:50: error: cannot find symbol
+    public boolean equiparArma(Arma arma){
+                               ^
+  symbol:   class Arma
+  location: class Jugador
+Tema5/BladeOfDarkness/Jugador.java:76: error: cannot find symbol
+        public void golpear(Monstruo monstruo) throws Exception {
+                            ^
+  symbol:   class Monstruo
+  location: class Jugador
+Tema5/BladeOfDarkness/Jugador.java:40: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+Tema5/BladeOfDarkness/Jugador.java:68: error: cannot find symbol
+            setSalud(getSalud() + puntosS);
+                     ^
+  symbol:   method getSalud()
+  location: class Jugador
+Tema5/BladeOfDarkness/Jugador.java:69: error: cannot find symbol
+            if (getSalud() >10000){
+                ^
+  symbol:   method getSalud()
+  location: class Jugador
+Tema5/BladeOfDarkness/Jugador.java:70: error: cannot find symbol
+                setSalud(10000);
+                ^
+  symbol:   method setSalud(int)
+  location: class Jugador
+Tema5/BladeOfDarkness/Jugador.java:78: error: cannot find symbol
+            if (getSalud() <= 0) {
+                ^
+  symbol:   method getSalud()
+  location: class Jugador
+Tema5/BladeOfDarkness/Jugador.java:87: error: cannot find symbol
+                    setNivel(experiencia / 100);
+                    ^
+  symbol:   method setNivel(int)
+  location: class Jugador
+Tema5/BladeOfDarkness/Jugador.java:90: error: cannot find symbol
+                        setNivel(10);
+                        ^
+  symbol:   method setNivel(int)
+  location: class Jugador
+16 errors
+Programacion/Tema5/BladeOfDarkness/Monstruo.java - Tema5/BladeOfDarkness/Monstruo.java:3: error: cannot find symbol
+public class Monstruo extends Personaje  {
+                              ^
+  symbol: class Personaje
+Tema5/BladeOfDarkness/Monstruo.java:28: error: cannot find symbol
+    public void golpear(Jugador jugador) throws Exception {
+                        ^
+  symbol:   class Jugador
+  location: class Monstruo
+Tema5/BladeOfDarkness/Monstruo.java:20: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+Tema5/BladeOfDarkness/Monstruo.java:29: error: cannot find symbol
+        if (getSalud() > 0) {
+            ^
+  symbol:   method getSalud()
+  location: class Monstruo
+4 errors
+Programacion/Tema5/Torneos/EquipoFPS.java - Tema5/Torneos/EquipoFPS.java:3: error: cannot find symbol
+public class EquipoFPS extends Equipo {
+                               ^
+  symbol: class Equipo
+Tema5/Torneos/EquipoFPS.java:22: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+Tema5/Torneos/EquipoFPS.java:24: error: cannot find symbol
+        return getNivel() + (getPunteria() * 5);
+               ^
+  symbol:   method getNivel()
+  location: class EquipoFPS
+3 errors
+Programacion/Tema5/Torneos/Torneo.java - Tema5/Torneos/Torneo.java:7: error: cannot find symbol
+    private ArrayList<Equipo> equipos = new ArrayList<>();
+                      ^
+  symbol:   class Equipo
+  location: class Torneo
+Tema5/Torneos/Torneo.java:9: error: cannot find symbol
+    public Torneo(String nombre, ArrayList<Equipo> equipos) {
+                                           ^
+  symbol:   class Equipo
+  location: class Torneo
+Tema5/Torneos/Torneo.java:22: error: cannot find symbol
+    public ArrayList<Equipo> getEquipos() {
+                     ^
+  symbol:   class Equipo
+  location: class Torneo
+Tema5/Torneos/Torneo.java:26: error: cannot find symbol
+    public void setEquipos(ArrayList<Equipo> equipos) {
+                                     ^
+  symbol:   class Equipo
+  location: class Torneo
+Tema5/Torneos/Torneo.java:30: error: cannot find symbol
+    public void inscribirEquipo(Equipo equipo) {
+                                ^
+  symbol:   class Equipo
+  location: class Torneo
+Tema5/Torneos/Torneo.java:33: error: cannot find symbol
+    public Equipo jugarTorneo() {
+           ^
+  symbol:   class Equipo
+  location: class Torneo
+Tema5/Torneos/Torneo.java:35: error: cannot find symbol
+        Equipo ganador = null;
+        ^
+  symbol:   class Equipo
+  location: class Torneo
+Tema5/Torneos/Torneo.java:36: error: cannot find symbol
+        for (Equipo equipo : equipos) {
+             ^
+  symbol:   class Equipo
+  location: class Torneo
+Tema5/Torneos/Torneo.java:47: error: cannot find symbol
+        for (Equipo equipo : equipos) {
+             ^
+  symbol:   class Equipo
+  location: class Torneo
+9 errors
+Programacion/Tema5/Torneos/TorneoMOBA.java - Tema5/Torneos/TorneoMOBA.java:5: error: cannot find symbol
+public class TorneoMOBA extends Torneo {
+                                ^
+  symbol: class Torneo
+Tema5/Torneos/TorneoMOBA.java:7: error: cannot find symbol
+    public TorneoMOBA(String nombre, ArrayList<Equipo> equipos) {
+                                               ^
+  symbol:   class Equipo
+  location: class TorneoMOBA
+Tema5/Torneos/TorneoMOBA.java:12: error: cannot find symbol
+    public void inscribirEquipo(Equipo equipo) {
+                                ^
+  symbol:   class Equipo
+  location: class TorneoMOBA
+Tema5/Torneos/TorneoMOBA.java:11: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+Tema5/Torneos/TorneoMOBA.java:13: error: cannot find symbol
+        if (equipo instanceof EquipoMOBA) {
+                              ^
+  symbol:   class EquipoMOBA
+  location: class TorneoMOBA
+Tema5/Torneos/TorneoMOBA.java:14: error: cannot find symbol
+            super.inscribirEquipo(equipo);
+            ^
+  symbol:   variable super
+  location: class TorneoMOBA
+Tema5/Torneos/TorneoMOBA.java:16: error: cannot find symbol
+            throw new EquipoNoValidoException("El equipo NO es de tipo EquipoMOBA");
+                      ^
+  symbol:   class EquipoNoValidoException
+  location: class TorneoMOBA
+7 errors
+Programacion/Tema5/Torneos/EquipoMOBA.java - Tema5/Torneos/EquipoMOBA.java:3: error: cannot find symbol
+public class EquipoMOBA extends Equipo {
+                                ^
+  symbol: class Equipo
+Tema5/Torneos/EquipoMOBA.java:22: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+Tema5/Torneos/EquipoMOBA.java:24: error: cannot find symbol
+        return getNivel() * getEstrategia();
+               ^
+  symbol:   method getNivel()
+  location: class EquipoMOBA
+3 errors
+Programacion/Tema5/Torneos/Main.java - Tema5/Torneos/Main.java:9: error: cannot find symbol
+        Equipo equipoFPS1 = new EquipoFPS("Team FPSA", 5, 4);
+        ^
+  symbol:   class Equipo
+  location: class Main
+Tema5/Torneos/Main.java:9: error: cannot find symbol
+        Equipo equipoFPS1 = new EquipoFPS("Team FPSA", 5, 4);
+                                ^
+  symbol:   class EquipoFPS
+  location: class Main
+Tema5/Torneos/Main.java:10: error: cannot find symbol
+        Equipo equipoFPS2 = new EquipoFPS("Team FPSB", 6, 8);
+        ^
+  symbol:   class Equipo
+  location: class Main
+Tema5/Torneos/Main.java:10: error: cannot find symbol
+        Equipo equipoFPS2 = new EquipoFPS("Team FPSB", 6, 8);
+                                ^
+  symbol:   class EquipoFPS
+  location: class Main
+Tema5/Torneos/Main.java:11: error: cannot find symbol
+        Equipo equipoFPS3 = new EquipoFPS("Team FPSC", 2, 2);
+        ^
+  symbol:   class Equipo
+  location: class Main
+Tema5/Torneos/Main.java:11: error: cannot find symbol
+        Equipo equipoFPS3 = new EquipoFPS("Team FPSC", 2, 2);
+                                ^
+  symbol:   class EquipoFPS
+  location: class Main
+Tema5/Torneos/Main.java:13: error: cannot find symbol
+        Equipo equipoMOBA1 = new EquipoMOBA("Team MOBAA", 5, 4);
+        ^
+  symbol:   class Equipo
+  location: class Main
+Tema5/Torneos/Main.java:13: error: cannot find symbol
+        Equipo equipoMOBA1 = new EquipoMOBA("Team MOBAA", 5, 4);
+                                 ^
+  symbol:   class EquipoMOBA
+  location: class Main
+Tema5/Torneos/Main.java:14: error: cannot find symbol
+        Equipo equipoMOBA2 = new EquipoMOBA("Team MOBAB", 6, 8);
+        ^
+  symbol:   class Equipo
+  location: class Main
+Tema5/Torneos/Main.java:14: error: cannot find symbol
+        Equipo equipoMOBA2 = new EquipoMOBA("Team MOBAB", 6, 8);
+                                 ^
+  symbol:   class EquipoMOBA
+  location: class Main
+Tema5/Torneos/Main.java:15: error: cannot find symbol
+        Equipo equipoMOBA3 = new EquipoMOBA("Team MOBAC", 2, 2);
+        ^
+  symbol:   class Equipo
+  location: class Main
+Tema5/Torneos/Main.java:15: error: cannot find symbol
+        Equipo equipoMOBA3 = new EquipoMOBA("Team MOBAC", 2, 2);
+                                 ^
+  symbol:   class EquipoMOBA
+  location: class Main
+Tema5/Torneos/Main.java:18: error: cannot find symbol
+        ArrayList<Equipo> equipoFPS = new ArrayList<>();
+                  ^
+  symbol:   class Equipo
+  location: class Main
+Tema5/Torneos/Main.java:22: error: cannot find symbol
+        ArrayList<Equipo> equipoMOBA = new ArrayList<>();
+                  ^
+  symbol:   class Equipo
+  location: class Main
+Tema5/Torneos/Main.java:26: error: cannot find symbol
+        Torneo torneoFPS = new TorneoFPS("Torneo FPS", equipoFPS);
+        ^
+  symbol:   class Torneo
+  location: class Main
+Tema5/Torneos/Main.java:26: error: cannot find symbol
+        Torneo torneoFPS = new TorneoFPS("Torneo FPS", equipoFPS);
+                               ^
+  symbol:   class TorneoFPS
+  location: class Main
+Tema5/Torneos/Main.java:27: error: cannot find symbol
+        Torneo torneoMOBA = new TorneoMOBA("Torneo MOBA", equipoMOBA);
+        ^
+  symbol:   class Torneo
+  location: class Main
+Tema5/Torneos/Main.java:27: error: cannot find symbol
+        Torneo torneoMOBA = new TorneoMOBA("Torneo MOBA", equipoMOBA);
+                                ^
+  symbol:   class TorneoMOBA
+  location: class Main
+18 errors
+Programacion/Tema5/Torneos/TorneoFPS.java - Tema5/Torneos/TorneoFPS.java:5: error: cannot find symbol
+public class TorneoFPS extends Torneo{
+                               ^
+  symbol: class Torneo
+Tema5/Torneos/TorneoFPS.java:7: error: cannot find symbol
+    public TorneoFPS(String nombre, ArrayList<Equipo> equipos) {
+                                              ^
+  symbol:   class Equipo
+  location: class TorneoFPS
+Tema5/Torneos/TorneoFPS.java:13: error: cannot find symbol
+    public void inscribirEquipo(Equipo equipo) {
+                                ^
+  symbol:   class Equipo
+  location: class TorneoFPS
+Tema5/Torneos/TorneoFPS.java:12: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+Tema5/Torneos/TorneoFPS.java:14: error: cannot find symbol
+        if (equipo instanceof EquipoFPS) {
+                              ^
+  symbol:   class EquipoFPS
+  location: class TorneoFPS
+Tema5/Torneos/TorneoFPS.java:15: error: cannot find symbol
+            super.inscribirEquipo(equipo);
+            ^
+  symbol:   variable super
+  location: class TorneoFPS
+Tema5/Torneos/TorneoFPS.java:17: error: cannot find symbol
+            throw new EquipoNoValidoException("El equipo NO es de tipo EquipoFPS");
+                      ^
+  symbol:   class EquipoNoValidoException
+  location: class TorneoFPS
+7 errors
+Programacion/Tema4/EjercicioClase2/TestArma.java - Tema4/EjercicioClase2/TestArma.java:28: error: cannot find symbol
+        Arma espada = new Arma("Espada");
+        ^
+  symbol:   class Arma
+  location: class TestArma
+Tema4/EjercicioClase2/TestArma.java:28: error: cannot find symbol
+        Arma espada = new Arma("Espada");
+                          ^
+  symbol:   class Arma
+  location: class TestArma
+Tema4/EjercicioClase2/TestArma.java:29: error: cannot find symbol
+        Arma martillo = new Arma("martillo");
+        ^
+  symbol:   class Arma
+  location: class TestArma
+Tema4/EjercicioClase2/TestArma.java:29: error: cannot find symbol
+        Arma martillo = new Arma("martillo");
+                            ^
+  symbol:   class Arma
+  location: class TestArma
+Tema4/EjercicioClase2/TestArma.java:30: error: cannot find symbol
+        Personaje per1 = new Personaje("Jugador1", "Vikingo", "Mujer", 150);
+        ^
+  symbol:   class Personaje
+  location: class TestArma
+Tema4/EjercicioClase2/TestArma.java:30: error: cannot find symbol
+        Personaje per1 = new Personaje("Jugador1", "Vikingo", "Mujer", 150);
+                             ^
+  symbol:   class Personaje
+  location: class TestArma
+6 errors
+Programacion/Tema4/TarjetaRegalo/Main.java - Tema4/TarjetaRegalo/Main.java:5: error: cannot find symbol
+        TarjetaRegalo tarjeta1 = new TarjetaRegalo(123456890, 1000, 50);
+        ^
+  symbol:   class TarjetaRegalo
+  location: class Main
+Tema4/TarjetaRegalo/Main.java:5: error: cannot find symbol
+        TarjetaRegalo tarjeta1 = new TarjetaRegalo(123456890, 1000, 50);
+                                     ^
+  symbol:   class TarjetaRegalo
+  location: class Main
+Tema4/TarjetaRegalo/Main.java:6: error: cannot find symbol
+        TarjetaRegalo tarjeta2 = new TarjetaRegalo(987653210, 500, 30);
+        ^
+  symbol:   class TarjetaRegalo
+  location: class Main
+Tema4/TarjetaRegalo/Main.java:6: error: cannot find symbol
+        TarjetaRegalo tarjeta2 = new TarjetaRegalo(987653210, 500, 30);
+                                     ^
+  symbol:   class TarjetaRegalo
+  location: class Main
+4 errors
+Programacion/Tema4/EjerciciosObjetosPOO/Ejercicio3/Test.java - Tema4/EjerciciosObjetosPOO/Ejercicio3/Test.java:5: error: cannot find symbol
+        Pajaro pajaro1 = new Pajaro();
+        ^
+  symbol:   class Pajaro
+  location: class Test
+Tema4/EjerciciosObjetosPOO/Ejercicio3/Test.java:5: error: cannot find symbol
+        Pajaro pajaro1 = new Pajaro();
+                             ^
+  symbol:   class Pajaro
+  location: class Test
+2 errors
+Programacion/Tema4/EjerciciosObjetosPOO/Ejercicio1/Test.java - Tema4/EjerciciosObjetosPOO/Ejercicio1/Test.java:17: error: cannot find symbol
+                System.out.println(celsius+"ºC se pasarían a: "+Temperatura.celsiusToFarenheit(celsius)+"F");
+                                                                ^
+  symbol:   variable Temperatura
+  location: class Test
+Tema4/EjerciciosObjetosPOO/Ejercicio1/Test.java:22: error: cannot find symbol
+                System.out.println(faren+"F se pasarían a: "+Temperatura.farenheitToCelsius(faren)+"F");
+                                                             ^
+  symbol:   variable Temperatura
+  location: class Test
+2 errors
+Programacion/Tema4/EjerciciosObjetosPOO/Ejercicio4/test.java - Tema4/EjerciciosObjetosPOO/Ejercicio4/test.java:5: error: cannot find symbol
+        Finanzas f1 = new Finanzas();
+        ^
+  symbol:   class Finanzas
+  location: class test
+Tema4/EjerciciosObjetosPOO/Ejercicio4/test.java:5: error: cannot find symbol
+        Finanzas f1 = new Finanzas();
+                          ^
+  symbol:   class Finanzas
+  location: class test
+Tema4/EjerciciosObjetosPOO/Ejercicio4/test.java:6: error: cannot find symbol
+        Finanzas f2 = new Finanzas();
+        ^
+  symbol:   class Finanzas
+  location: class test
+Tema4/EjerciciosObjetosPOO/Ejercicio4/test.java:6: error: cannot find symbol
+        Finanzas f2 = new Finanzas();
+                          ^
+  symbol:   class Finanzas
+  location: class test
+4 errors
+Programacion/Tema4/EjerciciosObjetosPOO/Ejercicio2/Test.java - Tema4/EjerciciosObjetosPOO/Ejercicio2/Test.java:5: error: cannot find symbol
+        Coche coche1 = new Coche();
+        ^
+  symbol:   class Coche
+  location: class Test
+Tema4/EjerciciosObjetosPOO/Ejercicio2/Test.java:5: error: cannot find symbol
+        Coche coche1 = new Coche();
+                           ^
+  symbol:   class Coche
+  location: class Test
+2 errors
+Programacion/InterfacesFuncionalesOpenWebinars/Supplier/Main.java - InterfacesFuncionalesOpenWebinars/Supplier/Main.java:29: error: cannot find symbol
+        Supplier<Person> personGenerator = () -> new Person();
+                 ^
+  symbol:   class Person
+  location: class Main
+InterfacesFuncionalesOpenWebinars/Supplier/Main.java:29: error: cannot find symbol
+        Supplier<Person> personGenerator = () -> new Person();
+                                                     ^
+  symbol:   class Person
+  location: class Main
+2 errors
+Programacion/Tema6/PracticaPDF1/Ejercicio3/Videojuego.java - Tema6/PracticaPDF1/Ejercicio3/Videojuego.java:3: error: cannot find symbol
+public class Videojuego implements Entregable{
+                                   ^
+  symbol: class Entregable
+Tema6/PracticaPDF1/Ejercicio3/Videojuego.java:85: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+Tema6/PracticaPDF1/Ejercicio3/Videojuego.java:90: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+Tema6/PracticaPDF1/Ejercicio3/Videojuego.java:95: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+4 errors
+Programacion/Tema6/PracticaPDF1/Ejercicio3/Ejecutable.java - Tema6/PracticaPDF1/Ejercicio3/Ejecutable.java:39: error: cannot find symbol
+    private static void imprimirPrestadoSerie(ArrayList<Serie> series) {
+                                                        ^
+  symbol:   class Serie
+  location: class Ejecutable
+Tema6/PracticaPDF1/Ejercicio3/Ejecutable.java:54: error: cannot find symbol
+    private static void imprimirPrestadoVideojuego(ArrayList<Videojuego> videojuegos) {
+                                                             ^
+  symbol:   class Videojuego
+  location: class Ejecutable
+Tema6/PracticaPDF1/Ejercicio3/Ejecutable.java:7: error: cannot find symbol
+        ArrayList<Serie> series = new ArrayList<>();
+                  ^
+  symbol:   class Serie
+  location: class Ejecutable
+Tema6/PracticaPDF1/Ejercicio3/Ejecutable.java:8: error: cannot find symbol
+        ArrayList<Videojuego> videojuegos = new ArrayList<>();
+                  ^
+  symbol:   class Videojuego
+  location: class Ejecutable
+Tema6/PracticaPDF1/Ejercicio3/Ejecutable.java:10: error: cannot find symbol
+        Serie s1 = new Serie("Juego de Tronos", "Rey");
+        ^
+  symbol:   class Serie
+  location: class Ejecutable
+Tema6/PracticaPDF1/Ejercicio3/Ejecutable.java:10: error: cannot find symbol
+        Serie s1 = new Serie("Juego de Tronos", "Rey");
+                       ^
+  symbol:   class Serie
+  location: class Ejecutable
+Tema6/PracticaPDF1/Ejercicio3/Ejecutable.java:11: error: cannot find symbol
+        Serie s2 = new Serie("Stranger Things", "Los hermanitos");
+        ^
+  symbol:   class Serie
+  location: class Ejecutable
+Tema6/PracticaPDF1/Ejercicio3/Ejecutable.java:11: error: cannot find symbol
+        Serie s2 = new Serie("Stranger Things", "Los hermanitos");
+                       ^
+  symbol:   class Serie
+  location: class Ejecutable
+Tema6/PracticaPDF1/Ejercicio3/Ejecutable.java:12: error: cannot find symbol
+        Serie s3 = new Serie("Tokyo Ghoul", "Los chinitos arigato");
+        ^
+  symbol:   class Serie
+  location: class Ejecutable
+Tema6/PracticaPDF1/Ejercicio3/Ejecutable.java:12: error: cannot find symbol
+        Serie s3 = new Serie("Tokyo Ghoul", "Los chinitos arigato");
+                       ^
+  symbol:   class Serie
+  location: class Ejecutable
+Tema6/PracticaPDF1/Ejercicio3/Ejecutable.java:14: error: cannot find symbol
+        Videojuego v1 = new Videojuego("Poppy playtime", "Terror", "Mob Entertainment");
+        ^
+  symbol:   class Videojuego
+  location: class Ejecutable
+Tema6/PracticaPDF1/Ejercicio3/Ejecutable.java:14: error: cannot find symbol
+        Videojuego v1 = new Videojuego("Poppy playtime", "Terror", "Mob Entertainment");
+                            ^
+  symbol:   class Videojuego
+  location: class Ejecutable
+Tema6/PracticaPDF1/Ejercicio3/Ejecutable.java:15: error: cannot find symbol
+        Videojuego v2 = new Videojuego("The Last of Us Part II", 100, "Nvidia", "Naughty Dog");
+        ^
+  symbol:   class Videojuego
+  location: class Ejecutable
+Tema6/PracticaPDF1/Ejercicio3/Ejecutable.java:15: error: cannot find symbol
+        Videojuego v2 = new Videojuego("The Last of Us Part II", 100, "Nvidia", "Naughty Dog");
+                            ^
+  symbol:   class Videojuego
+  location: class Ejecutable
+Tema6/PracticaPDF1/Ejercicio3/Ejecutable.java:16: error: cannot find symbol
+        Videojuego v3 = new Videojuego("Red Dead Redemption 2", 120, "Rockstar Games", "Treyarch");
+        ^
+  symbol:   class Videojuego
+  location: class Ejecutable
+Tema6/PracticaPDF1/Ejercicio3/Ejecutable.java:16: error: cannot find symbol
+        Videojuego v3 = new Videojuego("Red Dead Redemption 2", 120, "Rockstar Games", "Treyarch");
+                            ^
+  symbol:   class Videojuego
+  location: class Ejecutable
+Tema6/PracticaPDF1/Ejercicio3/Ejecutable.java:42: error: cannot find symbol
+        for (Serie serie : series) {
+             ^
+  symbol:   class Serie
+  location: class Ejecutable
+Tema6/PracticaPDF1/Ejercicio3/Ejecutable.java:57: error: cannot find symbol
+        for (Videojuego videojuego : videojuegos) {
+             ^
+  symbol:   class Videojuego
+  location: class Ejecutable
+18 errors
+Programacion/Tema6/PracticaPDF1/Ejercicio3/Serie.java - Tema6/PracticaPDF1/Ejercicio3/Serie.java:3: error: cannot find symbol
+public class Serie  implements Entregable{
+                               ^
+  symbol: class Entregable
+Tema6/PracticaPDF1/Ejercicio3/Serie.java:89: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+Tema6/PracticaPDF1/Ejercicio3/Serie.java:94: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+Tema6/PracticaPDF1/Ejercicio3/Serie.java:99: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+4 errors
+Programacion/Tema6/PracticaPDF1/Ejercicio5/Libro.java - Tema6/PracticaPDF1/Ejercicio5/Libro.java:3: error: cannot find symbol
+public class Libro extends Publicacion implements Prestable {
+                           ^
+  symbol: class Publicacion
+Tema6/PracticaPDF1/Ejercicio5/Libro.java:3: error: cannot find symbol
+public class Libro extends Publicacion implements Prestable {
+                                                  ^
+  symbol: class Prestable
+Tema6/PracticaPDF1/Ejercicio5/Libro.java:11: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+Tema6/PracticaPDF1/Ejercicio5/Libro.java:16: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+Tema6/PracticaPDF1/Ejercicio5/Libro.java:21: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+5 errors
+Programacion/Tema6/PracticaPDF1/Ejercicio5/Biblioteca.java - Tema6/PracticaPDF1/Ejercicio5/Biblioteca.java:6: error: cannot find symbol
+    ArrayList<Publicacion> biblioteca;
+              ^
+  symbol:   class Publicacion
+  location: class Biblioteca
+Tema6/PracticaPDF1/Ejercicio5/Biblioteca.java:9: error: cannot find symbol
+    public Biblioteca(ArrayList<Publicacion> biblioteca, String direccion) {
+                                ^
+  symbol:   class Publicacion
+  location: class Biblioteca
+Tema6/PracticaPDF1/Ejercicio5/Biblioteca.java:14: error: cannot find symbol
+    public ArrayList<Publicacion> getBiblioteca() {
+                     ^
+  symbol:   class Publicacion
+  location: class Biblioteca
+Tema6/PracticaPDF1/Ejercicio5/Biblioteca.java:18: error: cannot find symbol
+    public void setBiblioteca(ArrayList<Publicacion> biblioteca) {
+                                        ^
+  symbol:   class Publicacion
+  location: class Biblioteca
+Tema6/PracticaPDF1/Ejercicio5/Biblioteca.java:30: error: cannot find symbol
+    public void adquirirMaterial(Publicacion unaPub) {
+                                 ^
+  symbol:   class Publicacion
+  location: class Biblioteca
+Tema6/PracticaPDF1/Ejercicio5/Biblioteca.java:34: error: cannot find symbol
+    public Publicacion buscar(String titulo) {
+           ^
+  symbol:   class Publicacion
+  location: class Biblioteca
+6 errors
+Programacion/Tema6/PracticaPDF1/Ejercicio5/TestBiblioteca.java - Tema6/PracticaPDF1/Ejercicio5/TestBiblioteca.java:14: error: cannot find symbol
+        ArrayList<Publicacion> publicaciones = new ArrayList<>();
+                  ^
+  symbol:   class Publicacion
+  location: class TestBiblioteca
+Tema6/PracticaPDF1/Ejercicio5/TestBiblioteca.java:16: error: cannot find symbol
+        Biblioteca biblioteca = new Biblioteca(publicaciones, direccion);
+        ^
+  symbol:   class Biblioteca
+  location: class TestBiblioteca
+Tema6/PracticaPDF1/Ejercicio5/TestBiblioteca.java:16: error: cannot find symbol
+        Biblioteca biblioteca = new Biblioteca(publicaciones, direccion);
+                                    ^
+  symbol:   class Biblioteca
+  location: class TestBiblioteca
+Tema6/PracticaPDF1/Ejercicio5/TestBiblioteca.java:27: error: cannot find symbol
+            biblioteca.adquirirMaterial(new Libro(
+                                            ^
+  symbol:   class Libro
+  location: class TestBiblioteca
+Tema6/PracticaPDF1/Ejercicio5/TestBiblioteca.java:44: error: cannot find symbol
+            biblioteca.adquirirMaterial(new Revista(
+                                            ^
+  symbol:   class Revista
+  location: class TestBiblioteca
+Tema6/PracticaPDF1/Ejercicio5/TestBiblioteca.java:65: error: cannot find symbol
+                    List<Libro> Libros = biblioteca.biblioteca.stream()
+                         ^
+  symbol:   class Libro
+  location: class TestBiblioteca
+Tema6/PracticaPDF1/Ejercicio5/TestBiblioteca.java:66: error: cannot find symbol
+                            .filter(Libro.class::isInstance)
+                                    ^
+  symbol:   class Libro
+  location: class TestBiblioteca
+Tema6/PracticaPDF1/Ejercicio5/TestBiblioteca.java:67: error: cannot find symbol
+                            .map(Libro.class::cast)
+                                 ^
+  symbol:   class Libro
+  location: class TestBiblioteca
+Tema6/PracticaPDF1/Ejercicio5/TestBiblioteca.java:76: error: cannot find symbol
+                    List<Libro> librosPrestados = biblioteca.biblioteca.stream()
+                         ^
+  symbol:   class Libro
+  location: class TestBiblioteca
+Tema6/PracticaPDF1/Ejercicio5/TestBiblioteca.java:77: error: cannot find symbol
+                            .filter(Libro.class::isInstance)
+                                    ^
+  symbol:   class Libro
+  location: class TestBiblioteca
+Tema6/PracticaPDF1/Ejercicio5/TestBiblioteca.java:78: error: cannot find symbol
+                            .map(Libro.class::cast)
+                                 ^
+  symbol:   class Libro
+  location: class TestBiblioteca
+Tema6/PracticaPDF1/Ejercicio5/TestBiblioteca.java:79: error: cannot find symbol
+                            .filter(Libro::estaPrestado)
+                                    ^
+  symbol:   variable Libro
+  location: class TestBiblioteca
+Tema6/PracticaPDF1/Ejercicio5/TestBiblioteca.java:83: error: cannot find symbol
+                    for (Publicacion pub : biblioteca.biblioteca){
+                         ^
+  symbol:   class Publicacion
+  location: class TestBiblioteca
+Tema6/PracticaPDF1/Ejercicio5/TestBiblioteca.java:84: error: cannot find symbol
+                        if (pub instanceof Libro libro){
+                                           ^
+  symbol:   class Libro
+  location: class TestBiblioteca
+14 errors
+Programacion/Tema6/PracticaPDF1/Ejercicio5/Revista.java - Tema6/PracticaPDF1/Ejercicio5/Revista.java:3: error: cannot find symbol
+public class Revista extends Publicacion{
+                             ^
+  symbol: class Publicacion
+1 error
+Programacion/Tema6/PracticaPDF1/Ejercicio4/Test.java - Tema6/PracticaPDF1/Ejercicio4/Test.java:11: error: cannot find symbol
+        FechaUtils.cuentaAtras(fechaFutura, "Fin del año 2030");
+        ^
+  symbol:   variable FechaUtils
+  location: class Test
+Tema6/PracticaPDF1/Ejercicio4/Test.java:18: error: cannot find symbol
+        String diaCumple = FechaUtils.diaCumple(fechaCumple, yearConsulta);
+                           ^
+  symbol:   variable FechaUtils
+  location: class Test
+Tema6/PracticaPDF1/Ejercicio4/Test.java:25: error: cannot find symbol
+        int numYears = FechaUtils.numYears(fechaFutura2);
+                       ^
+  symbol:   variable FechaUtils
+  location: class Test
+Tema6/PracticaPDF1/Ejercicio4/Test.java:32: error: cannot find symbol
+        String signo = FechaUtils.zodiaco(fechaZodiaco);
+                       ^
+  symbol:   variable FechaUtils
+  location: class Test
+Tema6/PracticaPDF1/Ejercicio4/Test.java:42: error: cannot find symbol
+        System.out.println("Fecha " + dentro + " está en el intervalo: " + FechaUtils.isIntervalo(inicio, fin, dentro));
+                                                                           ^
+  symbol:   variable FechaUtils
+  location: class Test
+Tema6/PracticaPDF1/Ejercicio4/Test.java:43: error: cannot find symbol
+        System.out.println("Fecha " + fuera + " está en el intervalo: " + FechaUtils.isIntervalo(inicio, fin, fuera));
+                                                                          ^
+  symbol:   variable FechaUtils
+  location: class Test
+Tema6/PracticaPDF1/Ejercicio4/Test.java:48: error: cannot find symbol
+        LocalDateTime fechaAleatoria = FechaUtils.fechaAzar(inicio, fin);
+                                       ^
+  symbol:   variable FechaUtils
+  location: class Test
+7 errors
+Programacion/Tema6/PracticaPDF1/Ejercicio2/Test.java - Tema6/PracticaPDF1/Ejercicio2/Test.java:6: error: cannot find symbol
+        ConversorFechas conversor = new ConversorFechas();
+        ^
+  symbol:   class ConversorFechas
+  location: class Test
+Tema6/PracticaPDF1/Ejercicio2/Test.java:6: error: cannot find symbol
+        ConversorFechas conversor = new ConversorFechas();
+                                        ^
+  symbol:   class ConversorFechas
+  location: class Test
+2 errors
+Programacion/Streamsopenwebinars/operacionesTerminales/toList.java - Streamsopenwebinars/operacionesTerminales/toList.java:3: error: package Programacion.Streamsopenwebinars.OperacionesIntermedias does not exist
+import Programacion.Streamsopenwebinars.OperacionesIntermedias.Producto;
+                                                              ^
+Streamsopenwebinars/operacionesTerminales/toList.java:13: error: cannot find symbol
+        List<Producto> productos = new ArrayList<>();
+             ^
+  symbol:   class Producto
+  location: class toList
+Streamsopenwebinars/operacionesTerminales/toList.java:14: error: cannot find symbol
+        productos.add(new Producto("Producto1", 9.99));
+                          ^
+  symbol:   class Producto
+  location: class toList
+Streamsopenwebinars/operacionesTerminales/toList.java:15: error: cannot find symbol
+        productos.add(new Producto("Producto2", 19.99));
+                          ^
+  symbol:   class Producto
+  location: class toList
+Streamsopenwebinars/operacionesTerminales/toList.java:16: error: cannot find symbol
+        productos.add(new Producto("Producto3", 29.99));
+                          ^
+  symbol:   class Producto
+  location: class toList
+Streamsopenwebinars/operacionesTerminales/toList.java:17: error: cannot find symbol
+        productos.add(new Producto("Producto4", 39.99));
+                          ^
+  symbol:   class Producto
+  location: class toList
+Streamsopenwebinars/operacionesTerminales/toList.java:18: error: cannot find symbol
+        productos.add(new Producto("Producto5", 49.99));
+                          ^
+  symbol:   class Producto
+  location: class toList
+Streamsopenwebinars/operacionesTerminales/toList.java:21: error: cannot find symbol
+                .map(Producto::getPrice)
+                     ^
+  symbol:   variable Producto
+  location: class toList
+Streamsopenwebinars/operacionesTerminales/toList.java:27: error: cannot find symbol
+                .map(Producto::getPrice)
+                     ^
+  symbol:   variable Producto
+  location: class toList
+9 errors
+Programacion/Streamsopenwebinars/operacionesTerminales/ForEach.java - Streamsopenwebinars/operacionesTerminales/ForEach.java:3: error: package Programacion.Streamsopenwebinars.OperacionesIntermedias does not exist
+import Programacion.Streamsopenwebinars.OperacionesIntermedias.Producto;
+                                                              ^
+Streamsopenwebinars/operacionesTerminales/ForEach.java:13: error: cannot find symbol
+        List<Producto> productos = new ArrayList<>();
+             ^
+  symbol:   class Producto
+  location: class ForEach
+Streamsopenwebinars/operacionesTerminales/ForEach.java:14: error: cannot find symbol
+        productos.add(new Producto("Producto1", 9.99));
+                          ^
+  symbol:   class Producto
+  location: class ForEach
+Streamsopenwebinars/operacionesTerminales/ForEach.java:15: error: cannot find symbol
+        productos.add(new Producto("Producto2", 19.99));
+                          ^
+  symbol:   class Producto
+  location: class ForEach
+Streamsopenwebinars/operacionesTerminales/ForEach.java:16: error: cannot find symbol
+        productos.add(new Producto("Producto3", 29.99));
+                          ^
+  symbol:   class Producto
+  location: class ForEach
+Streamsopenwebinars/operacionesTerminales/ForEach.java:17: error: cannot find symbol
+        productos.add(new Producto("Producto4", 39.99));
+                          ^
+  symbol:   class Producto
+  location: class ForEach
+Streamsopenwebinars/operacionesTerminales/ForEach.java:18: error: cannot find symbol
+        productos.add(new Producto("Producto5", 49.99));
+                          ^
+  symbol:   class Producto
+  location: class ForEach
+7 errors
+Programacion/Streamsopenwebinars/OperacionesIntermedias/Map.java - Streamsopenwebinars/OperacionesIntermedias/Map.java:27: error: cannot find symbol
+        List<Producto> productos = new ArrayList<>();
+             ^
+  symbol:   class Producto
+  location: class Map
+Streamsopenwebinars/OperacionesIntermedias/Map.java:28: error: cannot find symbol
+        productos.add(new Producto("Producto1", 9.99));
+                          ^
+  symbol:   class Producto
+  location: class Map
+Streamsopenwebinars/OperacionesIntermedias/Map.java:29: error: cannot find symbol
+        productos.add(new Producto("Producto2", 19.99));
+                          ^
+  symbol:   class Producto
+  location: class Map
+Streamsopenwebinars/OperacionesIntermedias/Map.java:30: error: cannot find symbol
+        productos.add(new Producto("Producto3", 29.99));
+                          ^
+  symbol:   class Producto
+  location: class Map
+Streamsopenwebinars/OperacionesIntermedias/Map.java:31: error: cannot find symbol
+        productos.add(new Producto("Producto4", 39.99));
+                          ^
+  symbol:   class Producto
+  location: class Map
+Streamsopenwebinars/OperacionesIntermedias/Map.java:32: error: cannot find symbol
+        productos.add(new Producto("Producto5", 49.99));
+                          ^
+  symbol:   class Producto
+  location: class Map
+Streamsopenwebinars/OperacionesIntermedias/Map.java:35: error: cannot find symbol
+                .map(Producto::getPrice)
+                     ^
+  symbol:   variable Producto
+  location: class Map
+7 errors
+Programacion/Tema7/HobbiesTreeMap/Hobbie.java - Tema7/HobbiesTreeMap/Hobbie.java:13: error: cannot find symbol
+    TreeMap<Persona, List<String>> Hobbies;
+            ^
+  symbol:   class Persona
+  location: class Hobbie
+Tema7/HobbiesTreeMap/Hobbie.java:20: error: cannot find symbol
+    public void addPersona(Persona p){
+                           ^
+  symbol:   class Persona
+  location: class Hobbie
+Tema7/HobbiesTreeMap/Hobbie.java:27: error: cannot find symbol
+    public void removePersona(Persona p){
+                              ^
+  symbol:   class Persona
+  location: class Hobbie
+3 errors
+Programacion/Tema7/RepasoColecciones/Ejercicio3/Main.java - Tema7/RepasoColecciones/Ejercicio3/Main.java:5: error: cannot find symbol
+        LogBuffer buffer = new LogBuffer(3);
+        ^
+  symbol:   class LogBuffer
+  location: class Main
+Tema7/RepasoColecciones/Ejercicio3/Main.java:5: error: cannot find symbol
+        LogBuffer buffer = new LogBuffer(3);
+                               ^
+  symbol:   class LogBuffer
+  location: class Main
+2 errors
+Programacion/Tema7/RepasoColecciones/Ejercicio1/Baraja.java - Tema7/RepasoColecciones/Ejercicio1/Baraja.java:6: error: cannot find symbol
+    ArrayList<Carta> baraja;
+              ^
+  symbol:   class Carta
+  location: class Baraja
+1 error
+Programacion/Tema7/RepasoColecciones/Ejercicio1/Test.java - Tema7/RepasoColecciones/Ejercicio1/Test.java:9: error: cannot find symbol
+            Baraja baraja = new Baraja();
+            ^
+  symbol:   class Baraja
+  location: class Test
+Tema7/RepasoColecciones/Ejercicio1/Test.java:9: error: cannot find symbol
+            Baraja baraja = new Baraja();
+                                ^
+  symbol:   class Baraja
+  location: class Test
+Tema7/RepasoColecciones/Ejercicio1/Test.java:12: error: cannot find symbol
+            baraja.baraja.add(new Carta(i+1, "Corazones"));
+                                  ^
+  symbol:   class Carta
+  location: class Test
+Tema7/RepasoColecciones/Ejercicio1/Test.java:16: error: cannot find symbol
+            baraja.baraja.add(new Carta(i+1, "diamantes"));
+                                  ^
+  symbol:   class Carta
+  location: class Test
+Tema7/RepasoColecciones/Ejercicio1/Test.java:19: error: cannot find symbol
+            baraja.baraja.add(new Carta(i+1, "treboles"));
+                                  ^
+  symbol:   class Carta
+  location: class Test
+Tema7/RepasoColecciones/Ejercicio1/Test.java:22: error: cannot find symbol
+            baraja.baraja.add(new Carta(i+1, "picas"));
+                                  ^
+  symbol:   class Carta
+  location: class Test
+6 errors
+Programacion/Tema7/RepasoColecciones/Ejercicio5/Project.java - Tema7/RepasoColecciones/Ejercicio5/Project.java:11: error: cannot find symbol
+    Set<Employee> members;
+        ^
+  symbol:   class Employee
+  location: class Project
+Tema7/RepasoColecciones/Ejercicio5/Project.java:12: error: cannot find symbol
+    Map<Employee, Set<Task>> tasksByEmployee;
+        ^
+  symbol:   class Employee
+  location: class Project
+Tema7/RepasoColecciones/Ejercicio5/Project.java:12: error: cannot find symbol
+    Map<Employee, Set<Task>> tasksByEmployee;
+                      ^
+  symbol:   class Task
+  location: class Project
+Tema7/RepasoColecciones/Ejercicio5/Project.java:22: error: cannot find symbol
+    public void addTeamMember(Employee emp) {
+                              ^
+  symbol:   class Employee
+  location: class Project
+Tema7/RepasoColecciones/Ejercicio5/Project.java:29: error: cannot find symbol
+    public void assignTask(Employee emp, Task task) {
+                           ^
+  symbol:   class Employee
+  location: class Project
+Tema7/RepasoColecciones/Ejercicio5/Project.java:29: error: cannot find symbol
+    public void assignTask(Employee emp, Task task) {
+                                         ^
+  symbol:   class Task
+  location: class Project
+Tema7/RepasoColecciones/Ejercicio5/Project.java:17: error: cannot find symbol
+        members = new HashSet<Employee>();
+                              ^
+  symbol:   class Employee
+  location: class Project
+Tema7/RepasoColecciones/Ejercicio5/Project.java:18: error: cannot find symbol
+        tasksByEmployee = new HashMap<Employee, Set<Task>>();
+                                      ^
+  symbol:   class Employee
+  location: class Project
+Tema7/RepasoColecciones/Ejercicio5/Project.java:18: error: cannot find symbol
+        tasksByEmployee = new HashMap<Employee, Set<Task>>();
+                                                    ^
+  symbol:   class Task
+  location: class Project
+Tema7/RepasoColecciones/Ejercicio5/Project.java:41: error: cannot find symbol
+        for (Employee e : members) {
+             ^
+  symbol:   class Employee
+  location: class Project
+Tema7/RepasoColecciones/Ejercicio5/Project.java:43: error: cannot find symbol
+            Set<Task> tasks = tasksByEmployee.get(e);
+                ^
+  symbol:   class Task
+  location: class Project
+Tema7/RepasoColecciones/Ejercicio5/Project.java:47: error: cannot find symbol
+                for (Task t : tasks) {
+                     ^
+  symbol:   class Task
+  location: class Project
+12 errors
+Programacion/Tema7/RepasoColecciones/Ejercicio5/Main.java - Tema7/RepasoColecciones/Ejercicio5/Main.java:5: error: cannot find symbol
+        Project p = new Project(1, "Entrega Web");
+        ^
+  symbol:   class Project
+  location: class Main
+Tema7/RepasoColecciones/Ejercicio5/Main.java:5: error: cannot find symbol
+        Project p = new Project(1, "Entrega Web");
+                        ^
+  symbol:   class Project
+  location: class Main
+Tema7/RepasoColecciones/Ejercicio5/Main.java:6: error: cannot find symbol
+        Employee ana = new Employee(100, "Ana");
+        ^
+  symbol:   class Employee
+  location: class Main
+Tema7/RepasoColecciones/Ejercicio5/Main.java:6: error: cannot find symbol
+        Employee ana = new Employee(100, "Ana");
+                           ^
+  symbol:   class Employee
+  location: class Main
+Tema7/RepasoColecciones/Ejercicio5/Main.java:7: error: cannot find symbol
+        Employee Luis = new Employee(101, "Luis");
+        ^
+  symbol:   class Employee
+  location: class Main
+Tema7/RepasoColecciones/Ejercicio5/Main.java:7: error: cannot find symbol
+        Employee Luis = new Employee(101, "Luis");
+                            ^
+  symbol:   class Employee
+  location: class Main
+Tema7/RepasoColecciones/Ejercicio5/Main.java:12: error: cannot find symbol
+        p.assignTask(ana, new Task("Diseño de interfaz"));
+                              ^
+  symbol:   class Task
+  location: class Main
+Tema7/RepasoColecciones/Ejercicio5/Main.java:13: error: cannot find symbol
+        p.assignTask(ana, new Task("Revision de usabilidad"));
+                              ^
+  symbol:   class Task
+  location: class Main
+Tema7/RepasoColecciones/Ejercicio5/Main.java:14: error: cannot find symbol
+        p.assignTask(Luis, new Task("Implementar backend"));
+                               ^
+  symbol:   class Task
+  location: class Main
+9 errors
+Programacion/Tema7/RepasoColecciones/Ejercicio4/Main.java - Tema7/RepasoColecciones/Ejercicio4/Main.java:7: error: cannot find symbol
+        AgendaCitas agenda = new AgendaCitas();
+        ^
+  symbol:   class AgendaCitas
+  location: class Main
+Tema7/RepasoColecciones/Ejercicio4/Main.java:7: error: cannot find symbol
+        AgendaCitas agenda = new AgendaCitas();
+                                 ^
+  symbol:   class AgendaCitas
+  location: class Main
+2 errors
+Programacion/Tema7/RepasoColecciones/Ejercicio2/Tasks.java - Tema7/RepasoColecciones/Ejercicio2/Tasks.java:6: error: cannot find symbol
+    PriorityQueue<Task> prioridad;
+                  ^
+  symbol:   class Task
+  location: class Tasks
+Tema7/RepasoColecciones/Ejercicio2/Tasks.java:11: error: cannot find symbol
+    public void addTarea(Task task) {
+                         ^
+  symbol:   class Task
+  location: class Tasks
+Tema7/RepasoColecciones/Ejercicio2/Tasks.java:18: error: cannot find symbol
+    public void EliminarTarea(Task task) {
+                              ^
+  symbol:   class Task
+  location: class Tasks
+Tema7/RepasoColecciones/Ejercicio2/Tasks.java:23: error: cannot find symbol
+        for (Task t : prioridad) {
+             ^
+  symbol:   class Task
+  location: class Tasks
+4 errors
+Programacion/Tema7/RepasoColecciones/Ejercicio2/Test.java - Tema7/RepasoColecciones/Ejercicio2/Test.java:5: error: cannot find symbol
+        Tasks tasks = new Tasks();
+        ^
+  symbol:   class Tasks
+  location: class Test
+Tema7/RepasoColecciones/Ejercicio2/Test.java:5: error: cannot find symbol
+        Tasks tasks = new Tasks();
+                          ^
+  symbol:   class Tasks
+  location: class Test
+Tema7/RepasoColecciones/Ejercicio2/Test.java:7: error: cannot find symbol
+        Task t1 = new Task(2, "Limpiar casa");
+        ^
+  symbol:   class Task
+  location: class Test
+Tema7/RepasoColecciones/Ejercicio2/Test.java:7: error: cannot find symbol
+        Task t1 = new Task(2, "Limpiar casa");
+                      ^
+  symbol:   class Task
+  location: class Test
+Tema7/RepasoColecciones/Ejercicio2/Test.java:8: error: cannot find symbol
+        Task t2 = new Task(1, "Limpiar baño");
+        ^
+  symbol:   class Task
+  location: class Test
+Tema7/RepasoColecciones/Ejercicio2/Test.java:8: error: cannot find symbol
+        Task t2 = new Task(1, "Limpiar baño");
+                      ^
+  symbol:   class Task
+  location: class Test
+Tema7/RepasoColecciones/Ejercicio2/Test.java:9: error: cannot find symbol
+        Task t3 = new Task(3, "Hacer Tareas");
+        ^
+  symbol:   class Task
+  location: class Test
+Tema7/RepasoColecciones/Ejercicio2/Test.java:9: error: cannot find symbol
+        Task t3 = new Task(3, "Hacer Tareas");
+                      ^
+  symbol:   class Task
+  location: class Test
+Tema7/RepasoColecciones/Ejercicio2/Test.java:10: error: cannot find symbol
+        Task t4 = new Task(4, "Carnet de conducir");
+        ^
+  symbol:   class Task
+  location: class Test
+Tema7/RepasoColecciones/Ejercicio2/Test.java:10: error: cannot find symbol
+        Task t4 = new Task(4, "Carnet de conducir");
+                      ^
+  symbol:   class Task
+  location: class Test
+Tema7/RepasoColecciones/Ejercicio2/Test.java:11: error: cannot find symbol
+        Task t5 = new Task(5, "programar");
+        ^
+  symbol:   class Task
+  location: class Test
+Tema7/RepasoColecciones/Ejercicio2/Test.java:11: error: cannot find symbol
+        Task t5 = new Task(5, "programar");
+                      ^
+  symbol:   class Task
+  location: class Test
+12 errors
+Programacion/Tema7/RelacionPDF/Ejercicio1/Pelicula.java - Tema7/RelacionPDF/Ejercicio1/Pelicula.java:11: error: cannot find symbol
+    ArrayList<Genero> generos;
+              ^
+  symbol:   class Genero
+  location: class Pelicula
+Tema7/RelacionPDF/Ejercicio1/Pelicula.java:12: error: cannot find symbol
+    ArrayList<Director> directores;
+              ^
+  symbol:   class Director
+  location: class Pelicula
+Tema7/RelacionPDF/Ejercicio1/Pelicula.java:14: error: cannot find symbol
+    public Pelicula(int id, String titulo, int year, ArrayList<Genero> generos, ArrayList<Director> directores) {
+                                                               ^
+  symbol:   class Genero
+  location: class Pelicula
+Tema7/RelacionPDF/Ejercicio1/Pelicula.java:14: error: cannot find symbol
+    public Pelicula(int id, String titulo, int year, ArrayList<Genero> generos, ArrayList<Director> directores) {
+                                                                                          ^
+  symbol:   class Director
+  location: class Pelicula
+Tema7/RelacionPDF/Ejercicio1/Pelicula.java:22: error: cannot find symbol
+    public void addGenero(Genero genero){
+                          ^
+  symbol:   class Genero
+  location: class Pelicula
+Tema7/RelacionPDF/Ejercicio1/Pelicula.java:25: error: cannot find symbol
+    public void addDirectores(Director director){
+                              ^
+  symbol:   class Director
+  location: class Pelicula
+Tema7/RelacionPDF/Ejercicio1/Pelicula.java:42: error: cannot find symbol
+    public ArrayList<Director> getDirectores() {
+                     ^
+  symbol:   class Director
+  location: class Pelicula
+Tema7/RelacionPDF/Ejercicio1/Pelicula.java:46: error: cannot find symbol
+    public void setDirectores(ArrayList<Director> directores) {
+                                        ^
+  symbol:   class Director
+  location: class Pelicula
+Tema7/RelacionPDF/Ejercicio1/Pelicula.java:95: error: cannot find symbol
+    public ArrayList<Genero> getGeneros() {
+                     ^
+  symbol:   class Genero
+  location: class Pelicula
+Tema7/RelacionPDF/Ejercicio1/Pelicula.java:99: error: cannot find symbol
+    public void setGeneros(ArrayList<Genero> generos) {
+                                     ^
+  symbol:   class Genero
+  location: class Pelicula
+10 errors
+Programacion/Tema7/RelacionPDF/Ejercicio1/Director.java - Tema7/RelacionPDF/Ejercicio1/Director.java:10: error: cannot find symbol
+    private ArrayList<Pelicula> peliculas;
+                      ^
+  symbol:   class Pelicula
+  location: class Director
+Tema7/RelacionPDF/Ejercicio1/Director.java:12: error: cannot find symbol
+    public Director(String nombre, ArrayList<Pelicula> peliculas) {
+                                             ^
+  symbol:   class Pelicula
+  location: class Director
+Tema7/RelacionPDF/Ejercicio1/Director.java:42: error: cannot find symbol
+    public ArrayList<Pelicula> getPeliculas() {
+                     ^
+  symbol:   class Pelicula
+  location: class Director
+Tema7/RelacionPDF/Ejercicio1/Director.java:56: error: cannot find symbol
+    public void addPelicula(Pelicula peli){
+                            ^
+  symbol:   class Pelicula
+  location: class Director
+Tema7/RelacionPDF/Ejercicio1/Director.java:59: error: cannot find symbol
+    public void removePelicula(Pelicula peli){
+                               ^
+  symbol:   class Pelicula
+  location: class Director
+5 errors
+Programacion/Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoBase.java - Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoBase.java:7: error: cannot find symbol
+public class ProductoBase extends Producto {
+                                  ^
+  symbol: class Producto
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoBase.java:15: error: cannot find symbol
+    public ProductoBase(String sku, double precioBase, IVA iva, DetalleProducto detalle,
+                                                       ^
+  symbol:   class IVA
+  location: class ProductoBase
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoBase.java:15: error: cannot find symbol
+    public ProductoBase(String sku, double precioBase, IVA iva, DetalleProducto detalle,
+                                                                ^
+  symbol:   class DetalleProducto
+  location: class ProductoBase
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoBase.java:36: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoBase.java:38: error: cannot find symbol
+        boolean ok = super.toPDF();
+                     ^
+  symbol:   variable super
+  location: class ProductoBase
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoBase.java:39: error: cannot find symbol
+        try (FileWriter writer = new FileWriter(sku + ".txt", true)) {
+                                                ^
+  symbol:   variable sku
+  location: class ProductoBase
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoBase.java:58: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoBase.java:62: error: cannot find symbol
+        return (precioBase + transporte) + calculoIVA();
+                ^
+  symbol:   variable precioBase
+  location: class ProductoBase
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoBase.java:62: error: cannot find symbol
+        return (precioBase + transporte) + calculoIVA();
+                                           ^
+  symbol:   method calculoIVA()
+  location: class ProductoBase
+9 errors
+Programacion/Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/Producto.java - Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/Producto.java:2: error: package Programacion.Tema7.PruebaEscritaV2Repaso.VersionDeChatGPT.io does not exist
+import Programacion.Tema7.PruebaEscritaV2Repaso.VersionDeChatGPT.io.VistaPDF;
+                                                                   ^
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/Producto.java:8: error: cannot find symbol
+public abstract class Producto implements VistaPDF, Comparable<Producto> {
+                                          ^
+  symbol: class VistaPDF
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/Producto.java:11: error: cannot find symbol
+    protected IVA iva;
+              ^
+  symbol:   class IVA
+  location: class Producto
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/Producto.java:12: error: cannot find symbol
+    protected DetalleProducto detalleProducto;
+              ^
+  symbol:   class DetalleProducto
+  location: class Producto
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/Producto.java:14: error: cannot find symbol
+    public Producto(String sku, double precioBase, IVA iva, DetalleProducto detalleProducto) {
+                                                   ^
+  symbol:   class IVA
+  location: class Producto
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/Producto.java:14: error: cannot find symbol
+    public Producto(String sku, double precioBase, IVA iva, DetalleProducto detalleProducto) {
+                                                            ^
+  symbol:   class DetalleProducto
+  location: class Producto
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/Producto.java:25: error: cannot find symbol
+    public IVA getIva() { return iva; }
+           ^
+  symbol:   class IVA
+  location: class Producto
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/Producto.java:26: error: cannot find symbol
+    public void setIva(IVA iva) { this.iva = iva; }
+                       ^
+  symbol:   class IVA
+  location: class Producto
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/Producto.java:27: error: cannot find symbol
+    public DetalleProducto getDetalleProducto() { return detalleProducto; }
+           ^
+  symbol:   class DetalleProducto
+  location: class Producto
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/Producto.java:28: error: cannot find symbol
+    public void setDetalleProducto(DetalleProducto detalleProducto) { this.detalleProducto = detalleProducto; }
+                                   ^
+  symbol:   class DetalleProducto
+  location: class Producto
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/Producto.java:33: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+11 errors
+Programacion/Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoSubasta.java - Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoSubasta.java:8: error: cannot find symbol
+public class ProductoSubasta extends Producto {
+                                     ^
+  symbol: class Producto
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoSubasta.java:11: error: cannot find symbol
+    private Map<String, Puja> pujas = new HashMap<>();
+                        ^
+  symbol:   class Puja
+  location: class ProductoSubasta
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoSubasta.java:13: error: cannot find symbol
+    public ProductoSubasta(String sku, double precioBase, IVA iva, DetalleProducto detalle,
+                                                          ^
+  symbol:   class IVA
+  location: class ProductoSubasta
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoSubasta.java:13: error: cannot find symbol
+    public ProductoSubasta(String sku, double precioBase, IVA iva, DetalleProducto detalle,
+                                                                   ^
+  symbol:   class DetalleProducto
+  location: class ProductoSubasta
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoSubasta.java:26: error: cannot find symbol
+    public boolean pujar(Puja puja) {
+                         ^
+  symbol:   class Puja
+  location: class ProductoSubasta
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoSubasta.java:44: error: cannot find symbol
+    public Puja getPujaCliente(String cliente) {
+           ^
+  symbol:   class Puja
+  location: class ProductoSubasta
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoSubasta.java:48: error: cannot find symbol
+    public Puja buscarPuja(Predicate<Puja> criterio) {
+                                     ^
+  symbol:   class Puja
+  location: class ProductoSubasta
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoSubasta.java:48: error: cannot find symbol
+    public Puja buscarPuja(Predicate<Puja> criterio) {
+           ^
+  symbol:   class Puja
+  location: class ProductoSubasta
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoSubasta.java:52: error: cannot find symbol
+    public Puja getPujaMaxima() {
+           ^
+  symbol:   class Puja
+  location: class ProductoSubasta
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoSubasta.java:30: error: cannot find symbol
+                .max().orElse(precioBase);
+                              ^
+  symbol:   variable precioBase
+  location: class ProductoSubasta
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoSubasta.java:29: error: cannot find symbol
+                .mapToDouble(Puja::getPuja)
+                             ^
+  symbol:   variable Puja
+  location: class ProductoSubasta
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoSubasta.java:31: error: cannot find symbol
+        if (puja.getPuja() >= Math.max(precioBase, maxActual) && ahora.isBefore(fechaFin)) {
+                                       ^
+  symbol:   variable precioBase
+  location: class ProductoSubasta
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoSubasta.java:54: error: cannot find symbol
+                .max(Comparator.comparingDouble(Puja::getPuja))
+                                                ^
+  symbol:   variable Puja
+  location: class ProductoSubasta
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoSubasta.java:58: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoSubasta.java:60: error: cannot find symbol
+        boolean ok = super.toPDF();
+                     ^
+  symbol:   variable super
+  location: class ProductoSubasta
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoSubasta.java:61: error: cannot find symbol
+        try (FileWriter writer = new FileWriter(sku + ".txt", true)) {
+                                                ^
+  symbol:   variable sku
+  location: class ProductoSubasta
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoSubasta.java:62: error: cannot find symbol
+            writer.write("Precio Inicial Subasta: " + precioBase + System.lineSeparator());
+                                                      ^
+  symbol:   variable precioBase
+  location: class ProductoSubasta
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoSubasta.java:63: error: cannot find symbol
+            Puja ganadora = getPujaMaxima();
+            ^
+  symbol:   class Puja
+  location: class ProductoSubasta
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoSubasta.java:72: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoSubasta.java:74: error: cannot find symbol
+        return precioBase + calculoIVA();
+               ^
+  symbol:   variable precioBase
+  location: class ProductoSubasta
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoSubasta.java:74: error: cannot find symbol
+        return precioBase + calculoIVA();
+                            ^
+  symbol:   method calculoIVA()
+  location: class ProductoSubasta
+21 errors
+Programacion/Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoVirtual.java - Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoVirtual.java:5: error: cannot find symbol
+public class ProductoVirtual extends Producto {
+                                     ^
+  symbol: class Producto
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoVirtual.java:8: error: cannot find symbol
+    private TipoVirtual tipo;
+            ^
+  symbol:   class TipoVirtual
+  location: class ProductoVirtual
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoVirtual.java:10: error: cannot find symbol
+    public ProductoVirtual(String sku, double precioBase, IVA iva, DetalleProducto detalle,
+                                                          ^
+  symbol:   class IVA
+  location: class ProductoVirtual
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoVirtual.java:10: error: cannot find symbol
+    public ProductoVirtual(String sku, double precioBase, IVA iva, DetalleProducto detalle,
+                                                                   ^
+  symbol:   class DetalleProducto
+  location: class ProductoVirtual
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoVirtual.java:11: error: cannot find symbol
+                           long pesoBytes, String urlDescarga, TipoVirtual tipo) {
+                                                               ^
+  symbol:   class TipoVirtual
+  location: class ProductoVirtual
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoVirtual.java:22: error: cannot find symbol
+    public TipoVirtual getTipo() { return tipo; }
+           ^
+  symbol:   class TipoVirtual
+  location: class ProductoVirtual
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoVirtual.java:23: error: cannot find symbol
+    public void setTipo(TipoVirtual tipo) { this.tipo = tipo; }
+                        ^
+  symbol:   class TipoVirtual
+  location: class ProductoVirtual
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoVirtual.java:25: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoVirtual.java:27: error: cannot find symbol
+        boolean ok = super.toPDF();
+                     ^
+  symbol:   variable super
+  location: class ProductoVirtual
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoVirtual.java:28: error: cannot find symbol
+        try (FileWriter writer = new FileWriter(sku + ".txt", true)) {
+                                                ^
+  symbol:   variable sku
+  location: class ProductoVirtual
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoVirtual.java:39: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoVirtual.java:41: error: cannot find symbol
+        return precioBase + calculoIVA();
+               ^
+  symbol:   variable precioBase
+  location: class ProductoVirtual
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/models/ProductoVirtual.java:41: error: cannot find symbol
+        return precioBase + calculoIVA();
+                            ^
+  symbol:   method calculoIVA()
+  location: class ProductoVirtual
+13 errors
+Programacion/Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/app/App.java - Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/app/App.java:4: error: package Programacion.Tema7.PruebaEscritaV2Repaso.VersionDeChatGPT.models does not exist
+import Programacion.Tema7.PruebaEscritaV2Repaso.VersionDeChatGPT.models.DetalleProducto;
+                                                                       ^
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/app/App.java:5: error: package Programacion.Tema7.PruebaEscritaV2Repaso.VersionDeChatGPT.models does not exist
+import Programacion.Tema7.PruebaEscritaV2Repaso.VersionDeChatGPT.models.Producto;
+                                                                       ^
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/app/App.java:6: error: package Programacion.Tema7.PruebaEscritaV2Repaso.VersionDeChatGPT.models does not exist
+import Programacion.Tema7.PruebaEscritaV2Repaso.VersionDeChatGPT.models.ProductoSubasta;
+                                                                       ^
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/app/App.java:7: error: package Programacion.Tema7.PruebaEscritaV2Repaso.VersionDeChatGPT.models does not exist
+import Programacion.Tema7.PruebaEscritaV2Repaso.VersionDeChatGPT.models.Puja;
+                                                                       ^
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/app/App.java:8: error: package Programacion.Tema7.PruebaEscritaV2Repaso.VersionDeChatGPT.services does not exist
+import Programacion.Tema7.PruebaEscritaV2Repaso.VersionDeChatGPT.services.Productos;
+                                                                         ^
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/app/App.java:3: error: package Programacion.Tema7.PruebaEscritaV2Repaso.VersionDeChatGPT does not exist
+import Programacion.Tema7.PruebaEscritaV2Repaso.VersionDeChatGPT.*;
+^
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/app/App.java:16: error: cannot find symbol
+        Productos catalogo = new Productos();
+        ^
+  symbol:   class Productos
+  location: class App
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/app/App.java:16: error: cannot find symbol
+        Productos catalogo = new Productos();
+                                 ^
+  symbol:   class Productos
+  location: class App
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/app/App.java:34: error: cannot find symbol
+        List<Producto> baratos = catalogo.getProductosPrecio().stream().limit(3).toList();
+             ^
+  symbol:   class Producto
+  location: class App
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/app/App.java:35: error: incompatible types: invalid method reference
+        baratos.forEach(System.out::println);
+                        ^
+    reference to println is ambiguous
+      both method println(char[]) in PrintStream and method println(String) in PrintStream match
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/app/App.java:38: error: cannot find symbol
+        DetalleProducto det = new DetalleProducto("url","foto","categoria","marca","desc");
+        ^
+  symbol:   class DetalleProducto
+  location: class App
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/app/App.java:38: error: cannot find symbol
+        DetalleProducto det = new DetalleProducto("url","foto","categoria","marca","desc");
+                                  ^
+  symbol:   class DetalleProducto
+  location: class App
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/app/App.java:39: error: cannot find symbol
+        ProductoSubasta subasta = new ProductoSubasta("SKU123", 1000, IVA.GENERAL, det,
+        ^
+  symbol:   class ProductoSubasta
+  location: class App
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/app/App.java:39: error: cannot find symbol
+        ProductoSubasta subasta = new ProductoSubasta("SKU123", 1000, IVA.GENERAL, det,
+                                      ^
+  symbol:   class ProductoSubasta
+  location: class App
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/app/App.java:39: error: cannot find symbol
+        ProductoSubasta subasta = new ProductoSubasta("SKU123", 1000, IVA.GENERAL, det,
+                                                                      ^
+  symbol:   variable IVA
+  location: class App
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/app/App.java:42: error: cannot find symbol
+        subasta.pujar(new Puja("cliente1@example.com", 1100, LocalDateTime.now()));
+                          ^
+  symbol:   class Puja
+  location: class App
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/app/App.java:43: error: cannot find symbol
+        subasta.pujar(new Puja("cliente2@example.com", 1200, LocalDateTime.now()));
+                          ^
+  symbol:   class Puja
+  location: class App
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/app/App.java:44: error: cannot find symbol
+        subasta.pujar(new Puja("cliente3@example.com", 1300, LocalDateTime.now()));
+                          ^
+  symbol:   class Puja
+  location: class App
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+18 errors
+Programacion/Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/services/Productos.java - Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/services/Productos.java:14: error: cannot find symbol
+    private List<Producto> productos = new ArrayList<>();
+                 ^
+  symbol:   class Producto
+  location: class Productos
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/services/Productos.java:49: error: cannot find symbol
+    public void buscar(Predicate<Producto> criterio) {
+                                 ^
+  symbol:   class Producto
+  location: class Productos
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/services/Productos.java:53: error: cannot find symbol
+    public Producto getProducto(String sku) {
+           ^
+  symbol:   class Producto
+  location: class Productos
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/services/Productos.java:59: error: cannot find symbol
+    public List<Producto> getProductosSubasta() {
+                ^
+  symbol:   class Producto
+  location: class Productos
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/services/Productos.java:65: error: cannot find symbol
+    public List<Producto> getProductosPrecio() {
+                ^
+  symbol:   class Producto
+  location: class Productos
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/services/Productos.java:71: error: cannot find symbol
+    public Map<String, List<Producto>> getProductosPorCategoria() {
+                            ^
+  symbol:   class Producto
+  location: class Productos
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/services/Productos.java:2: error: package Programacion.Tema7.PruebaEscritaV2Repaso.VersionDeChatGPT.models does not exist
+import Programacion.Tema7.PruebaEscritaV2Repaso.VersionDeChatGPT.models.*;
+^
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/services/Productos.java:27: error: cannot find symbol
+                DetalleProducto det = new DetalleProducto(campos[3], campos[4], campos[5], campos[6], campos[7]);
+                ^
+  symbol:   class DetalleProducto
+  location: class Productos
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/services/Productos.java:27: error: cannot find symbol
+                DetalleProducto det = new DetalleProducto(campos[3], campos[4], campos[5], campos[6], campos[7]);
+                                          ^
+  symbol:   class DetalleProducto
+  location: class Productos
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/services/Productos.java:34: error: cannot find symbol
+                    productos.add(new ProductoBase(campos[0], Double.parseDouble(campos[1]),
+                                      ^
+  symbol:   class ProductoBase
+  location: class Productos
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/services/Productos.java:35: error: cannot find symbol
+                            IVA.valueOf(campos[2]), det, largo, ancho, alto, peso, esRegalo));
+                            ^
+  symbol:   variable IVA
+  location: class Productos
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/services/Productos.java:39: error: cannot find symbol
+                    TipoVirtual tipo = TipoVirtual.valueOf(campos[10]);
+                    ^
+  symbol:   class TipoVirtual
+  location: class Productos
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/services/Productos.java:39: error: cannot find symbol
+                    TipoVirtual tipo = TipoVirtual.valueOf(campos[10]);
+                                       ^
+  symbol:   variable TipoVirtual
+  location: class Productos
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/services/Productos.java:40: error: cannot find symbol
+                    productos.add(new ProductoVirtual(campos[0], Double.parseDouble(campos[1]),
+                                      ^
+  symbol:   class ProductoVirtual
+  location: class Productos
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/services/Productos.java:41: error: cannot find symbol
+                            IVA.valueOf(campos[2]), det, pesoBytes, urlDescarga, tipo));
+                            ^
+  symbol:   variable IVA
+  location: class Productos
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/services/Productos.java:61: error: cannot find symbol
+                .filter(p -> p instanceof ProductoSubasta)
+                                          ^
+  symbol:   class ProductoSubasta
+  location: class Productos
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/services/Productos.java:67: error: cannot find symbol
+                .sorted(Comparator.comparingDouble(Producto::getImporte))
+                                                   ^
+  symbol:   variable Producto
+  location: class Productos
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/services/Productos.java:73: error: cannot find symbol
+                .collect(Collectors.groupingBy(p -> p.getDetalleProducto().getCategorias(),
+                                                     ^
+  symbol:   method getDetalleProducto()
+  location: variable p of type Object
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/services/Productos.java:75: error: cannot find symbol
+                            lista.sort(Comparator.comparing(Producto::getSku).reversed());
+                                                            ^
+  symbol:   variable Producto
+  location: class Productos
+Tema7/PruebaEscritaV2Repaso/VersionDeChatGPT/services/Productos.java:82: error: cannot find symbol
+                .collect(Collectors.groupingBy(p -> p.getDetalleProducto().getCategorias(),
+                                                     ^
+  symbol:   method getDetalleProducto()
+  location: variable p of type Object
+20 errors
+Programacion/Tema7/PruebaEscritaV2Repaso/Productos.java - Tema7/PruebaEscritaV2Repaso/Productos.java:3: error: package Programacion.Tema7.PruebaEscritaV2Repaso.VersionDeChatGPT.models does not exist
+import Programacion.Tema7.PruebaEscritaV2Repaso.VersionDeChatGPT.models.Producto;
+                                                                       ^
+Tema7/PruebaEscritaV2Repaso/Productos.java:8: error: cannot find symbol
+    List<Producto> productos;
+         ^
+  symbol:   class Producto
+  location: class Productos
+2 errors
+Programacion/Tema7/EjerciciosStreams/Canciones/Cancion.java - Tema7/EjerciciosStreams/Canciones/Cancion.java:5: error: cannot find symbol
+    private Artista artista;
+            ^
+  symbol:   class Artista
+  location: class Cancion
+Tema7/EjerciciosStreams/Canciones/Cancion.java:9: error: cannot find symbol
+    Genero genero;
+    ^
+  symbol:   class Genero
+  location: class Cancion
+Tema7/EjerciciosStreams/Canciones/Cancion.java:11: error: cannot find symbol
+    public Cancion(String titulo, Artista artista, Integer lanzamientoYear, Integer duracionSegs, double popularidad, Genero genero) {
+                                  ^
+  symbol:   class Artista
+  location: class Cancion
+Tema7/EjerciciosStreams/Canciones/Cancion.java:11: error: cannot find symbol
+    public Cancion(String titulo, Artista artista, Integer lanzamientoYear, Integer duracionSegs, double popularidad, Genero genero) {
+                                                                                                                      ^
+  symbol:   class Genero
+  location: class Cancion
+Tema7/EjerciciosStreams/Canciones/Cancion.java:28: error: cannot find symbol
+    public Artista getArtista() {
+           ^
+  symbol:   class Artista
+  location: class Cancion
+Tema7/EjerciciosStreams/Canciones/Cancion.java:32: error: cannot find symbol
+    public void setArtista(Artista artista) {
+                           ^
+  symbol:   class Artista
+  location: class Cancion
+Tema7/EjerciciosStreams/Canciones/Cancion.java:60: error: cannot find symbol
+    public Genero getGenero() {
+           ^
+  symbol:   class Genero
+  location: class Cancion
+7 errors
+Programacion/Tema7/EjerciciosStreams/Canciones/Main.java - Tema7/EjerciciosStreams/Canciones/Main.java:12: error: cannot find symbol
+        List<Cancion> canciones = new ArrayList<>(List.of(
+             ^
+  symbol:   class Cancion
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:13: error: cannot find symbol
+                new Cancion("Blinding Lights", new Artista("The Weeknd", "Canadá"), 2024, 200, 90.5, Genero.POP),
+                    ^
+  symbol:   class Cancion
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:13: error: cannot find symbol
+                new Cancion("Blinding Lights", new Artista("The Weeknd", "Canadá"), 2024, 200, 90.5, Genero.POP),
+                                                   ^
+  symbol:   class Artista
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:13: error: cannot find symbol
+                new Cancion("Blinding Lights", new Artista("The Weeknd", "Canadá"), 2024, 200, 90.5, Genero.POP),
+                                                                                                     ^
+  symbol:   variable Genero
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:14: error: cannot find symbol
+                new Cancion("Levitating", new Artista("Dua Lipa", "Reino Unido"), 2024, 203, 88.7, Genero.POP),
+                    ^
+  symbol:   class Cancion
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:14: error: cannot find symbol
+                new Cancion("Levitating", new Artista("Dua Lipa", "Reino Unido"), 2024, 203, 88.7, Genero.POP),
+                                              ^
+  symbol:   class Artista
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:14: error: cannot find symbol
+                new Cancion("Levitating", new Artista("Dua Lipa", "Reino Unido"), 2024, 203, 88.7, Genero.POP),
+                                                                                                   ^
+  symbol:   variable Genero
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:15: error: cannot find symbol
+                new Cancion("Lost Souls", new Artista("Foo Fighters", "EE. UU."), 2024, 210, 91.0, Genero.ROCK),
+                    ^
+  symbol:   class Cancion
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:15: error: cannot find symbol
+                new Cancion("Lost Souls", new Artista("Foo Fighters", "EE. UU."), 2024, 210, 91.0, Genero.ROCK),
+                                              ^
+  symbol:   class Artista
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:15: error: cannot find symbol
+                new Cancion("Lost Souls", new Artista("Foo Fighters", "EE. UU."), 2024, 210, 91.0, Genero.ROCK),
+                                                                                                   ^
+  symbol:   variable Genero
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:16: error: cannot find symbol
+                new Cancion("Rise Again", new Artista("Sam Smith", "Reino Unido"), 2025, 220, 92.5, Genero.POP),
+                    ^
+  symbol:   class Cancion
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:16: error: cannot find symbol
+                new Cancion("Rise Again", new Artista("Sam Smith", "Reino Unido"), 2025, 220, 92.5, Genero.POP),
+                                              ^
+  symbol:   class Artista
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:16: error: cannot find symbol
+                new Cancion("Rise Again", new Artista("Sam Smith", "Reino Unido"), 2025, 220, 92.5, Genero.POP),
+                                                                                                    ^
+  symbol:   variable Genero
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:17: error: cannot find symbol
+                new Cancion("Phoenix Rising", new Artista("Paramore", "EE. UU."), 2025, 180, 89.7, Genero.ROCK),
+                    ^
+  symbol:   class Cancion
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:17: error: cannot find symbol
+                new Cancion("Phoenix Rising", new Artista("Paramore", "EE. UU."), 2025, 180, 89.7, Genero.ROCK),
+                                                  ^
+  symbol:   class Artista
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:17: error: cannot find symbol
+                new Cancion("Phoenix Rising", new Artista("Paramore", "EE. UU."), 2025, 180, 89.7, Genero.ROCK),
+                                                                                                   ^
+  symbol:   variable Genero
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:18: error: cannot find symbol
+                new Cancion("The Final Frontier", new Artista("Ghost", "Suecia"), 2025, 215, 92.1, Genero.METAL),
+                    ^
+  symbol:   class Cancion
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:18: error: cannot find symbol
+                new Cancion("The Final Frontier", new Artista("Ghost", "Suecia"), 2025, 215, 92.1, Genero.METAL),
+                                                      ^
+  symbol:   class Artista
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:18: error: cannot find symbol
+                new Cancion("The Final Frontier", new Artista("Ghost", "Suecia"), 2025, 215, 92.1, Genero.METAL),
+                                                                                                   ^
+  symbol:   variable Genero
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:19: error: cannot find symbol
+                new Cancion("Shining Star", new Artista("Doja Cat", "EE. UU."), 2025, 185, 88.7, Genero.HIPHOP),
+                    ^
+  symbol:   class Cancion
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:19: error: cannot find symbol
+                new Cancion("Shining Star", new Artista("Doja Cat", "EE. UU."), 2025, 185, 88.7, Genero.HIPHOP),
+                                                ^
+  symbol:   class Artista
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:19: error: cannot find symbol
+                new Cancion("Shining Star", new Artista("Doja Cat", "EE. UU."), 2025, 185, 88.7, Genero.HIPHOP),
+                                                                                                 ^
+  symbol:   variable Genero
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:20: error: cannot find symbol
+                new Cancion("Crimson Skies", new Artista("Foo Fighters", "EE. UU."), 2025, 225, 93.3, Genero.ROCK),
+                    ^
+  symbol:   class Cancion
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:20: error: cannot find symbol
+                new Cancion("Crimson Skies", new Artista("Foo Fighters", "EE. UU."), 2025, 225, 93.3, Genero.ROCK),
+                                                 ^
+  symbol:   class Artista
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:20: error: cannot find symbol
+                new Cancion("Crimson Skies", new Artista("Foo Fighters", "EE. UU."), 2025, 225, 93.3, Genero.ROCK),
+                                                                                                      ^
+  symbol:   variable Genero
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:21: error: cannot find symbol
+                new Cancion("Kiss Me More", new Artista("Doja Cat", "EE. UU."), 2024, 205, 87.1, Genero.POP)
+                    ^
+  symbol:   class Cancion
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:21: error: cannot find symbol
+                new Cancion("Kiss Me More", new Artista("Doja Cat", "EE. UU."), 2024, 205, 87.1, Genero.POP)
+                                                ^
+  symbol:   class Artista
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:21: error: cannot find symbol
+                new Cancion("Kiss Me More", new Artista("Doja Cat", "EE. UU."), 2024, 205, 87.1, Genero.POP)
+                                                                                                 ^
+  symbol:   variable Genero
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:27: error: incompatible types: invalid method reference
+                                .forEach(System.out::println);
+                                         ^
+    reference to println is ambiguous
+      both method println(char[]) in PrintStream and method println(String) in PrintStream match
+Tema7/EjerciciosStreams/Canciones/Main.java:33: error: incompatible types: invalid method reference
+                                        .forEach(System.out::println);
+                                                 ^
+    reference to println is ambiguous
+      both method println(char[]) in PrintStream and method println(String) in PrintStream match
+Tema7/EjerciciosStreams/Canciones/Main.java:38: error: cannot find symbol
+                .sorted(Comparator.comparing(Cancion::getPopularidad))
+                                             ^
+  symbol:   variable Cancion
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:44: error: cannot find symbol
+                .mapToInt(Cancion::getDuracionSegs) //Convierte Stream<Cancion> a IntStream
+                          ^
+  symbol:   variable Cancion
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:55: error: cannot find symbol
+                                Cancion -> Cancion.getArtista().getPais(), //clave: pais del artista
+                                                  ^
+  symbol:   method getArtista()
+  location: variable Cancion of type Object
+Tema7/EjerciciosStreams/Canciones/Main.java:61: error: cannot find symbol
+        List<Cancion> cancionList = canciones.stream().toList();
+             ^
+  symbol:   class Cancion
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:62: error: cannot find symbol
+        Map<Genero, Long> cancionesPorGenero = cancionList.stream()
+            ^
+  symbol:   class Genero
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:64: error: cannot find symbol
+                        groupingBy(Cancion::getGenero, //clave: el enum Genero
+                                   ^
+  symbol:   variable Cancion
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:77: error: incompatible types: invalid method reference
+                .forEach(System.out::println);
+                         ^
+    reference to println is ambiguous
+      both method println(char[]) in PrintStream and method println(String) in PrintStream match
+Tema7/EjerciciosStreams/Canciones/Main.java:80: error: cannot find symbol
+        Comparator<Cancion> cancionComparator = Comparator.comparing(Cancion::getDuracionSegs);
+                   ^
+  symbol:   class Cancion
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:80: error: cannot find symbol
+        Comparator<Cancion> cancionComparator = Comparator.comparing(Cancion::getDuracionSegs);
+                                                                     ^
+  symbol:   variable Cancion
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:84: error: incompatible types: invalid method reference
+                .forEach(System.out::println);
+                         ^
+    reference to println is ambiguous
+      both method println(char[]) in PrintStream and method println(String) in PrintStream match
+Tema7/EjerciciosStreams/Canciones/Main.java:95: error: incompatible types: inference variable T has incompatible bounds
+                .collect(toList());
+                        ^
+    equality constraints: String
+    lower bounds: Object
+  where T is a type-variable:
+    T extends Object declared in method <T>toList()
+Tema7/EjerciciosStreams/Canciones/Main.java:102: error: cannot find symbol
+                .mapToDouble(Cancion::getDuracionSegs)
+                             ^
+  symbol:   variable Cancion
+  location: class Main
+Tema7/EjerciciosStreams/Canciones/Main.java:109: error: cannot find symbol
+                .collect(summarizingDouble(Cancion::getPopularidad));
+                                           ^
+  symbol:   variable Cancion
+  location: class Main
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+43 errors
+Programacion/Tema7/EjerciciosTema7_1/Ejercicio1/Diccionario.java - Tema7/EjerciciosTema7_1/Ejercicio1/Diccionario.java:7: error: cannot find symbol
+    TreeSet<Entrada> entradas;
+            ^
+  symbol:   class Entrada
+  location: class Diccionario
+Tema7/EjerciciosTema7_1/Ejercicio1/Diccionario.java:8: error: cannot find symbol
+    Comparator<Entrada> EntradasComparator;
+               ^
+  symbol:   class Entrada
+  location: class Diccionario
+Tema7/EjerciciosTema7_1/Ejercicio1/Diccionario.java:14: error: cannot find symbol
+    public TreeSet<Entrada> getEntradas() {
+                   ^
+  symbol:   class Entrada
+  location: class Diccionario
+Tema7/EjerciciosTema7_1/Ejercicio1/Diccionario.java:18: error: cannot find symbol
+    public void setEntradas(TreeSet<Entrada> entradas) {
+                                    ^
+  symbol:   class Entrada
+  location: class Diccionario
+Tema7/EjerciciosTema7_1/Ejercicio1/Diccionario.java:22: error: cannot find symbol
+    public Comparator<Entrada> getEntradasComparator() {
+                      ^
+  symbol:   class Entrada
+  location: class Diccionario
+Tema7/EjerciciosTema7_1/Ejercicio1/Diccionario.java:26: error: cannot find symbol
+    public void setEntradasComparator(Comparator<Entrada> entradasComparator) {
+                                                 ^
+  symbol:   class Entrada
+  location: class Diccionario
+Tema7/EjerciciosTema7_1/Ejercicio1/Diccionario.java:38: error: cannot find symbol
+    public void addEntrada(Entrada entrada){
+                           ^
+  symbol:   class Entrada
+  location: class Diccionario
+Tema7/EjerciciosTema7_1/Ejercicio1/Diccionario.java:41: error: cannot find symbol
+    public void removeEntrada(Entrada entrada){
+                              ^
+  symbol:   class Entrada
+  location: class Diccionario
+Tema7/EjerciciosTema7_1/Ejercicio1/Diccionario.java:11: error: cannot find symbol
+        this.entradas = new TreeSet<>(Comparator.comparing(Entrada::getSpanish));
+                                                           ^
+  symbol:   variable Entrada
+  location: class Diccionario
+Tema7/EjerciciosTema7_1/Ejercicio1/Diccionario.java:46: error: cannot find symbol
+        for (Entrada e : entradas){
+             ^
+  symbol:   class Entrada
+  location: class Diccionario
+Tema7/EjerciciosTema7_1/Ejercicio1/Diccionario.java:51: error: cannot find symbol
+        for (Entrada en : entradas){
+             ^
+  symbol:   class Entrada
+  location: class Diccionario
+11 errors
+Programacion/Tema7/EjerciciosTema7_1/Ejercicio1/Test.java - Tema7/EjerciciosTema7_1/Ejercicio1/Test.java:10: error: cannot find symbol
+        Diccionario dic = new Diccionario();
+        ^
+  symbol:   class Diccionario
+  location: class Test
+Tema7/EjerciciosTema7_1/Ejercicio1/Test.java:10: error: cannot find symbol
+        Diccionario dic = new Diccionario();
+                              ^
+  symbol:   class Diccionario
+  location: class Test
+Tema7/EjerciciosTema7_1/Ejercicio1/Test.java:12: error: cannot find symbol
+        dic.addEntrada(new Entrada("Hola", "Hello"));
+                           ^
+  symbol:   class Entrada
+  location: class Test
+Tema7/EjerciciosTema7_1/Ejercicio1/Test.java:13: error: cannot find symbol
+        dic.addEntrada(new Entrada("Adios", "Goodbye"));
+                           ^
+  symbol:   class Entrada
+  location: class Test
+Tema7/EjerciciosTema7_1/Ejercicio1/Test.java:14: error: cannot find symbol
+        dic.addEntrada(new Entrada("respuesta", "replay"));
+                           ^
+  symbol:   class Entrada
+  location: class Test
+Tema7/EjerciciosTema7_1/Ejercicio1/Test.java:15: error: cannot find symbol
+        dic.addEntrada(new Entrada("superficie", "expanse"));
+                           ^
+  symbol:   class Entrada
+  location: class Test
+Tema7/EjerciciosTema7_1/Ejercicio1/Test.java:16: error: cannot find symbol
+        dic.addEntrada(new Entrada("disponible","available"));
+                           ^
+  symbol:   class Entrada
+  location: class Test
+Tema7/EjerciciosTema7_1/Ejercicio1/Test.java:17: error: cannot find symbol
+        dic.addEntrada(new Entrada("cesta", "basket"));
+                           ^
+  symbol:   class Entrada
+  location: class Test
+Tema7/EjerciciosTema7_1/Ejercicio1/Test.java:18: error: cannot find symbol
+        dic.addEntrada(new Entrada("antes", "before"));
+                           ^
+  symbol:   class Entrada
+  location: class Test
+Tema7/EjerciciosTema7_1/Ejercicio1/Test.java:19: error: cannot find symbol
+        dic.addEntrada(new Entrada("mejor","better"));
+                           ^
+  symbol:   class Entrada
+  location: class Test
+Tema7/EjerciciosTema7_1/Ejercicio1/Test.java:20: error: cannot find symbol
+        dic.addEntrada(new Entrada("pájaro","bird"));
+                           ^
+  symbol:   class Entrada
+  location: class Test
+Tema7/EjerciciosTema7_1/Ejercicio1/Test.java:21: error: cannot find symbol
+        dic.addEntrada(new Entrada("rama", "branch"));
+                           ^
+  symbol:   class Entrada
+  location: class Test
+Tema7/EjerciciosTema7_1/Ejercicio1/Test.java:22: error: cannot find symbol
+        dic.addEntrada(new Entrada("puente", "bridge"));
+                           ^
+  symbol:   class Entrada
+  location: class Test
+Tema7/EjerciciosTema7_1/Ejercicio1/Test.java:23: error: cannot find symbol
+        dic.addEntrada(new Entrada("pastel", "cake"));
+                           ^
+  symbol:   class Entrada
+  location: class Test
+Tema7/EjerciciosTema7_1/Ejercicio1/Test.java:24: error: cannot find symbol
+        dic.addEntrada(new Entrada("cierto", "certain"));
+                           ^
+  symbol:   class Entrada
+  location: class Test
+Tema7/EjerciciosTema7_1/Ejercicio1/Test.java:25: error: cannot find symbol
+        dic.addEntrada(new Entrada("cereza","cherry"));
+                           ^
+  symbol:   class Entrada
+  location: class Test
+Tema7/EjerciciosTema7_1/Ejercicio1/Test.java:26: error: cannot find symbol
+        dic.addEntrada(new Entrada("nube","cloud"));
+                           ^
+  symbol:   class Entrada
+  location: class Test
+17 errors
+Programacion/Tema7/EjerciciosTema7_1/Ejercicio2/CitasConsulta.java - Tema7/EjerciciosTema7_1/Ejercicio2/CitasConsulta.java:14: error: cannot find symbol
+    ArrayList<Cita> citas;
+              ^
+  symbol:   class Cita
+  location: class CitasConsulta
+Tema7/EjerciciosTema7_1/Ejercicio2/CitasConsulta.java:16: error: cannot find symbol
+    public CitasConsulta(ArrayList<Cita> citas) {
+                                   ^
+  symbol:   class Cita
+  location: class CitasConsulta
+Tema7/EjerciciosTema7_1/Ejercicio2/CitasConsulta.java:20: error: cannot find symbol
+    public ArrayList<Cita> getCitas() {
+                     ^
+  symbol:   class Cita
+  location: class CitasConsulta
+Tema7/EjerciciosTema7_1/Ejercicio2/CitasConsulta.java:24: error: cannot find symbol
+    public void setCitas(ArrayList<Cita> citas) {
+                                   ^
+  symbol:   class Cita
+  location: class CitasConsulta
+Tema7/EjerciciosTema7_1/Ejercicio2/CitasConsulta.java:28: error: cannot find symbol
+    public void addCita(Cita cita){
+                        ^
+  symbol:   class Cita
+  location: class CitasConsulta
+Tema7/EjerciciosTema7_1/Ejercicio2/CitasConsulta.java:31: error: cannot find symbol
+    public void removeCita(Cita cita){
+                           ^
+  symbol:   class Cita
+  location: class CitasConsulta
+Tema7/EjerciciosTema7_1/Ejercicio2/CitasConsulta.java:35: error: cannot find symbol
+        this.citas.sort(Comparator.comparing(Cita::getPersona));
+                                             ^
+  symbol:   variable Cita
+  location: class CitasConsulta
+Tema7/EjerciciosTema7_1/Ejercicio2/CitasConsulta.java:36: error: cannot find symbol
+        for (Cita ci : citas){
+             ^
+  symbol:   class Cita
+  location: class CitasConsulta
+Tema7/EjerciciosTema7_1/Ejercicio2/CitasConsulta.java:42: error: cannot find symbol
+        this.citas.sort(new Comparator<Cita>() {
+                                       ^
+  symbol:   class Cita
+  location: class CitasConsulta
+Tema7/EjerciciosTema7_1/Ejercicio2/CitasConsulta.java:44: error: cannot find symbol
+            public int compare(Cita o1, Cita o2) {
+                               ^
+  symbol: class Cita
+Tema7/EjerciciosTema7_1/Ejercicio2/CitasConsulta.java:44: error: cannot find symbol
+            public int compare(Cita o1, Cita o2) {
+                                        ^
+  symbol: class Cita
+Tema7/EjerciciosTema7_1/Ejercicio2/CitasConsulta.java:48: error: cannot find symbol
+        for (Cita ci : citas){
+             ^
+  symbol:   class Cita
+  location: class CitasConsulta
+Tema7/EjerciciosTema7_1/Ejercicio2/CitasConsulta.java:54: error: cannot find symbol
+        this.citas.sort(new Comparator<Cita>() {
+                                       ^
+  symbol:   class Cita
+  location: class CitasConsulta
+Tema7/EjerciciosTema7_1/Ejercicio2/CitasConsulta.java:56: error: cannot find symbol
+            public int compare(Cita o1, Cita o2) {
+                               ^
+  symbol: class Cita
+Tema7/EjerciciosTema7_1/Ejercicio2/CitasConsulta.java:56: error: cannot find symbol
+            public int compare(Cita o1, Cita o2) {
+                                        ^
+  symbol: class Cita
+Tema7/EjerciciosTema7_1/Ejercicio2/CitasConsulta.java:64: error: cannot find symbol
+        for (Cita cita : citas){
+             ^
+  symbol:   class Cita
+  location: class CitasConsulta
+Tema7/EjerciciosTema7_1/Ejercicio2/CitasConsulta.java:70: error: cannot find symbol
+        ArrayList<Cita> citasEnFecha = new ArrayList<>();
+                  ^
+  symbol:   class Cita
+  location: class CitasConsulta
+Tema7/EjerciciosTema7_1/Ejercicio2/CitasConsulta.java:71: error: cannot find symbol
+        for (Cita cita : citas){
+             ^
+  symbol:   class Cita
+  location: class CitasConsulta
+Tema7/EjerciciosTema7_1/Ejercicio2/CitasConsulta.java:76: error: cannot find symbol
+        citasEnFecha.sort(Comparator.comparing(Cita::getHora));
+                                               ^
+  symbol:   variable Cita
+  location: class CitasConsulta
+Tema7/EjerciciosTema7_1/Ejercicio2/CitasConsulta.java:77: error: cannot find symbol
+        for (Cita cita : citasEnFecha){
+             ^
+  symbol:   class Cita
+  location: class CitasConsulta
+Tema7/EjerciciosTema7_1/Ejercicio2/CitasConsulta.java:82: error: cannot find symbol
+        for (Cita cita : citas){
+             ^
+  symbol:   class Cita
+  location: class CitasConsulta
+21 errors
+Programacion/Tema7/EjerciciosTema7_1/Ejercicio2/Cita.java - Tema7/EjerciciosTema7_1/Ejercicio2/Cita.java:10: error: cannot find symbol
+    private Persona persona;
+            ^
+  symbol:   class Persona
+  location: class Cita
+Tema7/EjerciciosTema7_1/Ejercicio2/Cita.java:15: error: cannot find symbol
+    public Cita(Persona persona, LocalDate fecha, LocalTime hora) {
+                ^
+  symbol:   class Persona
+  location: class Cita
+Tema7/EjerciciosTema7_1/Ejercicio2/Cita.java:31: error: cannot find symbol
+    public Persona getPersona() {
+           ^
+  symbol:   class Persona
+  location: class Cita
+Tema7/EjerciciosTema7_1/Ejercicio2/Cita.java:35: error: cannot find symbol
+    public void setPersona(Persona persona) {
+                           ^
+  symbol:   class Persona
+  location: class Cita
+4 errors
+Programacion/Tema7/Practica2Streams/SensoresPlantacion/Main.java - Tema7/Practica2Streams/SensoresPlantacion/Main.java:3: error: package Programacion.ProgramacionFuncionalOpenWebinars does not exist
+import Programacion.ProgramacionFuncionalOpenWebinars.Product;
+                                                     ^
+Tema7/Practica2Streams/SensoresPlantacion/Main.java:4: error: package Programacion.Streamsopenwebinars does not exist
+import Programacion.Streamsopenwebinars.StreamEmpty;
+                                       ^
+Tema7/Practica2Streams/SensoresPlantacion/Main.java:93: error: cannot find symbol
+    private static List<Registro> generateRegistros() {
+                        ^
+  symbol:   class Registro
+  location: class Main
+Tema7/Practica2Streams/SensoresPlantacion/Main.java:17: error: cannot find symbol
+        List<Registro> registros = generateRegistros();
+             ^
+  symbol:   class Registro
+  location: class Main
+Tema7/Practica2Streams/SensoresPlantacion/Main.java:24: error: incompatible types: invalid method reference
+                .forEach(System.out::println);
+                         ^
+    reference to println is ambiguous
+      both method println(char[]) in PrintStream and method println(String) in PrintStream match
+Tema7/Practica2Streams/SensoresPlantacion/Main.java:28: error: cannot find symbol
+        Optional<Registro> tempMax = registros.stream()
+                 ^
+  symbol:   class Registro
+  location: class Main
+Tema7/Practica2Streams/SensoresPlantacion/Main.java:29: error: cannot find symbol
+                .max(Comparator.comparingDouble(Registro::getTemperatura));
+                                                ^
+  symbol:   variable Registro
+  location: class Main
+Tema7/Practica2Streams/SensoresPlantacion/Main.java:30: error: incompatible types: invalid method reference
+        tempMax.ifPresent(System.out::println);
+                          ^
+    reference to println is ambiguous
+      both method println(char[]) in PrintStream and method println(String) in PrintStream match
+Tema7/Practica2Streams/SensoresPlantacion/Main.java:36: error: cannot find symbol
+                .map(Registro::getFechaHora)
+                     ^
+  symbol:   variable Registro
+  location: class Main
+Tema7/Practica2Streams/SensoresPlantacion/Main.java:53: error: cannot find symbol
+                .min(Comparator.comparing(Registro::getTemperatura))
+                                          ^
+  symbol:   variable Registro
+  location: class Main
+Tema7/Practica2Streams/SensoresPlantacion/Main.java:75: error: incompatible types: invalid method reference
+                .forEach(System.out::println);
+                         ^
+    reference to println is ambiguous
+      both method println(char[]) in PrintStream and method println(String) in PrintStream match
+Tema7/Practica2Streams/SensoresPlantacion/Main.java:80: error: cannot find symbol
+                .sorted(Comparator.comparing(Registro::getFechaHora))
+                                             ^
+  symbol:   variable Registro
+  location: class Main
+Tema7/Practica2Streams/SensoresPlantacion/Main.java:87: error: cannot find symbol
+                .collect(Collectors.summarizingDouble(Registro::getTemperatura))
+                                                      ^
+  symbol:   variable Registro
+  location: class Main
+Tema7/Practica2Streams/SensoresPlantacion/Main.java:94: error: cannot find symbol
+        List<Registro> registros = new ArrayList<>();
+             ^
+  symbol:   class Registro
+  location: class Main
+Tema7/Practica2Streams/SensoresPlantacion/Main.java:107: error: cannot find symbol
+            registros.add(new Registro(ts, valor1, valor2));
+                              ^
+  symbol:   class Registro
+  location: class Main
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+15 errors
+Programacion/Tema7/Practica2Streams/BancoSmart/Main.java - Tema7/Practica2Streams/BancoSmart/Main.java:11: error: cannot find symbol
+        Banco banco = new Banco();
+        ^
+  symbol:   class Banco
+  location: class Main
+Tema7/Practica2Streams/BancoSmart/Main.java:11: error: cannot find symbol
+        Banco banco = new Banco();
+                          ^
+  symbol:   class Banco
+  location: class Main
+Tema7/Practica2Streams/BancoSmart/Main.java:17: error: cannot find symbol
+            Cliente cliente = new Cliente("DNI" + i, "Nombre" + i, "email" + i + "@ejemplo.com", "60000000" + i,
+            ^
+  symbol:   class Cliente
+  location: class Main
+Tema7/Practica2Streams/BancoSmart/Main.java:17: error: cannot find symbol
+            Cliente cliente = new Cliente("DNI" + i, "Nombre" + i, "email" + i + "@ejemplo.com", "60000000" + i,
+                                  ^
+  symbol:   class Cliente
+  location: class Main
+Tema7/Practica2Streams/BancoSmart/Main.java:19: error: cannot find symbol
+            Cuenta cuenta = new Cuenta(cliente);
+            ^
+  symbol:   class Cuenta
+  location: class Main
+Tema7/Practica2Streams/BancoSmart/Main.java:19: error: cannot find symbol
+            Cuenta cuenta = new Cuenta(cliente);
+                                ^
+  symbol:   class Cuenta
+  location: class Main
+Tema7/Practica2Streams/BancoSmart/Main.java:25: error: cannot find symbol
+                TipoTransaccion tipo = rand.nextBoolean() ? TipoTransaccion.INGRESO : TipoTransaccion.GASTO;
+                ^
+  symbol:   class TipoTransaccion
+  location: class Main
+Tema7/Practica2Streams/BancoSmart/Main.java:25: error: cannot find symbol
+                TipoTransaccion tipo = rand.nextBoolean() ? TipoTransaccion.INGRESO : TipoTransaccion.GASTO;
+                                                            ^
+  symbol:   variable TipoTransaccion
+  location: class Main
+Tema7/Practica2Streams/BancoSmart/Main.java:25: error: cannot find symbol
+                TipoTransaccion tipo = rand.nextBoolean() ? TipoTransaccion.INGRESO : TipoTransaccion.GASTO;
+                                                                                      ^
+  symbol:   variable TipoTransaccion
+  location: class Main
+Tema7/Practica2Streams/BancoSmart/Main.java:29: error: cannot find symbol
+                Transaccion t = new Transaccion(cuenta, importe, fecha, tipo, descripcion);
+                ^
+  symbol:   class Transaccion
+  location: class Main
+Tema7/Practica2Streams/BancoSmart/Main.java:29: error: cannot find symbol
+                Transaccion t = new Transaccion(cuenta, importe, fecha, tipo, descripcion);
+                                    ^
+  symbol:   class Transaccion
+  location: class Main
+Tema7/Practica2Streams/BancoSmart/Main.java:37: error: cannot find symbol
+        List<Transaccion> transMin = banco.getTransaccionesImporteMinimo(valorMin);
+             ^
+  symbol:   class Transaccion
+  location: class Main
+Tema7/Practica2Streams/BancoSmart/Main.java:38: error: incompatible types: invalid method reference
+        transMin.forEach(System.out::println);
+                         ^
+    reference to println is ambiguous
+      both method println(char[]) in PrintStream and method println(String) in PrintStream match
+Tema7/Practica2Streams/BancoSmart/Main.java:50: error: cannot find symbol
+        List<Cuenta> ordenadas = banco.getCuentasPorSaldo();
+             ^
+  symbol:   class Cuenta
+  location: class Main
+Tema7/Practica2Streams/BancoSmart/Main.java:61: error: cannot find symbol
+        List<Cuenta> activas = banco.getCuentasActivas();
+             ^
+  symbol:   class Cuenta
+  location: class Main
+Tema7/Practica2Streams/BancoSmart/Main.java:66: error: cannot find symbol
+        Map<UUID, Set<Transaccion>> porDescripcion = banco.getTransaccionesPorDescripcion(palabraClave);
+                      ^
+  symbol:   class Transaccion
+  location: class Main
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+16 errors
+Programacion/Tema7/Practica2Streams/BancoSmart/Transaccion.java - Tema7/Practica2Streams/BancoSmart/Transaccion.java:8: error: cannot find symbol
+    private Cuenta cuenta;
+            ^
+  symbol:   class Cuenta
+  location: class Transaccion
+Tema7/Practica2Streams/BancoSmart/Transaccion.java:11: error: cannot find symbol
+    private TipoTransaccion tipoTransaccion;
+            ^
+  symbol:   class TipoTransaccion
+  location: class Transaccion
+Tema7/Practica2Streams/BancoSmart/Transaccion.java:14: error: cannot find symbol
+    public Transaccion(Cuenta cuenta, Double importe, LocalDate fecha, TipoTransaccion tipoTransaccion, String descripcion) {
+                       ^
+  symbol:   class Cuenta
+  location: class Transaccion
+Tema7/Practica2Streams/BancoSmart/Transaccion.java:14: error: cannot find symbol
+    public Transaccion(Cuenta cuenta, Double importe, LocalDate fecha, TipoTransaccion tipoTransaccion, String descripcion) {
+                                                                       ^
+  symbol:   class TipoTransaccion
+  location: class Transaccion
+Tema7/Practica2Streams/BancoSmart/Transaccion.java:43: error: cannot find symbol
+    public Cuenta getCuenta() {
+           ^
+  symbol:   class Cuenta
+  location: class Transaccion
+Tema7/Practica2Streams/BancoSmart/Transaccion.java:47: error: cannot find symbol
+    public void setCuenta(Cuenta cuenta) {
+                          ^
+  symbol:   class Cuenta
+  location: class Transaccion
+Tema7/Practica2Streams/BancoSmart/Transaccion.java:75: error: cannot find symbol
+    public TipoTransaccion getTipoTransaccion() {
+           ^
+  symbol:   class TipoTransaccion
+  location: class Transaccion
+Tema7/Practica2Streams/BancoSmart/Transaccion.java:79: error: cannot find symbol
+    public void setTipoTransaccion(TipoTransaccion tipoTransaccion) {
+                                   ^
+  symbol:   class TipoTransaccion
+  location: class Transaccion
+8 errors
+Programacion/Tema7/Practica2Streams/BancoSmart/Cuenta.java - Tema7/Practica2Streams/BancoSmart/Cuenta.java:10: error: cannot find symbol
+    private Cliente propietario;
+            ^
+  symbol:   class Cliente
+  location: class Cuenta
+Tema7/Practica2Streams/BancoSmart/Cuenta.java:12: error: cannot find symbol
+    private List<Transaccion> transacciones;
+                 ^
+  symbol:   class Transaccion
+  location: class Cuenta
+Tema7/Practica2Streams/BancoSmart/Cuenta.java:14: error: cannot find symbol
+    public Cuenta(Cliente propietario) {
+                  ^
+  symbol:   class Cliente
+  location: class Cuenta
+Tema7/Practica2Streams/BancoSmart/Cuenta.java:29: error: cannot find symbol
+    public Cliente getPropietario() {
+           ^
+  symbol:   class Cliente
+  location: class Cuenta
+Tema7/Practica2Streams/BancoSmart/Cuenta.java:33: error: cannot find symbol
+    public void setPropietario(Cliente propietario) {
+                               ^
+  symbol:   class Cliente
+  location: class Cuenta
+Tema7/Practica2Streams/BancoSmart/Cuenta.java:45: error: cannot find symbol
+    public List<Transaccion> getTransacciones() {
+                ^
+  symbol:   class Transaccion
+  location: class Cuenta
+Tema7/Practica2Streams/BancoSmart/Cuenta.java:49: error: cannot find symbol
+    public void setTransacciones(List<Transaccion> transacciones) {
+                                      ^
+  symbol:   class Transaccion
+  location: class Cuenta
+Tema7/Practica2Streams/BancoSmart/Cuenta.java:53: error: cannot find symbol
+    public void addTransaccion(Transaccion t){
+                               ^
+  symbol:   class Transaccion
+  location: class Cuenta
+8 errors
+Programacion/Tema7/Practica2Streams/BancoSmart/Banco.java - Tema7/Practica2Streams/BancoSmart/Banco.java:12: error: cannot find symbol
+    List<Cuenta> cuentas;
+         ^
+  symbol:   class Cuenta
+  location: class Banco
+Tema7/Practica2Streams/BancoSmart/Banco.java:18: error: cannot find symbol
+    public void addCuenta(Cuenta c){
+                          ^
+  symbol:   class Cuenta
+  location: class Banco
+Tema7/Practica2Streams/BancoSmart/Banco.java:22: error: cannot find symbol
+    public Cuenta getCuentaPorId(UUID id) {
+           ^
+  symbol:   class Cuenta
+  location: class Banco
+Tema7/Practica2Streams/BancoSmart/Banco.java:31: error: cannot find symbol
+    public List<Transaccion> getTodasTransacciones(){
+                ^
+  symbol:   class Transaccion
+  location: class Banco
+Tema7/Practica2Streams/BancoSmart/Banco.java:45: error: cannot find symbol
+    public List<Transaccion> getTransaccionesImporteMinimo(Double valor) {
+                ^
+  symbol:   class Transaccion
+  location: class Banco
+Tema7/Practica2Streams/BancoSmart/Banco.java:66: error: cannot find symbol
+    public List<Cuenta> getCuentasPorSaldo(){
+                ^
+  symbol:   class Cuenta
+  location: class Banco
+Tema7/Practica2Streams/BancoSmart/Banco.java:77: error: cannot find symbol
+    public List<Cuenta> getCuentasActivas(){
+                ^
+  symbol:   class Cuenta
+  location: class Banco
+Tema7/Practica2Streams/BancoSmart/Banco.java:86: error: cannot find symbol
+    public Map<UUID, Set<Transaccion>> getTransaccionesPorDescripcion(String palabra){
+                         ^
+  symbol:   class Transaccion
+  location: class Banco
+Tema7/Practica2Streams/BancoSmart/Banco.java:26: error: cannot find symbol
+        List<Cuenta> encontrado = cuentas.stream()
+             ^
+  symbol:   class Cuenta
+  location: class Banco
+Tema7/Practica2Streams/BancoSmart/Banco.java:48: error: cannot find symbol
+                .filter(t -> t.getImporte() > valor)
+                              ^
+  symbol:   method getImporte()
+  location: variable t of type Object
+Tema7/Practica2Streams/BancoSmart/Banco.java:49: error: cannot find symbol
+                .sorted(Comparator.comparing(Transaccion::getFecha))
+                                             ^
+  symbol:   variable Transaccion
+  location: class Banco
+Tema7/Practica2Streams/BancoSmart/Banco.java:55: error: cannot find symbol
+                .filter(t -> t.getTipoTransaccion().equals(TipoTransaccion.INGRESO))
+                                                           ^
+  symbol:   variable TipoTransaccion
+  location: class Banco
+Tema7/Practica2Streams/BancoSmart/Banco.java:55: error: cannot find symbol
+                .filter(t -> t.getTipoTransaccion().equals(TipoTransaccion.INGRESO))
+                              ^
+  symbol:   method getTipoTransaccion()
+  location: variable t of type Object
+Tema7/Practica2Streams/BancoSmart/Banco.java:56: error: cannot find symbol
+                .collect(Collectors.summarizingDouble(Transaccion::getImporte))
+                                                      ^
+  symbol:   variable Transaccion
+  location: class Banco
+Tema7/Practica2Streams/BancoSmart/Banco.java:62: error: cannot find symbol
+                .filter(t -> t.getTipoTransaccion().equals(TipoTransaccion.GASTO))
+                                                           ^
+  symbol:   variable TipoTransaccion
+  location: class Banco
+Tema7/Practica2Streams/BancoSmart/Banco.java:62: error: cannot find symbol
+                .filter(t -> t.getTipoTransaccion().equals(TipoTransaccion.GASTO))
+                              ^
+  symbol:   method getTipoTransaccion()
+  location: variable t of type Object
+Tema7/Practica2Streams/BancoSmart/Banco.java:63: error: cannot find symbol
+                .collect(Collectors.summarizingDouble(Transaccion::getImporte))
+                                                      ^
+  symbol:   variable Transaccion
+  location: class Banco
+Tema7/Practica2Streams/BancoSmart/Banco.java:68: error: cannot find symbol
+                .sorted(Comparator.comparing(Cuenta::getSaldo))
+                                             ^
+  symbol:   variable Cuenta
+  location: class Banco
+Tema7/Practica2Streams/BancoSmart/Banco.java:73: error: cannot find symbol
+                .collect(Collectors.groupingBy(Cuenta::getId, counting()));
+                                               ^
+  symbol:   variable Cuenta
+  location: class Banco
+Tema7/Practica2Streams/BancoSmart/Banco.java:89: error: cannot find symbol
+                .filter(t -> t.getDescripcion().contains(palabra))
+                              ^
+  symbol:   method getDescripcion()
+  location: variable t of type Object
+Tema7/Practica2Streams/BancoSmart/Banco.java:90: error: cannot find symbol
+                .collect(Collectors.groupingBy(t -> t.getCuenta().getId(), Collectors.toSet()));
+                                                     ^
+  symbol:   method getCuenta()
+  location: variable t of type Object
+Tema7/Practica2Streams/BancoSmart/Banco.java:94: error: cannot find symbol
+        Map<Month, List<Transaccion>> transPorMes = cuentas.stream()
+                        ^
+  symbol:   class Transaccion
+  location: class Banco
+Tema7/Practica2Streams/BancoSmart/Banco.java:97: error: cannot find symbol
+                        t -> t.getFecha().getMonth(),
+                              ^
+  symbol:   method getFecha()
+  location: variable t of type Object
+Tema7/Practica2Streams/BancoSmart/Banco.java:106: error: cannot find symbol
+                    .filter(t -> t.getTipoTransaccion() == TipoTransaccion.INGRESO)
+                                                           ^
+  symbol:   variable TipoTransaccion
+  location: class Banco
+Tema7/Practica2Streams/BancoSmart/Banco.java:107: error: cannot find symbol
+                    .mapToDouble(Transaccion::getImporte)
+                                 ^
+  symbol:   variable Transaccion
+  location: class Banco
+Tema7/Practica2Streams/BancoSmart/Banco.java:110: error: cannot find symbol
+                    .filter(t -> t.getTipoTransaccion() == TipoTransaccion.GASTO)
+                                                           ^
+  symbol:   variable TipoTransaccion
+  location: class Banco
+Tema7/Practica2Streams/BancoSmart/Banco.java:111: error: cannot find symbol
+                    .mapToDouble(Transaccion::getImporte)
+                                 ^
+  symbol:   variable Transaccion
+  location: class Banco
+Note: Tema7/Practica2Streams/BancoSmart/Banco.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+27 errors
+Programacion/Tema7/PracticaClaseHashSet/AulaNueva.java - Tema7/PracticaClaseHashSet/AulaNueva.java:9: error: cannot find symbol
+    HashSet<Alumno> alumnos;
+            ^
+  symbol:   class Alumno
+  location: class AulaNueva
+Tema7/PracticaClaseHashSet/AulaNueva.java:11: error: cannot find symbol
+    public AulaNueva(String nombre, String ubicacion, HashSet<Alumno> alumnos) {
+                                                              ^
+  symbol:   class Alumno
+  location: class AulaNueva
+Tema7/PracticaClaseHashSet/AulaNueva.java:33: error: cannot find symbol
+    public HashSet<Alumno> getAlumnos() {
+                   ^
+  symbol:   class Alumno
+  location: class AulaNueva
+Tema7/PracticaClaseHashSet/AulaNueva.java:37: error: cannot find symbol
+    public void setAlumnos(HashSet<Alumno> alumnos) {
+                                   ^
+  symbol:   class Alumno
+  location: class AulaNueva
+Tema7/PracticaClaseHashSet/AulaNueva.java:51: error: cannot find symbol
+    public void addAlumno(Alumno alumno){
+                          ^
+  symbol:   class Alumno
+  location: class AulaNueva
+Tema7/PracticaClaseHashSet/AulaNueva.java:54: error: cannot find symbol
+    public boolean delAlumno(Alumno alumno){
+                             ^
+  symbol:   class Alumno
+  location: class AulaNueva
+Tema7/PracticaClaseHashSet/AulaNueva.java:58: error: cannot find symbol
+        for (Alumno al : alumnos){
+             ^
+  symbol:   class Alumno
+  location: class AulaNueva
+7 errors
+Programacion/Tema7/PracticaClaseHashSet/Main.java - Tema7/PracticaClaseHashSet/Main.java:9: error: cannot find symbol
+    ArrayList<Alumno> alumnos = new ArrayList<>();
+              ^
+  symbol:   class Alumno
+  location: class Main
+Tema7/PracticaClaseHashSet/Main.java:10: error: cannot find symbol
+    HashSet<Alumno> alumnosSet = new HashSet<>();
+            ^
+  symbol:   class Alumno
+  location: class Main
+Tema7/PracticaClaseHashSet/Main.java:11: error: cannot find symbol
+    Aula aula = new Aula(alumnos, "Informatica", "Sala de Ordenadores II");
+    ^
+  symbol:   class Aula
+  location: class Main
+Tema7/PracticaClaseHashSet/Main.java:11: error: cannot find symbol
+    Aula aula = new Aula(alumnos, "Informatica", "Sala de Ordenadores II");
+                    ^
+  symbol:   class Aula
+  location: class Main
+Tema7/PracticaClaseHashSet/Main.java:12: error: cannot find symbol
+    AulaNueva aulaNueva = new AulaNueva("Telecomunicaciones", "Sala de Telecomunicaciones", alumnosSet);
+    ^
+  symbol:   class AulaNueva
+  location: class Main
+Tema7/PracticaClaseHashSet/Main.java:12: error: cannot find symbol
+    AulaNueva aulaNueva = new AulaNueva("Telecomunicaciones", "Sala de Telecomunicaciones", alumnosSet);
+                              ^
+  symbol:   class AulaNueva
+  location: class Main
+Tema7/PracticaClaseHashSet/Main.java:14: error: cannot find symbol
+    Alumno a1 = new Alumno("1111111", "al1", "apel1", "alumno12gmail.com", 14, "Almeria Capital");
+    ^
+  symbol:   class Alumno
+  location: class Main
+Tema7/PracticaClaseHashSet/Main.java:14: error: cannot find symbol
+    Alumno a1 = new Alumno("1111111", "al1", "apel1", "alumno12gmail.com", 14, "Almeria Capital");
+                    ^
+  symbol:   class Alumno
+  location: class Main
+Tema7/PracticaClaseHashSet/Main.java:15: error: cannot find symbol
+    Alumno a2 = new Alumno("1111112", "al2", "apel1", "alumno12gmail.com", 14, "Almeria Capital");
+    ^
+  symbol:   class Alumno
+  location: class Main
+Tema7/PracticaClaseHashSet/Main.java:15: error: cannot find symbol
+    Alumno a2 = new Alumno("1111112", "al2", "apel1", "alumno12gmail.com", 14, "Almeria Capital");
+                    ^
+  symbol:   class Alumno
+  location: class Main
+Tema7/PracticaClaseHashSet/Main.java:16: error: cannot find symbol
+    Alumno a3 = new Alumno("1111113", "al3", "apel1", "alumno12gmail.com", 14, "Almeria Capital");
+    ^
+  symbol:   class Alumno
+  location: class Main
+Tema7/PracticaClaseHashSet/Main.java:16: error: cannot find symbol
+    Alumno a3 = new Alumno("1111113", "al3", "apel1", "alumno12gmail.com", 14, "Almeria Capital");
+                    ^
+  symbol:   class Alumno
+  location: class Main
+Tema7/PracticaClaseHashSet/Main.java:17: error: cannot find symbol
+    Alumno a4 = new Alumno("1111114", "al4", "apel1", "alumno12gmail.com", 14, "Almeria Capital");
+    ^
+  symbol:   class Alumno
+  location: class Main
+Tema7/PracticaClaseHashSet/Main.java:17: error: cannot find symbol
+    Alumno a4 = new Alumno("1111114", "al4", "apel1", "alumno12gmail.com", 14, "Almeria Capital");
+                    ^
+  symbol:   class Alumno
+  location: class Main
+Tema7/PracticaClaseHashSet/Main.java:18: error: cannot find symbol
+    Alumno a5 = new Alumno("1111115", "al5", "apel1", "alumno12gmail.com", 14, "Almeria Capital");
+    ^
+  symbol:   class Alumno
+  location: class Main
+Tema7/PracticaClaseHashSet/Main.java:18: error: cannot find symbol
+    Alumno a5 = new Alumno("1111115", "al5", "apel1", "alumno12gmail.com", 14, "Almeria Capital");
+                    ^
+  symbol:   class Alumno
+  location: class Main
+Tema7/PracticaClaseHashSet/Main.java:21: error: cannot find symbol
+    Alumno a6 = new Alumno("1111115", "al6", "apel6", "alumno12gmail.com", 14, "Almeria Capital");
+    ^
+  symbol:   class Alumno
+  location: class Main
+Tema7/PracticaClaseHashSet/Main.java:21: error: cannot find symbol
+    Alumno a6 = new Alumno("1111115", "al6", "apel6", "alumno12gmail.com", 14, "Almeria Capital");
+                    ^
+  symbol:   class Alumno
+  location: class Main
+18 errors
+Programacion/Tema7/PracticaClaseHashSet/Aula.java - Tema7/PracticaClaseHashSet/Aula.java:11: error: cannot find symbol
+    ArrayList<Alumno> alumnos;
+              ^
+  symbol:   class Alumno
+  location: class Aula
+Tema7/PracticaClaseHashSet/Aula.java:12: error: cannot find symbol
+    public Aula(ArrayList<Alumno> alumnos, String nombre, String ubicacion) {
+                          ^
+  symbol:   class Alumno
+  location: class Aula
+Tema7/PracticaClaseHashSet/Aula.java:18: error: cannot find symbol
+    public void addAlumno(Alumno al){
+                          ^
+  symbol:   class Alumno
+  location: class Aula
+Tema7/PracticaClaseHashSet/Aula.java:21: error: cannot find symbol
+    public void removeAlumno(Alumno al){
+                             ^
+  symbol:   class Alumno
+  location: class Aula
+Tema7/PracticaClaseHashSet/Aula.java:41: error: cannot find symbol
+    public ArrayList<Alumno> getAlumnos() {
+                     ^
+  symbol:   class Alumno
+  location: class Aula
+Tema7/PracticaClaseHashSet/Aula.java:45: error: cannot find symbol
+    public void setAlumnos(ArrayList<Alumno> alumnos) {
+                                     ^
+  symbol:   class Alumno
+  location: class Aula
+Tema7/PracticaClaseHashSet/Aula.java:25: error: cannot find symbol
+        for (Alumno al : alumnos){
+             ^
+  symbol:   class Alumno
+  location: class Aula
+7 errors
+Programacion/Tema7/FicherosConJavaNIO2/Ejercicio1/FileUtils.java - Tema7/FicherosConJavaNIO2/Ejercicio1/FileUtils.java:3: error: package Programacion.Streamsopenwebinars does not exist
+import Programacion.Streamsopenwebinars.StreamEmpty;
+                                       ^
+1 error
