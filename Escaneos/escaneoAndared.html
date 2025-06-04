@@ -1,0 +1,500 @@
+<pre>Nmap scan report for f0.04002052.04.andared.ced.junta-andalucia.es (192.168.8.1)
+Host is up, received arp-response (0.010s latency).
+Scanned at 2025-05-28 19:42:53 CEST for 155s
+Not shown: 977 closed tcp ports (reset)
+PORT     STATE    SERVICE           REASON              VERSION
+1/tcp    filtered tcpmux            no-response
+3/tcp    filtered compressnet       no-response
+4/tcp    filtered unknown           no-response
+6/tcp    filtered unknown           no-response
+7/tcp    filtered echo              no-response
+9/tcp    filtered discard           no-response
+13/tcp   filtered daytime           no-response
+17/tcp   filtered qotd              no-response
+19/tcp   filtered chargen           no-response
+21/tcp   open     ftp               syn-ack ttl 64
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| drwxr-xr-x   6 0        0            4096 Sep 28  2020 catcornerdda
+| drwxr-xr-x   6 0        0            4096 Sep 28  2020 catcornerdda2
+| drwxr-xr-x   3 127      132          4096 May 10  2022 centros.edu.guadalinex.org
+| lrwxrwxrwx   1 0        0               1 May 18  2011 Edu -&gt; /Edu
+| drwxr-xr-x   2 0        0            4096 May  6 20:24 eosfocal
+| -rw-r--r--   1 127      132         10736 May 28 04:25 _exfail_cnt
+| drwxr-xr-x   6 0        0            4096 May 28 01:14 fenix
+| drwxr-xr-x   5 0        0            4096 May 28 01:15 fenixscmd
+| drwxr-xr-x   6 0        0            4096 May 28 01:15 fenixscpdi
+| drwxrwxrwx   6 0        0            4096 May 28 01:15 focal [NSE: writeable]
+| drwxr-xr-x   5 0        0            4096 May 28 01:16 focalscmd
+| drwxrwxrwx   6 0        0            4096 May 28 01:15 focalscpdi [NSE: writeable]
+| drwxr-xr-x   6 0        0            4096 May 28 01:15 focal-update
+| drwxr-xr-x   2 0        0            4096 Jan  4  2024 gedufenix
+| drwxr-xr-x   2 33       33           4096 Sep 27  2021 gedupersonalizado
+| drwxr-xr-x   6 0        0            4096 Nov 16  2020 heroes
+| lrwxrwxrwx   1 0        0              17 Oct 17  2020 heroessc -&gt; /focalsc
+| lrwxrwxrwx   1 0        0              19 Oct 17  2020 heroesscmd -&gt; /focalscmd
+| lrwxrwxrwx   1 0        0              20 Oct 17  2020 heroesscpdi -&gt; /focalscpdi
+| drwxr-xr-x   6 0        0            4096 Sep 28  2020 precisedda
+| drwxr-xr-x   6 0        0            4096 Sep 28  2020 precisedda2
+| drwx------   2 2002     0            4096 May 18  2011 privado
+| drwx------   2 2001     0            4096 May 18  2011 publico
+| -rwxr-xr-x   1 ftp      0             166 Nov  4  2008 welcome.msg
+| drwxr-xr-x   4 127      132          4096 May 10  2022 _xstore
+|_drwxr-xr-x   9 0        0            4096 Dec 22  2020 zocodda
+| fingerprint-strings: 
+|   GenericLines: 
+|     220 ProFTPD Server (Debian) [192.168.8.1]
+|     Comando invalido: intenta ser mas creativo
+|     Comando invalido: intenta ser mas creativo
+|   Help: 
+|     220 ProFTPD Server (Debian) [192.168.8.1]
+|     214-Los siguientes comandos son desconocidos (* =&gt;&apos;s no implementado):
+|     214-CWD XCWD CDUP XCUP SMNT* QUIT PORT PASV 
+|     214-EPRT EPSV ALLO* RNFR RNTO DELE MDTM RMD 
+|     214-XRMD MKD XMKD PWD XPWD SIZE SYST HELP 
+|     214-NOOP FEAT OPTS HOST CLNT AUTH* CCC* CONF* 
+|     214-ENC* MIC* PBSZ* PROT* TYPE STRU MODE RETR 
+|     214-STOR STOU APPE REST ABOR USER PASS ACCT* 
+|     214-REIN* LIST NLST STAT SITE MLSD MLST 
+|     Dirigir comentarios a root@f0.04002052.04.andared.ced.junta-andalucia.es
+|   NULL, SMBProgNeg, SSLSessionReq: 
+|_    220 ProFTPD Server (Debian) [192.168.8.1]
+22/tcp   filtered ssh               port-unreach ttl 64
+25/tcp   open     smtp              syn-ack ttl 64      Postfix smtpd
+| ssl-cert: Subject: commonName=f0.04002052.04.andared.ced.junta-andalucia.es
+| Subject Alternative Name: DNS:f0.04002052.04.andared.ced.junta-andalucia.es
+| Issuer: commonName=f0.04002052.04.andared.ced.junta-andalucia.es
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2020-08-07T07:50:48
+| Not valid after:  2030-08-05T07:50:48
+| MD5:   de5c:fd21:68f1:4a6c:97c2:e31a:2e63:0c37
+| SHA-1: 43ce:3c91:9b1e:28ac:945d:3fe9:c6f6:c20c:c115:b572
+| -----BEGIN CERTIFICATE-----
+| MIIDRTCCAi2gAwIBAgIUXDfv3h4jsTfNZ/wE3RYSxSC9FhwwDQYJKoZIhvcNAQEL
+| BQAwODE2MDQGA1UEAwwtZjAuMDQwMDIwNTIuMDQuYW5kYXJlZC5jZWQuanVudGEt
+| YW5kYWx1Y2lhLmVzMB4XDTIwMDgwNzA3NTA0OFoXDTMwMDgwNTA3NTA0OFowODE2
+| MDQGA1UEAwwtZjAuMDQwMDIwNTIuMDQuYW5kYXJlZC5jZWQuanVudGEtYW5kYWx1
+| Y2lhLmVzMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxuE08Cn46SUL
+| 6l/QCd87MIKW3C2ZK0BNKlv1lRqSH+ehvOE+MwPfmHi4Hest/6hSc42VFmKLep2b
+| AU9OAJOxyK5mV7AJ8o2xcUCeuSaMzjxltjDUmUJrkLLIu9ndQ4hjv0+WemRbgdGH
+| Ze7oI+X6dd6LeVo/l7n7CqhpUb1+KdgajfC1hJ8mkuID0H9qAUCRaDPkH5HbNgNA
+| /035PEWuKp9E4rA6jJFoK8mF1JQNM7jmtN6gpv9HgEb0kS9vFnAEXBNmraJQfl8q
+| kfSWePj1nD55+L/9DfAVoUa/Z2my9Wlpq1AUI6SenVSctiFYNoKMT2xELP2e/40r
+| 6GX9eU0bqwIDAQABo0cwRTAJBgNVHRMEAjAAMDgGA1UdEQQxMC+CLWYwLjA0MDAy
+| MDUyLjA0LmFuZGFyZWQuY2VkLmp1bnRhLWFuZGFsdWNpYS5lczANBgkqhkiG9w0B
+| AQsFAAOCAQEAPJKbqRdH3EPt4+eu6+cpVPJPMs7ygpEwqhusE8Yan4+o92YKgHqV
+| Fw4SBD3BZX3Cj2NXuPO2KJ5jL264t7Qz9ROvQI9/yD0XVWTdF72w3rdtMqlIEEQr
+| o0m0A6RMVT6l28lmirV9rYi1Z7YYzpHsjNQK2ZvrGAEkqqQio8/iP8lFgkF18q1S
+| Rdg/3EjN/0OKMJkqETuy97+sXzmnBgsCH9tAgcyrjEcHTwwmKFRcz1QdHSuQHK2G
+| qkHMXm24bAUNykb220X8RZJyb8bgdrRYmcBMjsO9eM1areAbVzsMgJoDi2YmX3W/
+| KjROqKq0e2OqfJR86k1XbSGhVhJZ65Nh7w==
+|_-----END CERTIFICATE-----
+|_smtp-commands: f0.04002052.04.andared.ced.junta-andalucia.es, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, CHUNKING
+|_ssl-date: TLS randomness does not represent time
+53/tcp   open     domain            syn-ack ttl 64      ISC BIND 9.11.5-P4-5.1 (Debian Linux)
+| dns-nsid: 
+|_  bind.version: 9.11.5-P4-5.1-Debian
+80/tcp   open     http              syn-ack ttl 64      Apache httpd 2.4.38 ((Debian) mod_fcgid/2.3.9 PHP/7.3.4-2)
+|_http-title: Site doesn&apos;t have a title (text/html).
+|_http-server-header: Apache/2.4.38 (Debian) mod_fcgid/2.3.9 PHP/7.3.4-2
+| http-methods: 
+|   Supported Methods: GET POST OPTIONS HEAD TRACE
+|_  Potentially risky methods: TRACE
+111/tcp  open     rpcbind           syn-ack ttl 64      2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|_  100000  3,4          111/udp6  rpcbind
+389/tcp  open     ldap              syn-ack ttl 64      (Anonymous bind OK)
+| ssl-cert: Subject: commonName=f0/organizationName=Junta de Andalucia/stateOrProvinceName=Andalucia/countryName=ES/organizationalUnitName=Consejeria de Educacion y Ciencia/localityName=Andalucia
+| Issuer: commonName=f0/organizationName=Junta de Andalucia/stateOrProvinceName=Andalucia/countryName=ES/organizationalUnitName=Consejeria de Educacion y Ciencia/localityName=Andalucia
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: md5WithRSAEncryption
+| Not valid before: 2004-07-19T12:28:55
+| Not valid after:  2014-07-17T12:28:55
+| MD5:   98e2:818f:8e01:c3c2:fde0:fef6:f49d:a659
+| SHA-1: 847f:081a:84d0:099b:b90b:5b43:18c4:8da0:7b27:c700
+| -----BEGIN CERTIFICATE-----
+| MIIDejCCAuOgAwIBAgIBADANBgkqhkiG9w0BAQQFADCBizELMAkGA1UEBhMCRVMx
+| EjAQBgNVBAgTCUFuZGFsdWNpYTESMBAGA1UEBxMJQW5kYWx1Y2lhMRswGQYDVQQK
+| ExJKdW50YSBkZSBBbmRhbHVjaWExKjAoBgNVBAsTIUNvbnNlamVyaWEgZGUgRWR1
+| Y2FjaW9uIHkgQ2llbmNpYTELMAkGA1UEAxMCZjAwHhcNMDQwNzE5MTIyODU1WhcN
+| MTQwNzE3MTIyODU1WjCBizELMAkGA1UEBhMCRVMxEjAQBgNVBAgTCUFuZGFsdWNp
+| YTESMBAGA1UEBxMJQW5kYWx1Y2lhMRswGQYDVQQKExJKdW50YSBkZSBBbmRhbHVj
+| aWExKjAoBgNVBAsTIUNvbnNlamVyaWEgZGUgRWR1Y2FjaW9uIHkgQ2llbmNpYTEL
+| MAkGA1UEAxMCZjAwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKtfcHuoLFqG
+| 4BPmtsNOl6czbie0+ntPeIgvsLLAj60mItCf9afvUzJbXUUyI8A4BObyQrU6O78N
+| LmAPYmXWkdqK9M7BAkkEsPLQEf2dKF2vJM+1pBltCV1dYqYsdf5AByFgwIGm/c+8
+| PyJD7511+1SNig9oSVIu3MjCPmIhWSBDAgMBAAGjgeswgegwHQYDVR0OBBYEFNPz
+| AdtN3jaWa6uoaqlInY1lAWhNMIG4BgNVHSMEgbAwga2AFNPzAdtN3jaWa6uoaqlI
+| nY1lAWhNoYGRpIGOMIGLMQswCQYDVQQGEwJFUzESMBAGA1UECBMJQW5kYWx1Y2lh
+| MRIwEAYDVQQHEwlBbmRhbHVjaWExGzAZBgNVBAoTEkp1bnRhIGRlIEFuZGFsdWNp
+| YTEqMCgGA1UECxMhQ29uc2VqZXJpYSBkZSBFZHVjYWNpb24geSBDaWVuY2lhMQsw
+| CQYDVQQDEwJmMIIBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4GBAF3I
+| E+tkfEXhp6vbBSBqSLHR6iqGJX9Pb5gkVEDwWK/7FXtJzQjyvbOsnCf64ByKlQG3
+| 25cg13nLa63/nhRspKqhCtSuOhby49RZYLK9GlCAKKlSSfT+xSEIK3GI+5uZCsTp
+| cPZABVVnGZwf1k1jzi30dzCv2PUzVdwz/mkgmP4v
+|_-----END CERTIFICATE-----
+|_ssl-date: TLS randomness does not represent time
+3030/tcp open     http              syn-ack ttl 64      CherryPy wsgiserver
+|_http-title: Site doesn&apos;t have a title (text/html).
+|_http-server-header: localhost
+3128/tcp open     http-proxy        syn-ack ttl 64      Squid http proxy 4.6
+|_http-server-header: squid/4.6
+|_http-title: ERROR: The requested URL could not be retrieved
+5666/tcp open     tcpwrapped        syn-ack ttl 64
+8080/tcp open     http-proxy        syn-ack ttl 64      Apache/2.4.38 (Debian) mod_fcgid/2.3.9 PHP/7.3.4-2
+|_http-server-header: Apache/2.4.38 (Debian) mod_fcgid/2.3.9 PHP/7.3.4-2
+|_http-title: ERROR: The requested URL could not be retrieved
+| fingerprint-strings: 
+|   FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, LDAPSearchReq, RTSPRequest, Socks5: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/html
+|     Connection: Close
+|     &lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;e2guardian - 400 Bad Request&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;&lt;H1&gt;e2guardian - 400 Bad Request&lt;/H1&gt;La URL solicitada est
+|_    formada.&lt;/BODY&gt;&lt;/HTML&gt;
+8090/tcp open     ssl/opsmessaging? syn-ack ttl 64
+| sslv2: 
+|   SSLv2 supported
+|_  ciphers: none
+|_ssl-date: 2025-05-28T17:45:16+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=jesse/organizationName=Delta/stateOrProvinceName=TW/countryName=TW/emailAddress=jesse.zhuo@delta.com.tw/organizationalUnitName=RUBU/localityName=TN
+| Issuer: commonName=jesse/organizationName=Delta/stateOrProvinceName=TW/countryName=TW/emailAddress=jesse.zhuo@delta.com.tw/organizationalUnitName=RUBU/localityName=TN
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: md5WithRSAEncryption
+| Not valid before: 2009-12-18T02:31:33
+| Not valid after:  2019-12-16T02:31:33
+| MD5:   ac4d:077c:f08f:bd04:119f:1fcb:fba5:0144
+| SHA-1: 9944:e514:52e6:d26b:44cc:f7fb:fb48:0398:7d21:6585
+| -----BEGIN CERTIFICATE-----
+| MIIDUDCCArmgAwIBAgIBADANBgkqhkiG9w0BAQQFADB+MQswCQYDVQQGEwJUVzEL
+| MAkGA1UECBMCVFcxCzAJBgNVBAcTAlROMQ4wDAYDVQQKEwVEZWx0YTENMAsGA1UE
+| CxMEUlVCVTEOMAwGA1UEAxMFamVzc2UxJjAkBgkqhkiG9w0BCQEWF2plc3NlLnpo
+| dW9AZGVsdGEuY29tLnR3MB4XDTA5MTIxODAyMzEzM1oXDTE5MTIxNjAyMzEzM1ow
+| fjELMAkGA1UEBhMCVFcxCzAJBgNVBAgTAlRXMQswCQYDVQQHEwJUTjEOMAwGA1UE
+| ChMFRGVsdGExDTALBgNVBAsTBFJVQlUxDjAMBgNVBAMTBWplc3NlMSYwJAYJKoZI
+| hvcNAQkBFhdqZXNzZS56aHVvQGRlbHRhLmNvbS50dzCBnzANBgkqhkiG9w0BAQEF
+| AAOBjQAwgYkCgYEA02OyMs/3MeuCIsZzsbnFOVa03EkZcfwEY01Sa8axX/ik0IMJ
+| atetXIZ+rYR+IdGO6W901AgB0BnLPEmd8nSzxk8S6VStGn9n9BP4eojtUty53K2I
+| 1dBxQ8Zt43lVuY1Q1/l5AbQGDCavmzOuamgIjNjtLkqIhK1t/sggKpMABH8CAwEA
+| AaOB3TCB2jAdBgNVHQ4EFgQURCmvy3Jumyt9jy67QvviYvUnm/owgaoGA1UdIwSB
+| ojCBn4AURCmvy3Jumyt9jy67QvviYvUnm/qhgYOkgYAwfjELMAkGA1UEBhMCVFcx
+| CzAJBgNVBAgTAlRXMQswCQYDVQQHEwJUTjEOMAwGA1UEChMFRGVsdGExDTALBgNV
+| BAsTBFJVQlUxDjAMBgNVBAMTBWplc3NlMSYwJAYJKoZIhvcNAQkBFhdqZXNzZS56
+| aHVvQGRlbHRhLmNvbS50d4IBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUA
+| A4GBAKW4X+CKHSkDW3YYxI8rYyCR+2+1M7GmdGxhnSLtNVvCGhhk2VbIVf+Xus0F
+| SywnbYeivzKgfe7LtRK9QDXB5gCsefes7jXHGshjOvz/pmStoCxAp+HwyPEID8sr
+| ooIKO2+6MCkbrN7J8oKpZHjCblEhDFRDM19NXpEMkXfHzMAy
+|_-----END CERTIFICATE-----
+8443/tcp open     https-alt?        syn-ack ttl 64
+9102/tcp open     jetdirect?        syn-ack ttl 64
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port21-TCP:V=7.94SVN%I=7%D=5/28%Time=68374B27%P=x86_64-pc-linux-gnu%r(N
+SF:ULL,2B,&quot;220\x20ProFTPD\x20Server\x20\(Debian\)\x20\[192\.168\.8\.1\]\r\
+SF:n&quot;)%r(GenericLines,8B,&quot;220\x20ProFTPD\x20Server\x20\(Debian\)\x20\[192\
+SF:.168\.8\.1\]\r\n500\x20Comando\x20invalido:\x20intenta\x20ser\x20mas\x2
+SF:0creativo\r\n500\x20Comando\x20invalido:\x20intenta\x20ser\x20mas\x20cr
+SF:eativo\r\n&quot;)%r(Help,2A3,&quot;220\x20ProFTPD\x20Server\x20\(Debian\)\x20\[19
+SF:2\.168\.8\.1\]\r\n214-Los\x20siguientes\x20comandos\x20son\x20desconoci
+SF:dos\x20\(\*\x20=&gt;&apos;s\x20no\x20implementado\):\r\n214-CWD\x20\x20\x20\x20
+SF:\x20XCWD\x20\x20\x20\x20CDUP\x20\x20\x20\x20XCUP\x20\x20\x20\x20SMNT\*\
+SF:x20\x20\x20QUIT\x20\x20\x20\x20PORT\x20\x20\x20\x20PASV\x20\x20\x20\x20
+SF:\r\n214-EPRT\x20\x20\x20\x20EPSV\x20\x20\x20\x20ALLO\*\x20\x20\x20RNFR\
+SF:x20\x20\x20\x20RNTO\x20\x20\x20\x20DELE\x20\x20\x20\x20MDTM\x20\x20\x20
+SF:\x20RMD\x20\x20\x20\x20\x20\r\n214-XRMD\x20\x20\x20\x20MKD\x20\x20\x20\
+SF:x20\x20XMKD\x20\x20\x20\x20PWD\x20\x20\x20\x20\x20XPWD\x20\x20\x20\x20S
+SF:IZE\x20\x20\x20\x20SYST\x20\x20\x20\x20HELP\x20\x20\x20\x20\r\n214-NOOP
+SF:\x20\x20\x20\x20FEAT\x20\x20\x20\x20OPTS\x20\x20\x20\x20HOST\x20\x20\x2
+SF:0\x20CLNT\x20\x20\x20\x20AUTH\*\x20\x20\x20CCC\*\x20\x20\x20\x20CONF\*\
+SF:x20\x20\x20\r\n214-ENC\*\x20\x20\x20\x20MIC\*\x20\x20\x20\x20PBSZ\*\x20
+SF:\x20\x20PROT\*\x20\x20\x20TYPE\x20\x20\x20\x20STRU\x20\x20\x20\x20MODE\
+SF:x20\x20\x20\x20RETR\x20\x20\x20\x20\r\n214-STOR\x20\x20\x20\x20STOU\x20
+SF:\x20\x20\x20APPE\x20\x20\x20\x20REST\x20\x20\x20\x20ABOR\x20\x20\x20\x2
+SF:0USER\x20\x20\x20\x20PASS\x20\x20\x20\x20ACCT\*\x20\x20\x20\r\n214-REIN
+SF:\*\x20\x20\x20LIST\x20\x20\x20\x20NLST\x20\x20\x20\x20STAT\x20\x20\x20\
+SF:x20SITE\x20\x20\x20\x20MLSD\x20\x20\x20\x20MLST\x20\x20\x20\x20\r\n214\
+SF:x20Dirigir\x20comentarios\x20a\x20root@f0\.04002052\.04\.andared\.ced\.
+SF:junta-andalucia\.es\r\n&quot;)%r(SSLSessionReq,2B,&quot;220\x20ProFTPD\x20Server\
+SF:x20\(Debian\)\x20\[192\.168\.8\.1\]\r\n&quot;)%r(SMBProgNeg,2B,&quot;220\x20ProFT
+SF:PD\x20Server\x20\(Debian\)\x20\[192\.168\.8\.1\]\r\n&quot;);
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8080-TCP:V=7.94SVN%I=7%D=5/28%Time=68374B28%P=x86_64-pc-linux-gnu%r
+SF:(GetRequest,E4,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\nContent-Type:\x20te
+SF:xt/html\r\nConnection:\x20Close\r\n\r\n&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;e2guardian\x2
+SF:0-\x20400\x20Bad\x20Request&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;&lt;H1&gt;e2guardian\x20-\x20
+SF:400\x20Bad\x20Request&lt;/H1&gt;La\x20URL\x20solicitada\x20est\xc3\xa1\x20mal
+SF:\x20formada\.&lt;/BODY&gt;&lt;/HTML&gt;\r\n&quot;)%r(HTTPOptions,E4,&quot;HTTP/1\.1\x20400\x2
+SF:0Bad\x20Request\nContent-Type:\x20text/html\r\nConnection:\x20Close\r\n
+SF:\r\n&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;e2guardian\x20-\x20400\x20Bad\x20Request&lt;/TITLE&gt;
+SF:&lt;/HEAD&gt;&lt;BODY&gt;&lt;H1&gt;e2guardian\x20-\x20400\x20Bad\x20Request&lt;/H1&gt;La\x20URL
+SF:\x20solicitada\x20est\xc3\xa1\x20mal\x20formada\.&lt;/BODY&gt;&lt;/HTML&gt;\r\n&quot;)%r
+SF:(RTSPRequest,E4,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\nContent-Type:\x20t
+SF:ext/html\r\nConnection:\x20Close\r\n\r\n&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;e2guardian\x
+SF:20-\x20400\x20Bad\x20Request&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;&lt;H1&gt;e2guardian\x20-\x2
+SF:0400\x20Bad\x20Request&lt;/H1&gt;La\x20URL\x20solicitada\x20est\xc3\xa1\x20ma
+SF:l\x20formada\.&lt;/BODY&gt;&lt;/HTML&gt;\r\n&quot;)%r(FourOhFourRequest,E4,&quot;HTTP/1\.1\x2
+SF:0400\x20Bad\x20Request\nContent-Type:\x20text/html\r\nConnection:\x20Cl
+SF:ose\r\n\r\n&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;e2guardian\x20-\x20400\x20Bad\x20Request&lt;
+SF:/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;&lt;H1&gt;e2guardian\x20-\x20400\x20Bad\x20Request&lt;/H1&gt;La
+SF:\x20URL\x20solicitada\x20est\xc3\xa1\x20mal\x20formada\.&lt;/BODY&gt;&lt;/HTML&gt;\
+SF:r\n&quot;)%r(Socks5,E4,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\nContent-Type:\x2
+SF:0text/html\r\nConnection:\x20Close\r\n\r\n&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;e2guardian
+SF:\x20-\x20400\x20Bad\x20Request&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;&lt;H1&gt;e2guardian\x20-\
+SF:x20400\x20Bad\x20Request&lt;/H1&gt;La\x20URL\x20solicitada\x20est\xc3\xa1\x20
+SF:mal\x20formada\.&lt;/BODY&gt;&lt;/HTML&gt;\r\n&quot;)%r(GenericLines,E4,&quot;HTTP/1\.1\x2040
+SF:0\x20Bad\x20Request\nContent-Type:\x20text/html\r\nConnection:\x20Close
+SF:\r\n\r\n&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;e2guardian\x20-\x20400\x20Bad\x20Request&lt;/TI
+SF:TLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;&lt;H1&gt;e2guardian\x20-\x20400\x20Bad\x20Request&lt;/H1&gt;La\x2
+SF:0URL\x20solicitada\x20est\xc3\xa1\x20mal\x20formada\.&lt;/BODY&gt;&lt;/HTML&gt;\r\n
+SF:&quot;)%r(LDAPSearchReq,E4,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\nContent-Type
+SF::\x20text/html\r\nConnection:\x20Close\r\n\r\n&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;e2guar
+SF:dian\x20-\x20400\x20Bad\x20Request&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;&lt;H1&gt;e2guardian\x
+SF:20-\x20400\x20Bad\x20Request&lt;/H1&gt;La\x20URL\x20solicitada\x20est\xc3\xa1
+SF:\x20mal\x20formada\.&lt;/BODY&gt;&lt;/HTML&gt;\r\n&quot;);
+MAC Address: 00:15:17:BC:D3:86 (Intel Corporate)
+Service Info: Host:  f0.04002052.04.andared.ced.junta-andalucia.es; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: 0s
+
+Nmap scan report for pc63-8.04002052.04.andared.ced.junta-andalucia.es (192.168.8.63)
+Host is up, received arp-response (0.00049s latency).
+Scanned at 2025-05-28 19:42:53 CEST for 155s
+Not shown: 999 filtered tcp ports (no-response)
+PORT     STATE SERVICE REASON          VERSION
+5357/tcp open  http    syn-ack ttl 128 Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Service Unavailable
+|_http-server-header: Microsoft-HTTPAPI/2.0
+MAC Address: 6C:0B:84:3E:31:C6 (Universal Global Scientific Industrial)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for pc208-8.04002052.04.andared.ced.junta-andalucia.es (192.168.8.208)
+Host is up, received arp-response (0.00027s latency).
+Scanned at 2025-05-28 19:42:53 CEST for 155s
+Not shown: 994 closed tcp ports (reset)
+PORT     STATE SERVICE        REASON         VERSION
+22/tcp   open  ssh            syn-ack ttl 64 OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 f6:35:0d:f7:66:1e:0d:c6:36:35:7f:24:1f:1a:03:bb (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDJnSHCBlaZKZeSxIgSchuJ2AL85eEHrorf22Ex0nj+ITyedMOXk4CCCx9i0CfMS4y0n4D34hzDBS5n/ImSgyQeopB5Nfi+XeYtPy76k9MvmudMn65KShw75fPe628uVpX7k4mGcCAvrCZhCSirFZ+fqV8uCZffozBC3snc5q6hPDS9PRI1rHrAh2f56b7ax6Hdv9ZelhzOg5ORUaozkaiqA6MQKmSr7QW/RZBqJh7ZHRmAHW74RV2ORovpTiR17f5fWcGZ/RDEj7X29b8WRCX83BpFZimnqDlpKzjXrXLo6KdKD67vx5OrBTa1bD83D3lvHbYbOxcIHgFQSX+fXXX9KG6izZs7TYkERqAt++M9eEH65H/ZYCL6eDrz4etkaJTutYYTNO72iJMQbHC5Fz7b1pjVujSdKLKPdQgTAuwv5Whf/hn4Of06ObRM0/c7nmlbnJ1POHkKMCos8v3JfT5H7fv8Bo+phxOUzK0JPVQ/W1IMMQt//dqsFNRPw29F/58=
+|   256 a8:bb:35:73:2b:22:94:64:fa:d8:23:16:a2:c2:63:65 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDR/S/scm+zIBNSIRc+WYmdEfi7lU6RxeXZf/bxuhUaBj104ltZLe6ULlr8ITuslUdSesKA7Saunu4tl05HWJeY=
+|   256 9f:12:02:d2:a3:7c:08:a7:7b:0c:67:1a:fb:f0:9f:76 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILWTxWPEV6U96d7V9YROjMVpIgBvRJQiqaN7zlo4NmA2
+139/tcp  open  netbios-ssn    syn-ack ttl 64 Samba smbd 4.6.2
+445/tcp  open  netbios-ssn    syn-ack ttl 64 Samba smbd 4.6.2
+5222/tcp open  xmpp-client?   syn-ack ttl 64
+| xmpp-info: 
+|   Respects server name
+|   STARTTLS Failed
+|   info: 
+|     unknown: 
+|     capabilities: 
+|     xmpp: 
+|       lang: ru-RU
+|       version: 1.0
+|     errors: 
+|       host-unknown
+|       (timeout)
+|     auth_mechanisms: 
+|     features: 
+|     compression_methods: 
+|_    stream_id: 3757019008600116589
+| fingerprint-strings: 
+|   DNSVersionBindReqTCP: 
+|     &lt;?xml version=&apos;1.0&apos;?&gt;&lt;stream:stream id=&apos;9947146440796939872&apos; version=&apos;1.0&apos; xml:lang=&apos;en&apos; xmlns:stream=&apos;http://etherx.jabber.org/streams&apos; xmlns=&apos;jabber:client&apos;&gt;&lt;stream:error&gt;&lt;not-well-formed xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;/&gt;&lt;text xml:lang=&apos;en&apos; xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;&gt;not well-formed (invalid token)&lt;/text&gt;&lt;/stream:error&gt;&lt;/stream:stream&gt;
+|   GetRequest: 
+|     &lt;?xml version=&apos;1.0&apos;?&gt;&lt;stream:stream id=&apos;9239835306941087832&apos; version=&apos;1.0&apos; xml:lang=&apos;en&apos; xmlns:stream=&apos;http://etherx.jabber.org/streams&apos; xmlns=&apos;jabber:client&apos;&gt;&lt;stream:error&gt;&lt;not-well-formed xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;/&gt;&lt;text xml:lang=&apos;en&apos; xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;&gt;syntax error&lt;/text&gt;&lt;/stream:error&gt;&lt;/stream:stream&gt;
+|   HTTPOptions: 
+|     &lt;?xml version=&apos;1.0&apos;?&gt;&lt;stream:stream id=&apos;8466063557645948504&apos; version=&apos;1.0&apos; xml:lang=&apos;en&apos; xmlns:stream=&apos;http://etherx.jabber.org/streams&apos; xmlns=&apos;jabber:client&apos;&gt;&lt;stream:error&gt;&lt;not-well-formed xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;/&gt;&lt;text xml:lang=&apos;en&apos; xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;&gt;syntax error&lt;/text&gt;&lt;/stream:error&gt;&lt;/stream:stream&gt;
+|   RPCCheck: 
+|     &lt;?xml version=&apos;1.0&apos;?&gt;&lt;stream:stream id=&apos;2268852332223609716&apos; version=&apos;1.0&apos; xml:lang=&apos;en&apos; xmlns:stream=&apos;http://etherx.jabber.org/streams&apos; xmlns=&apos;jabber:client&apos;&gt;&lt;stream:error&gt;&lt;not-well-formed xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;/&gt;&lt;text xml:lang=&apos;en&apos; xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;&gt;not well-formed (invalid token)&lt;/text&gt;&lt;/stream:error&gt;&lt;/stream:stream&gt;
+|   RTSPRequest: 
+|_    &lt;?xml version=&apos;1.0&apos;?&gt;&lt;stream:stream id=&apos;2279328339806618666&apos; version=&apos;1.0&apos; xml:lang=&apos;en&apos; xmlns:stream=&apos;http://etherx.jabber.org/streams&apos; xmlns=&apos;jabber:client&apos;&gt;&lt;stream:error&gt;&lt;not-well-formed xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;/&gt;&lt;text xml:lang=&apos;en&apos; xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;&gt;syntax error&lt;/text&gt;&lt;/stream:error&gt;&lt;/stream:stream&gt;
+5269/tcp open  xmpp-server?   syn-ack ttl 64
+| xmpp-info: 
+|   Respects server name
+|   STARTTLS Failed
+|   info: 
+|     unknown: 
+|     capabilities: 
+|     xmpp: 
+|       lang: ru-RU
+|       version: 1.0
+|     errors: 
+|       host-unknown
+|       (timeout)
+|     auth_mechanisms: 
+|     features: 
+|     compression_methods: 
+|_    stream_id: 4394858731271736406
+| fingerprint-strings: 
+|   DNSVersionBindReqTCP: 
+|     &lt;?xml version=&apos;1.0&apos;?&gt;&lt;stream:stream id=&apos;15845803058544938488&apos; version=&apos;1.0&apos; xml:lang=&apos;en&apos; xmlns:db=&apos;jabber:server:dialback&apos; xmlns:stream=&apos;http://etherx.jabber.org/streams&apos; xmlns=&apos;jabber:server&apos;&gt;&lt;stream:error&gt;&lt;not-well-formed xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;/&gt;&lt;text xml:lang=&apos;en&apos; xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;&gt;not well-formed (invalid token)&lt;/text&gt;&lt;/stream:error&gt;&lt;/stream:stream&gt;
+|   GetRequest: 
+|     &lt;?xml version=&apos;1.0&apos;?&gt;&lt;stream:stream id=&apos;5709036703646142349&apos; version=&apos;1.0&apos; xml:lang=&apos;en&apos; xmlns:db=&apos;jabber:server:dialback&apos; xmlns:stream=&apos;http://etherx.jabber.org/streams&apos; xmlns=&apos;jabber:server&apos;&gt;&lt;stream:error&gt;&lt;not-well-formed xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;/&gt;&lt;text xml:lang=&apos;en&apos; xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;&gt;syntax error&lt;/text&gt;&lt;/stream:error&gt;&lt;/stream:stream&gt;
+|   HTTPOptions: 
+|     &lt;?xml version=&apos;1.0&apos;?&gt;&lt;stream:stream id=&apos;2767954599408746342&apos; version=&apos;1.0&apos; xml:lang=&apos;en&apos; xmlns:db=&apos;jabber:server:dialback&apos; xmlns:stream=&apos;http://etherx.jabber.org/streams&apos; xmlns=&apos;jabber:server&apos;&gt;&lt;stream:error&gt;&lt;not-well-formed xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;/&gt;&lt;text xml:lang=&apos;en&apos; xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;&gt;syntax error&lt;/text&gt;&lt;/stream:error&gt;&lt;/stream:stream&gt;
+|   RPCCheck: 
+|     &lt;?xml version=&apos;1.0&apos;?&gt;&lt;stream:stream id=&apos;14641222376383904256&apos; version=&apos;1.0&apos; xml:lang=&apos;en&apos; xmlns:db=&apos;jabber:server:dialback&apos; xmlns:stream=&apos;http://etherx.jabber.org/streams&apos; xmlns=&apos;jabber:server&apos;&gt;&lt;stream:error&gt;&lt;not-well-formed xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;/&gt;&lt;text xml:lang=&apos;en&apos; xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;&gt;not well-formed (invalid token)&lt;/text&gt;&lt;/stream:error&gt;&lt;/stream:stream&gt;
+|   RTSPRequest: 
+|_    &lt;?xml version=&apos;1.0&apos;?&gt;&lt;stream:stream id=&apos;13958685881889290094&apos; version=&apos;1.0&apos; xml:lang=&apos;en&apos; xmlns:db=&apos;jabber:server:dialback&apos; xmlns:stream=&apos;http://etherx.jabber.org/streams&apos; xmlns=&apos;jabber:server&apos;&gt;&lt;stream:error&gt;&lt;not-well-formed xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;/&gt;&lt;text xml:lang=&apos;en&apos; xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;&gt;syntax error&lt;/text&gt;&lt;/stream:error&gt;&lt;/stream:stream&gt;
+5280/tcp open  ssl/xmpp-bosh? syn-ack ttl 64
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=ejabberd/organizationName=Internet Widgits Pty Ltd/emailAddress=root@pc95-100./organizationalUnitName=pc95-100
+| Issuer: commonName=ejabberd/organizationName=Internet Widgits Pty Ltd/emailAddress=root@pc95-100./organizationalUnitName=pc95-100
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2024-01-10T07:23:17
+| Not valid after:  2025-01-09T07:23:17
+| MD5:   68fa:05c6:a16f:67dc:e0c4:61ec:2660:ca16
+| SHA-1: ca09:fc13:449c:d45f:f60f:5313:752c:62f9:c3d9:0ed2
+| -----BEGIN CERTIFICATE-----
+| MIIDsTCCApmgAwIBAgIURjCbDsYhOcLBix5ZOWJYb2wXBAowDQYJKoZIhvcNAQEL
+| BQAwaDEhMB8GA1UECgwYSW50ZXJuZXQgV2lkZ2l0cyBQdHkgTHRkMREwDwYDVQQL
+| DAhwYzk1LTEwMDERMA8GA1UEAwwIZWphYmJlcmQxHTAbBgkqhkiG9w0BCQEWDnJv
+| b3RAcGM5NS0xMDAuMB4XDTI0MDExMDA3MjMxN1oXDTI1MDEwOTA3MjMxN1owaDEh
+| MB8GA1UECgwYSW50ZXJuZXQgV2lkZ2l0cyBQdHkgTHRkMREwDwYDVQQLDAhwYzk1
+| LTEwMDERMA8GA1UEAwwIZWphYmJlcmQxHTAbBgkqhkiG9w0BCQEWDnJvb3RAcGM5
+| NS0xMDAuMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA23xKDhG7i+7d
+| exvh/9psba2WUYhSr0UDFzKCdxonkKBB7/RuQLWDqkGLOvKUeahdlzZ206VPScH6
+| WDl6WSAW7PJ/0M+loMWDaiVM/3J47UP1m1hJFCOC2PuSnU+RFuZQ24I+ixhRJ4us
+| 46WpPrmm2fV1aJQD/KcwG9zQ70FmKipaQf+sqpLn7k/ik7kOOjxpMAAkulK1lIfD
+| 08Pc8D6AN0wfp4CICzPkel7MdbzmdSdXXQDGMy/J7yUE2T2Uh3J9e1Nwxlx1DYpl
+| n6Ik/HRDdC4k0JUQLqtqLSHjxlqEGEzX4fkl62vGPNkTdk9VqSUzeHPQNreIzdd+
+| p3jntFvpzQIDAQABo1MwUTAdBgNVHQ4EFgQUglG2LJemXv5W1C66yzkwNYxZ/JYw
+| HwYDVR0jBBgwFoAUglG2LJemXv5W1C66yzkwNYxZ/JYwDwYDVR0TAQH/BAUwAwEB
+| /zANBgkqhkiG9w0BAQsFAAOCAQEACmknjPiKJ8PSuq9jqE0VA1lwWJud7FzyR7Fv
+| FpCzHSjVNxmv2cLgvFOMtdXaSdxNTdMPnf/SS+uPnWDh3sE61p8RHWDNvjAz9Xz4
+| 3ZsNx7vuKYWsoOMuZ28Onf6dQwe8MvGvhCmgSfjOihBME9fNMXW33EJOZyUyOZ6W
+| dEHEdbgDz+iqX7R5ucEz1WYtezB0Y+q85rlL8ouo3DRFvDsjxQCE78CvLsCAqvpD
+| 2asYOGEwTI18PWbXyyxFJZBCk8vMb7LZIBhg4SoP4mtPtuEm/3uI8vIkUnlkj/Ly
+| Plh1SLLmI4GAYqYpMfZaNzjl7GTwyrwCJ+hBHAYoI9rEOQDM6Q==
+|_-----END CERTIFICATE-----
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port5222-TCP:V=7.94SVN%I=7%D=5/28%Time=68374B28%P=x86_64-pc-linux-gnu%r
+SF:(GetRequest,15D,&quot;&lt;\?xml\x20version=&apos;1\.0&apos;\?&gt;&lt;stream:stream\x20id=&apos;92398
+SF:35306941087832&apos;\x20version=&apos;1\.0&apos;\x20xml:lang=&apos;en&apos;\x20xmlns:stream=&apos;htt
+SF:p://etherx\.jabber\.org/streams&apos;\x20xmlns=&apos;jabber:client&apos;&gt;&lt;stream:error
+SF:&gt;&lt;not-well-formed\x20xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;/&gt;&lt;text
+SF:\x20xml:lang=&apos;en&apos;\x20xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;&gt;syntax
+SF:\x20error&lt;/text&gt;&lt;/stream:error&gt;&lt;/stream:stream&gt;&quot;)%r(HTTPOptions,15D,&quot;&lt;\
+SF:?xml\x20version=&apos;1\.0&apos;\?&gt;&lt;stream:stream\x20id=&apos;8466063557645948504&apos;\x20
+SF:version=&apos;1\.0&apos;\x20xml:lang=&apos;en&apos;\x20xmlns:stream=&apos;http://etherx\.jabber\
+SF:.org/streams&apos;\x20xmlns=&apos;jabber:client&apos;&gt;&lt;stream:error&gt;&lt;not-well-formed\x
+SF:20xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;/&gt;&lt;text\x20xml:lang=&apos;en&apos;\x
+SF:20xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;&gt;syntax\x20error&lt;/text&gt;&lt;/s
+SF:tream:error&gt;&lt;/stream:stream&gt;&quot;)%r(RTSPRequest,15D,&quot;&lt;\?xml\x20version=&apos;1\
+SF:.0&apos;\?&gt;&lt;stream:stream\x20id=&apos;2279328339806618666&apos;\x20version=&apos;1\.0&apos;\x20x
+SF:ml:lang=&apos;en&apos;\x20xmlns:stream=&apos;http://etherx\.jabber\.org/streams&apos;\x20xm
+SF:lns=&apos;jabber:client&apos;&gt;&lt;stream:error&gt;&lt;not-well-formed\x20xmlns=&apos;urn:ietf:p
+SF:arams:xml:ns:xmpp-streams&apos;/&gt;&lt;text\x20xml:lang=&apos;en&apos;\x20xmlns=&apos;urn:ietf:p
+SF:arams:xml:ns:xmpp-streams&apos;&gt;syntax\x20error&lt;/text&gt;&lt;/stream:error&gt;&lt;/strea
+SF:m:stream&gt;&quot;)%r(RPCCheck,170,&quot;&lt;\?xml\x20version=&apos;1\.0&apos;\?&gt;&lt;stream:stream\x
+SF:20id=&apos;2268852332223609716&apos;\x20version=&apos;1\.0&apos;\x20xml:lang=&apos;en&apos;\x20xmlns:
+SF:stream=&apos;http://etherx\.jabber\.org/streams&apos;\x20xmlns=&apos;jabber:client&apos;&gt;&lt;s
+SF:tream:error&gt;&lt;not-well-formed\x20xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stre
+SF:ams&apos;/&gt;&lt;text\x20xml:lang=&apos;en&apos;\x20xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stre
+SF:ams&apos;&gt;not\x20well-formed\x20\(invalid\x20token\)&lt;/text&gt;&lt;/stream:error&gt;&lt;/
+SF:stream:stream&gt;&quot;)%r(DNSVersionBindReqTCP,170,&quot;&lt;\?xml\x20version=&apos;1\.0&apos;\?
+SF:&gt;&lt;stream:stream\x20id=&apos;9947146440796939872&apos;\x20version=&apos;1\.0&apos;\x20xml:la
+SF:ng=&apos;en&apos;\x20xmlns:stream=&apos;http://etherx\.jabber\.org/streams&apos;\x20xmlns=&apos;
+SF:jabber:client&apos;&gt;&lt;stream:error&gt;&lt;not-well-formed\x20xmlns=&apos;urn:ietf:params
+SF::xml:ns:xmpp-streams&apos;/&gt;&lt;text\x20xml:lang=&apos;en&apos;\x20xmlns=&apos;urn:ietf:params
+SF::xml:ns:xmpp-streams&apos;&gt;not\x20well-formed\x20\(invalid\x20token\)&lt;/text&gt;
+SF:&lt;/stream:error&gt;&lt;/stream:stream&gt;&quot;);
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port5269-TCP:V=7.94SVN%I=7%D=5/28%Time=68374B28%P=x86_64-pc-linux-gnu%r
+SF:(GetRequest,17F,&quot;&lt;\?xml\x20version=&apos;1\.0&apos;\?&gt;&lt;stream:stream\x20id=&apos;57090
+SF:36703646142349&apos;\x20version=&apos;1\.0&apos;\x20xml:lang=&apos;en&apos;\x20xmlns:db=&apos;jabber:
+SF:server:dialback&apos;\x20xmlns:stream=&apos;http://etherx\.jabber\.org/streams&apos;\x
+SF:20xmlns=&apos;jabber:server&apos;&gt;&lt;stream:error&gt;&lt;not-well-formed\x20xmlns=&apos;urn:ie
+SF:tf:params:xml:ns:xmpp-streams&apos;/&gt;&lt;text\x20xml:lang=&apos;en&apos;\x20xmlns=&apos;urn:ie
+SF:tf:params:xml:ns:xmpp-streams&apos;&gt;syntax\x20error&lt;/text&gt;&lt;/stream:error&gt;&lt;/s
+SF:tream:stream&gt;&quot;)%r(HTTPOptions,17F,&quot;&lt;\?xml\x20version=&apos;1\.0&apos;\?&gt;&lt;stream:s
+SF:tream\x20id=&apos;2767954599408746342&apos;\x20version=&apos;1\.0&apos;\x20xml:lang=&apos;en&apos;\x2
+SF:0xmlns:db=&apos;jabber:server:dialback&apos;\x20xmlns:stream=&apos;http://etherx\.jabb
+SF:er\.org/streams&apos;\x20xmlns=&apos;jabber:server&apos;&gt;&lt;stream:error&gt;&lt;not-well-forme
+SF:d\x20xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;/&gt;&lt;text\x20xml:lang=&apos;en
+SF:&apos;\x20xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;&gt;syntax\x20error&lt;/text&gt;
+SF:&lt;/stream:error&gt;&lt;/stream:stream&gt;&quot;)%r(RTSPRequest,180,&quot;&lt;\?xml\x20version=
+SF:&apos;1\.0&apos;\?&gt;&lt;stream:stream\x20id=&apos;13958685881889290094&apos;\x20version=&apos;1\.0&apos;\
+SF:x20xml:lang=&apos;en&apos;\x20xmlns:db=&apos;jabber:server:dialback&apos;\x20xmlns:stream=&apos;
+SF:http://etherx\.jabber\.org/streams&apos;\x20xmlns=&apos;jabber:server&apos;&gt;&lt;stream:er
+SF:ror&gt;&lt;not-well-formed\x20xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;/&gt;&lt;t
+SF:ext\x20xml:lang=&apos;en&apos;\x20xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;&gt;syn
+SF:tax\x20error&lt;/text&gt;&lt;/stream:error&gt;&lt;/stream:stream&gt;&quot;)%r(RPCCheck,193,&quot;&lt;\
+SF:?xml\x20version=&apos;1\.0&apos;\?&gt;&lt;stream:stream\x20id=&apos;14641222376383904256&apos;\x2
+SF:0version=&apos;1\.0&apos;\x20xml:lang=&apos;en&apos;\x20xmlns:db=&apos;jabber:server:dialback&apos;\x
+SF:20xmlns:stream=&apos;http://etherx\.jabber\.org/streams&apos;\x20xmlns=&apos;jabber:se
+SF:rver&apos;&gt;&lt;stream:error&gt;&lt;not-well-formed\x20xmlns=&apos;urn:ietf:params:xml:ns:x
+SF:mpp-streams&apos;/&gt;&lt;text\x20xml:lang=&apos;en&apos;\x20xmlns=&apos;urn:ietf:params:xml:ns:x
+SF:mpp-streams&apos;&gt;not\x20well-formed\x20\(invalid\x20token\)&lt;/text&gt;&lt;/stream:
+SF:error&gt;&lt;/stream:stream&gt;&quot;)%r(DNSVersionBindReqTCP,193,&quot;&lt;\?xml\x20version=
+SF:&apos;1\.0&apos;\?&gt;&lt;stream:stream\x20id=&apos;15845803058544938488&apos;\x20version=&apos;1\.0&apos;\
+SF:x20xml:lang=&apos;en&apos;\x20xmlns:db=&apos;jabber:server:dialback&apos;\x20xmlns:stream=&apos;
+SF:http://etherx\.jabber\.org/streams&apos;\x20xmlns=&apos;jabber:server&apos;&gt;&lt;stream:er
+SF:ror&gt;&lt;not-well-formed\x20xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;/&gt;&lt;t
+SF:ext\x20xml:lang=&apos;en&apos;\x20xmlns=&apos;urn:ietf:params:xml:ns:xmpp-streams&apos;&gt;not
+SF:\x20well-formed\x20\(invalid\x20token\)&lt;/text&gt;&lt;/stream:error&gt;&lt;/stream:s
+SF:tream&gt;&quot;);
+MAC Address: 74:D4:35:D7:50:73 (Giga-byte Technology)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+| nbstat: NetBIOS name: PC208-8, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: &lt;unknown&gt; (unknown)
+| Names:
+|   PC208-8&lt;00&gt;          Flags: &lt;unique&gt;&lt;active&gt;
+|   PC208-8&lt;03&gt;          Flags: &lt;unique&gt;&lt;active&gt;
+|   PC208-8&lt;20&gt;          Flags: &lt;unique&gt;&lt;active&gt;
+|   \x01\x02__MSBROWSE__\x02&lt;01&gt;  Flags: &lt;group&gt;&lt;active&gt;
+|   WORKGROUP&lt;00&gt;        Flags: &lt;group&gt;&lt;active&gt;
+|   WORKGROUP&lt;1d&gt;        Flags: &lt;unique&gt;&lt;active&gt;
+|   WORKGROUP&lt;1e&gt;        Flags: &lt;group&gt;&lt;active&gt;
+| Statistics:
+|   00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+|   00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+|_  00:00:00:00:00:00:00:00:00:00:00:00:00:00
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 32205/tcp): CLEAN (Couldn&apos;t connect)
+|   Check 2 (port 22287/tcp): CLEAN (Couldn&apos;t connect)
+|   Check 3 (port 62912/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 12728/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+|_clock-skew: 0s
+| smb2-time: 
+|   date: 2025-05-28T17:45:04
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 19:45
+Completed NSE at 19:45, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 19:45
+Completed NSE at 19:45, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 19:45
+Completed NSE at 19:45, 0.00s elapsed
+Post-scan script results:
+| clock-skew: 
+|   0s: 
+|     192.168.8.1 (f0.04002052.04.andared.ced.junta-andalucia.es)
+|_    192.168.8.208 (pc208-8.04002052.04.andared.ced.junta-andalucia.es)
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 256 IP addresses (3 hosts up) scanned in 156.59 seconds
+           Raw packets sent: 4522 (190.760KB) | Rcvd: 2000 (80.028KB)
+</pre>
