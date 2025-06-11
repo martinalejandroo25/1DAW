@@ -1,0 +1,50 @@
+:root {
+    --color-principal: #b3d7c3;
+    --color-secundario: #f3b09e;
+    --gris-claro: #f5f5f5;
+    --texto: #333;
+    --fuente-principal: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--fuente-principal);
+    color: var(--texto);
+    background-color: var(--gris-claro);
+    line-height: 1.6;
+}
+header img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+h1, h2, h3 {
+    color: var(--texto);
+    margin-bottom: 1rem;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.nav-list {
+  list-style: none;
+  display: flex;        /* Hace que los <li> aparezcan en fila */
+  gap: 1rem;            /* Espacio entre cada enlace */
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: var(--texto);
+  padding: 0.5rem 1rem;
+  display: block;       /* Para que todo el área sea clicable */
+}

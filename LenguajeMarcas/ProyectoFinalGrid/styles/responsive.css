@@ -1,0 +1,14 @@
+@media only screen and (max-width: 768px) {
+    .products-grid .container {
+        grid-template-columns: 1fr;
+    }
+    .categorias-nav .cat-list ul {
+        flex-direction:column;
+        gap: 0.5rem;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .search-form input[type="search"] {
+        width: 100%;
+    }
+}
