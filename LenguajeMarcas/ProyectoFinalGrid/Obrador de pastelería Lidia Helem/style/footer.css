@@ -1,0 +1,12 @@
+
+footer {
+    background: #5d4037;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    animation: fadeIn 1s ease-out;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}

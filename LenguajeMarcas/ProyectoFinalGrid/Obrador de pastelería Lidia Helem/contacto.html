@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Obrador de Pastelería Lidia Helem</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/animation.css">
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/responsive.css"> 
+    <meta name="description" content="Contacta con Obrador de Pastelería Lidia Helem. Horarios, ubicación, teléfono y formulario de contacto para pedidos personalizados.">
+</head>
+<body>
+<header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Lidia Helem</h1>
+                    <p>Obrador de Pastelería</p>
+                </div>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1>Contacto</h1>
+                    <p>Estamos aquí para ayudarte a crear el dulce perfecto para tu ocasión especial</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Información de Contacto</h2>
+                        <div class="contact-item">
+                            <strong>📍 Dirección:</strong>
+                            <div>
+                                <p>Calle Antonio Machado, 61</p>
+                                <p>Macael, CP 046867</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <strong>📞 Teléfono:</strong>
+                            <span>+34 657 10 84 59</span>
+                            <span>+34 672 51 86 65</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong>📧 Email:</strong>
+                            <span>americamotorsport@hotmail.com</span>
+                            <span>lidiatrans@hotmail.es</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong>🕒 Horario:</strong>
+                            <div>
+                                <p>Lunes a Sábado: 9.00 - 22:00</p>
+                                <p>Domingos descansamos</p>
+                            </div>
+                        </div>
+                    <form class="contact-form" method="post" action="#contacto">
+                        <h2>Envíanos un Mensaje</h2>
+                        <div class="form-group">
+                            <label for="nombre">Nombre *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        <div class="form-group">
+                            <label for="tipo-consulta">Tipo de Consulta</label>
+                            <select id="tipo-consulta" name="tipo-consulta">
+                                <option value="">Selecciona una opción</option>
+                                <option value="pedido-personalizado">Pedido Personalizado</option>
+                                <option value="evento-especial">Evento Especial</option>
+                                <option value="consulta-precios">Consulta de Precios</option>
+                                <option value="informacion-general">Información General</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="fecha-evento">Fecha del Evento (si aplica)</label>
+                            <input type="date" id="fecha-evento" name="fecha-evento">
+                        </div>
+                        <div class="form-group">
+                            <label for="num-personas">Número de Personas (si aplica)</label>
+                            <input type="number" id="num-personas" name="num-personas" min="1" max="500">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Cuéntanos qué necesitas..."></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Quiero recibir información sobre nuevos productos y ofertas especiales</label>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>¿Con cuánta antelación debo hacer mi pedido?</h3>
+                        <p>Para productos estándar, recomendamos 24 horas. Para tartas personalizadas y eventos especiales, mínimo 48-72 horas, dependiendo de la complejidad.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>¿Hacen productos sin gluten o para diabéticos?</h3>
+                        <p>Sí, ofrecemos opciones sin gluten y con edulcorantes naturales. Consulta disponibilidad y precios al hacer tu pedido.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>¿Realizan entregas a domicilio?</h3>
+                        <p>Sí, realizamos entregas en un radio de 10 km. Para eventos especiales, podemos ampliar la zona de entrega. Consulta condiciones y precios.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>¿Puedo ver ejemplos de trabajos anteriores?</h3>
+                        <p>Por supuesto. Tenemos un portafolio con fotos de nuestros trabajos más recientes. Puedes verlo en nuestro obrador o solicitarlo por email.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>¿Aceptan pagos con tarjeta?</h3>
+                        <p>Sí, aceptamos efectivo, tarjetas de crédito y débito, y transferencias bancarias para pedidos grandes.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>¿Qué pasa si no estoy satisfecho con mi pedido?</h3>
+                        <p>Tu satisfacción es nuestra prioridad. Si algo no cumple tus expectativas, contáctanos inmediatamente y buscaremos la mejor solución.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Obrador de Pastelería Lidia Helem. Todos los derechos reservados.</p>
+            <p>Endulzando momentos especiales desde 2015</p>
+        </div>
+    </footer>
+</body>
+</html>

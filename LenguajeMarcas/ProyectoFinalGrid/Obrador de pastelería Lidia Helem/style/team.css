@@ -1,0 +1,179 @@
+.team {
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.team::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.03) 0%, rgba(244, 228, 193, 0.03) 100%);
+    pointer-events: none;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.team-member {
+    background: white;
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    opacity: 0;
+    animation: fadeInUp 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    position: relative;
+    border: 2px solid transparent;
+    overflow: hidden;
+}
+
+.team-member::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.team-member:hover::before {
+    left: 100%;
+}
+
+.team-member:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.team-member:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.team-member:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.team-member:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    border-color: #d4af37;
+}
+
+.member-image {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #d4af37, #f4e4c1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    margin: 0 auto 1.5rem auto;
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    position: relative;
+    z-index: 2;
+}
+
+.member-image::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 3px solid #d4af37;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.team-member:hover .member-image {
+    transform: scale(1.1) rotate(-5deg);
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.4);
+}
+
+.team-member:hover .member-image::after {
+    opacity: 0.3;
+    transform: scale(1);
+}
+
+.team-member h3 {
+    color: #5d4037;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.team-member:hover h3 {
+    color: #d4af37;
+    transform: translateY(-2px);
+}
+
+.member-role {
+    color: #d4af37;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.team-member:hover .member-role {
+    color: #5d4037;
+    transform: translateY(-2px);
+}
+
+.team-member p:not(.member-role) {
+    color: #666;
+    line-height: 1.7;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.team-member:hover p:not(.member-role) {
+    color: #555;
+    transform: translateY(-2px);
+}
+
+
+.member-image {
+    animation: avatarGlow 3s ease-in-out infinite;
+}
+
+.team-member::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #d4af37, #f4e4c1, #d4af37);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+    border-radius: 0 0 20px 20px;
+}
+
+.team-member:hover::after {
+    transform: scaleX(1);
+}

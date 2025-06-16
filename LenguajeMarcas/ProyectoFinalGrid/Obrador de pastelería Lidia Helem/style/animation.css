@@ -1,0 +1,84 @@
+@keyframes stepPulse {
+    0% {
+        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    }
+    50% {
+        box-shadow: 0 4px 25px rgba(212, 175, 55, 0.5);
+    }
+    100% {
+        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    }
+}
+@keyframes avatarGlow {
+    0% {
+        box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+    }
+    50% {
+        box-shadow: 0 8px 35px rgba(212, 175, 55, 0.4);
+    }
+    100% {
+        box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+    }
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(-10px) scale(1.02);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
