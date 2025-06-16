@@ -1,0 +1,108 @@
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.logo img{
+    width: 120px ;
+    height: auto;
+    margin: 10px;
+}
+.header-content p {
+    color: orangered;
+}
+.header-content {
+    text-align: center;
+}
+.header-content h1 {
+    font-size: x-large;
+}
+nav {
+    background-color: lightgray;
+    border-bottom: 2px solid grey;
+    border-top: 1px solid grey;
+}
+nav li{
+    list-style-type: none;
+    display: inline;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(109, 108, 108);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+nav a:hover {
+    color: white;
+    background-color: darkgray;
+    border-radius: 50%;
+}
+@media(max-width: 768px) {
+    nav {
+        background: none;
+        border: none;
+    }
+    
+    nav li{
+    display: flex;
+    background-color: rgb(175, 161, 240);
+    color: white;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 2px;
+    list-style: none;
+    }
+
+}
+main {
+    display: grid;
+    grid-template-columns: max-content 2fr;
+}
+@media(max-width: 810px){
+    .publicidad img{
+        width: 350px;
+        height: auto;
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
+        
+    }
+}
+@media(max-width:768px){
+    main{
+        grid-template-columns:1fr;
+    }
+    .main-content {
+        grid-column: span 2;
+    }
+}
+main aside {
+    margin: 10%;
+    grid-column: span 2;
+}
+.aside-content h4, .aside-content ol{
+    margin: 0 auto;
+}
+.main-content{
+    margin: 5%;
+}
+.main-content h3 {
+    background-color: lightgray;
+    text-align: center;
+}
+
+.aside-content {
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+.publicidad img {
+    border: 1px solid black;
+}
+footer {
+    border-top: 1px dotted black;
+    text-align: center;
+    background-color: lightgrey;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
