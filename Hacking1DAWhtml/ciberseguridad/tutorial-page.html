@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Tutorial: Escaneo de Puertos con Nmap - HackBook</title>
+</head>
+
+<body>
+
+    
+    <header>
+        
+        <div class="logo">
+            <img src="img/HackBook logo.png" alt="Logo" width="5.5%">HackBook<span class="blink">_</span>
+        </div>
+    </header>
+
+    <main>
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <div class="terminal-nav">
+                    <div class="terminal-header">
+                        <span>HackBook@system:~$</span>
+                        <div class="controles">
+                            <span class="minimize"></span>
+                            <span class="maximize"></span>
+                            <span class="close"></span>
+                        </div>
+                    </div>
+                    <div class="terminal-body">
+                        <nav>
+                            <ul>
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">tutoriales</a></li>
+                                <li><a href="#">herramientas</a></li>
+                                <li><a href="#">recursos</a></li>
+                                <li><a href="#">blog</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-section">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="#">Pentesting</a></li>
+                    <li class="active"><a href="#">Redes</a></li>
+                    <li><a href="#">Hacking Web</a></li>
+                    <li><a href="#">Forense</a></li>
+                    <li><a href="#">Criptografía</a></li>
+                </ul>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>Tutoriales Relacionados</h3>
+                <ul>
+                    <li><a href="#">Escaneo con Masscan</a></li>
+                    <li><a href="#">Detectar sistemas operativos</a></li>
+                    <li><a href="#">Evasión de firewalls</a></li>
+                    <li><a href="#">Escaneo furtivo</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Nivel</h3>
+                <ul>
+                    <li><a href="#">Principiante</a></li>
+                    <li><a href="#">Intermedio</a></li>
+                    <li><a href="#">Avanzado</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="content">
+            <div class="breadcrumbs">
+                <a href="#">Inicio</a>
+                <span>/</span>
+                <a href="#">Tutoriales</a>
+                <span>/</span>
+                <a href="#">Redes</a>
+                <span>/</span>
+                Escaneo de Puertos con Nmap
+            </div>
+            
+            <h1 class="section-title">Escaneo de Puertos con Nmap</h1>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Introducción</h2>
+                    <div class="card-icon">🔍</div>
+                </div>
+                <div class="card-content">
+                    <p>El escaneo de puertos es una técnica fundamental en ciberseguridad que permite identificar qué puertos están abiertos, cerrados o filtrados en un sistema objetivo. Nmap (Network Mapper) es una de las herramientas más populares y potentes para esta tarea.</p>
+                    
+                    <p>En este tutorial, aprenderás los fundamentos del escaneo de puertos con Nmap, desde los escaneos básicos hasta técnicas más avanzadas para evadir detección y obtener información detallada sobre los servicios en ejecución.</p>
+                    
+                    <div class="note">
+                        <p><strong>Importante:</strong> El escaneo de puertos sin autorización puede ser ilegal. Siempre asegúrate de tener permiso para escanear los sistemas objetivo. Este tutorial es solo para fines educativos.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tutorial-steps">
+                <div class="tutorial-step">
+                    <h3>Instalación de Nmap</h3>
+                    <p>Antes de comenzar, necesitamos instalar Nmap en nuestro sistema. Dependiendo de tu sistema operativo, puedes utilizar diferentes métodos:</p>
+                    
+                    <div class="code-terminal">
+                        <div class="terminal-header">
+                            <span>terminal@HackBook:~$</span>
+                            <div class="controles">
+                                <span class="minimize"></span>
+                                <span class="maximize"></span>
+                                <span class="close"></span>
+                            </div>
+                        </div>
+                        <div class="terminal-body">
+                            <pre><span class="code-line">sudo apt update && sudo apt install nmap</span>
+<span class="code-output">Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias... Hecho
+nmap ya está en su versión más reciente (7.92+dfsg1-2).</span>
+
+<span class="code-line">nmap --version</span>
+<span class="code-output">Nmap version 7.92 ( https://nmap.org )
+Platform: x86_64-pc-linux-gnu
+Compiled with: liblua-5.3.6 openssl-3.0.2 libpcre2-10.39 libpcap-1.10.1 nmap-libdnet-1.12 ipv6</span></pre>
+                        </div>
+                    </div>
+                    
+                    <p>Para otros sistemas operativos:</p>
+                    <ul>
+                        <li><strong>Windows:</strong> Descarga el instalador desde la <a href="#">página oficial de Nmap</a></li>
+                        <li><strong>macOS:</strong> Utiliza Homebrew con <code>brew install nmap</code></li>
+                    </ul>
+                </div>
+                
+                <div class="tutorial-step">
+                    <h3>Escaneo Básico de Puertos</h3>
+                    <p>El comando más simple de Nmap es escanear los puertos más comunes de un host:</p>
+                    
+                    <div class="code-terminal">
+                        <div class="terminal-header">
+                            <span>terminal@HackBook:~$</span>
+                            <div class="controles">
+                                <span class="minimize"></span>
+                                <span class="maximize"></span>
+                                <span class="close"></span>
+                            </div>
+                        </div>
+                        <div class="terminal-body">
+                            <pre><span class="code-line">nmap 192.168.1.1</span>
+<span class="code-output">Starting Nmap 7.92 ( https://nmap.org ) at 2025-04-09 12:45 CEST
+Nmap scan report for router.home (192.168.1.1)
+Host is up (0.0023s latency).
+Not shown: 995 closed tcp ports (conn-refused)
+PORT    STATE SERVICE
+22/tcp  open  ssh
+53/tcp  open  domain
+80/tcp  open  http
+443/tcp open  https
+8443/tcp open  https-alt
+
+Nmap done: 1 IP address (1 host up) scanned in 0.28 seconds</span></pre>
+                        </div>
+                    </div>
+                    
+                    <p>Este comando escaneará los 1000 puertos TCP más comunes. Si queremos escanear todos los puertos, podemos usar:</p>
+                    
+                    <div class="code-terminal">
+                        <div class="terminal-header">
+                            <span>terminal@HackBook:~$</span>
+                            <div class="controles">
+                                <span class="minimize"></span>
+                                <span class="maximize"></span>
+                                <span class="close"></span>
+                            </div>
+                        </div>
+                        <div class="terminal-body">
+                            <pre><span class="code-line">nmap -p- 192.168.1.1</span></pre>
+                        
